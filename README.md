@@ -2,7 +2,7 @@
 
 Public landing page, privacy policy, and terms of use for [TripEase](https://github.com/pjauthor1-code/TripEase).
 
-**Live site:** https://pjauthor1-code.github.io/tripease-site/
+**Live site:** https://tripeaseapp.com/
 
 **Contact:** apptripease@gmail.com
 
