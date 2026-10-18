@@ -42,7 +42,7 @@
 
   <main class="wrap legal">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: 7 October 2026 · Last updated: 14 October 2026</p>
+    <p class="meta">Effective date: 7 October 2026 · Last updated: 18 October 2026</p>
 
     <div class="toc">
       <strong>Contents</strong>
@@ -79,6 +79,7 @@
       <li>Travel content (countries, airports, forms, advisories) is loaded from Firebase / Firestore operated by Google. App settings such as partner link IDs are loaded from Firebase Remote Config.</li>
       <li>If the app crashes, a crash report is sent to Firebase Crashlytics (Google) so we can fix it. It contains technical details only, with no name, passport, trip or account details and no identifier we assign to you. You can turn crash reports off in Settings → Privacy.</li>
       <li>Optional TripEase Pro subscriptions are processed by Apple or Google via RevenueCat. We receive an anonymous purchase identifier and purchase status — not your full payment card details.</li>
+      <li>Landing weather (TripEase Pro): to show the forecast, the app sends only the destination airport’s coordinates to MET Norway (the Norwegian Meteorological Institute). Nothing personal is sent. MET Norway logs the request’s IP address in Oslo, Norway. The forecast stays on your device.</li>
       <li>Map tiles may be requested from OpenStreetMap (which can see your IP address).</li>
       <li>If you open a partner recommendation, you leave TripEase and that partner’s own privacy policy applies.</li>
     </ul>
@@ -192,6 +193,11 @@
       If the app displays map tiles from OpenStreetMap, requests go to OpenStreetMap’s tile infrastructure (or a configured tile provider). Those requests typically include your IP address. OpenStreetMap’s usage policies and privacy notices apply to that traffic.
     </p>
 
+    <h3 id="met-norway">5.3a MET Norway (landing weather)</h3>
+    <p>
+      If you use TripEase Pro’s landing weather, the app requests the forecast from the MET Weather API (api.met.no) of the Norwegian Meteorological Institute (MET Norway). The request contains only the latitude and longitude of your destination airport, rounded to four decimals (a public location, not your own position), and an app identifier with our public contact details (“TripEase/&lt;version&gt; tripeaseapp.com apptripease@gmail.com”), which MET Norway requires. It does not contain your name, passport or trip details, email address, or any identifier we assign. Like any web request, it reaches MET Norway from your IP address; MET Norway stores the IP address and the requested coordinates in its access logs in its own data centre in Oslo, Norway. The app only asks when you open TripEase, never in the background. The forecast is stored only on your device so it can be shown offline, and is replaced when it is refreshed. Weather data: “Data from MET Norway”, licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a> (source: <a href="https://api.met.no/" rel="noopener">api.met.no</a>); TripEase summarises the hourly data into daily highs and lows. See MET Norway’s <a href="https://api.met.no/doc/TermsOfService" rel="noopener">terms of service</a> and privacy statement.
+    </p>
+
     <h3>5.4 Website hosting</h3>
     <p>
       This website is hosted on GitHub Pages. When you visit the site, GitHub may process standard server logs (such as IP address and browser type) under GitHub’s privacy policy.
@@ -246,7 +252,7 @@
 
     <h2 id="international">11. International transfers</h2>
     <p>
-      Our service providers (including Google, Apple, Google Play / RevenueCat infrastructure, and GitHub) may process data in countries other than your own. Where required, we rely on appropriate safeguards offered by those providers’ terms and transfer mechanisms.
+      Our service providers (including Google, Apple, Google Play / RevenueCat infrastructure, MET Norway, and GitHub) may process data in countries other than your own. Where required, we rely on appropriate safeguards offered by those providers’ terms and transfer mechanisms.
     </p>
 
     <h2 id="changes">12. Changes</h2>
