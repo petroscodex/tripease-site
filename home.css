@@ -139,7 +139,7 @@ section{padding:96px 0}
 /* arrivals */
 .arrivals{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:36px}
 .arr{background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
-.arr .ph{aspect-ratio:4/3;background:linear-gradient(135deg,#0A756C,#E8604A 140%)}
+.arr .ph{aspect-ratio:4/3;background:var(--sand)}
 .arr .ph img{width:100%;height:100%;object-fit:cover}
 .arr .in{padding:18px 20px 22px}
 .arr h3{margin:0}
