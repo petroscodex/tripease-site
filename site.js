@@ -13,7 +13,7 @@
   var PP={TW:"Taiwan",US:"United States",IN:"India",MY:"Malaysia"};
   var TO={JP:"Japan",TH:"Thailand",GB:"United Kingdom",KR:"South Korea",US:"United States"};
   var M={TW:{JP:"F90",TH:"F30",GB:"T180",KR:"F90",US:"T90"},US:{JP:"F90",TH:"F30",GB:"T180",KR:"F90",US:"own"},IN:{JP:"E90",TH:"F30",GB:"V",KR:"V",US:"V"},MY:{JP:"F90",TH:"F30",GB:"T180",KR:"T90",US:"V"}};
-  var FORM={JP:["Visit Japan Web","Optional. Register before you fly and get QR codes for faster immigration and customs."],TH:["Thailand Digital Arrival Card (TDAC)","Required for every visitor. Free on the official site; submit within 3 days before you arrive."],GB:["UK Electronic Travel Authorisation","Apply on GOV.UK before you travel if your passport needs one."],KR:["Korea e-Arrival Card","Submit online up to 3 days before arrival. Some passports also need a K-ETA."],US:["ESTA","Required for Visa Waiver Program passports before you board."]};
+  var FORM={JP:["Visit Japan Web","Optional. Register before you fly. TripEase keeps your passport and trip details ready to copy across."],TH:["Thailand Digital Arrival Card (TDAC)","Required for every visitor. Free on the official site; submit within 3 days before you arrive."],GB:["UK Electronic Travel Authorisation","Apply on GOV.UK before you travel if your passport needs one."],KR:["Korea e-Arrival Card","Submit online up to 3 days before arrival. Some passports also need a K-ETA."],US:["ESTA","Required for Visa Waiver Program passports before you board."]};
   var st={pp:"TW",to:"JP"};
   function $(id){return document.getElementById(id);}
   function render(){
@@ -60,7 +60,6 @@
       fetch(ep,{method:"POST",body:new FormData(f)}).then(function(r){ m.textContent=r.ok?ok:"Something went wrong. Please try again."; if(r.ok)f.reset(); }).catch(function(){ m.textContent="Something went wrong. Please try again."; });
     });
   }
-  wire("waitlist","wl-msg","You're on the list. One email on launch day.");
   wire("report","rp-msg","Thanks, we'll check it against the official source.",function(f){
     var t=(f.details.value+" "+f.link.value);
     if(/passport\s*(no|number|#)?\s*[:#]?\s*[A-Z0-9]{6,9}\b/i.test(t)) return "Please remove the passport number. We only need the rule.";
