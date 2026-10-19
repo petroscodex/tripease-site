@@ -1,0 +1,6 @@
+{"_note":"Peter: update the dates here after each data refresh. [DATES TO CONFIRM]","sources":[
+{"name":"Entry rules (visa matrix)","refreshed":"Weekly","last":"[DATE]"},
+{"name":"TripEase-checked destinations","refreshed":"Ongoing","last":"[DATE]"},
+{"name":"Travel advisories","refreshed":"Weekly","last":"[DATE]"},
+{"name":"Exchange rates","refreshed":"Weekly","last":"[DATE]"},
+{"name":"Plugs and emergency numbers","refreshed":"Weekly","last":"[DATE]"}]}

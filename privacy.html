@@ -3,31 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:image" content="https://tripeaseapp.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="A passenger jet flying over the sea at sunset" />
+  <meta name="twitter:image" content="https://tripeaseapp.com/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <title>Privacy Policy — TripEase</title>
   <meta name="description" content="TripEase Privacy Policy. How we handle data for the TripEase travel companion app." />
   <meta name="theme-color" content="#0A756C" />
-  <link rel="icon" href="favicon.ico?v=v4" sizes="48x48" />
-  <link rel="icon" href="favicon.svg?v=v4" type="image/svg+xml" />
-  <link rel="icon" href="favicon-32x32.png?v=v4" type="image/png" sizes="32x32" />
-  <link rel="icon" href="favicon-16x16.png?v=v4" type="image/png" sizes="16x16" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=v4" />
+  <link rel="icon" href="favicon.ico?v=v5" sizes="48x48" />
+  <link rel="icon" href="favicon-32x32.png?v=v5" type="image/png" sizes="32x32" />
+  <link rel="icon" href="favicon-16x16.png?v=v5" type="image/png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=v5" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
-<script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-  (function () {
-      var script = document.createElement("script");
-      script.async = 1;
-      script.setAttribute("data-cmp-ab", "2");
-      script.src = 'https://emrldtp.com/NTg0NTUx.js?t=584551';
-      document.head.appendChild(script);
-  })();
-</script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav">
       <a class="brand" href="index.html">
-        <img class="logo" src="favicon.svg?v=v4" width="36" height="36" alt="" />
+        <img class="logo" src="icon-192.png?v=v5" width="36" height="36" alt="" />
         <span>TripEase</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
@@ -42,7 +38,7 @@
 
   <main class="wrap legal">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: 7 October 2026 · Last updated: 14 October 2026</p>
+    <p class="meta">Effective date: 7 October 2026 · Last updated: 18 October 2026</p>
 
     <div class="toc">
       <strong>Contents</strong>
@@ -66,7 +62,7 @@
     <h2 id="who">1. Who we are</h2>
     <p>
       This Privacy Policy describes how TripEase (“TripEase”, “we”, “us”) handles information when you use the TripEase mobile application for iOS, Android, and iPad, and when you visit this website.
-      For privacy questions, contact us at <a href="mailto:apptripease@gmail.com">apptripease@gmail.com</a>.
+      For privacy questions, contact us at <a href="mailto:privacy@tripeaseapp.com">privacy@tripeaseapp.com</a>.
     </p>
 
     <h2 id="summary">2. Summary</h2>
@@ -79,6 +75,7 @@
       <li>Travel content (countries, airports, forms, advisories) is loaded from Firebase / Firestore operated by Google. App settings such as partner link IDs are loaded from Firebase Remote Config.</li>
       <li>If the app crashes, a crash report is sent to Firebase Crashlytics (Google) so we can fix it. It contains technical details only, with no name, passport, trip or account details and no identifier we assign to you. You can turn crash reports off in Settings → Privacy.</li>
       <li>Optional TripEase Pro subscriptions are processed by Apple or Google via RevenueCat. We receive an anonymous purchase identifier and purchase status — not your full payment card details.</li>
+      <li>Landing weather (TripEase Pro): to show the forecast, the app sends only the destination airport’s coordinates to MET Norway (the Norwegian Meteorological Institute). Nothing personal is sent. MET Norway logs the request’s IP address in Oslo, Norway. The forecast stays on your device.</li>
       <li>Map tiles may be requested from OpenStreetMap (which can see your IP address).</li>
       <li>If you open a partner recommendation, you leave TripEase and that partner’s own privacy policy applies.</li>
     </ul>
@@ -107,7 +104,7 @@
       <li><strong>Form helper (Pro).</strong> Opens the official government form in your browser and shows your saved details with copy buttons. TripEase never fills in, injects into or submits a government form.</li>
       <li><strong>Travel wallet (Pro).</strong> Documents you add (for example visa approvals, insurance, e-tickets) are encrypted on your device (AES-256-GCM) with a key kept in secure storage, excluded from backups and never uploaded. They are deleted when you delete them, use “Delete everything”, or delete the app.</li>
       <li><strong>Home Screen widget and Lock Screen countdown (Pro).</strong> To show your next trip’s countdown and next step, the app saves the destination name, the countdown and the step title (no passport or booking details) to an area on your device that only TripEase and its widget can read (iOS App Group / Android widget storage). The iOS Lock Screen countdown (Live Activity) starts only when you tap it and is updated locally; no push service is used.</li>
-      <li><strong>Stamp map.</strong> Built on your device from your past trips and countries you add. Each stamp is stored on your device with a random identifier, the country code and visit dates (copied from your trips, or from a file you import). A shareable image is created only when you tap Share, and contains country names and flags only. <em>Export stamps</em> creates a file with your stamps (country codes, visit dates and trip references) only when you tap it, and hands it to your device's share sheet; you choose where it goes. TripEase doesn't upload it. <em>Import stamps</em> reads a file you pick.</li>
+      <li><strong>Stamp map.</strong> Built on your device from your past trips and countries you add. Each stamp is stored on your device with a random identifier, the country code and visit dates (copied from your trips, or from a file you import). A shareable image is created only when you tap Share, and contains country names and flags only. <em>Export</em> creates a file with your trips (country, airport, dates and landing time) and stamps (country codes, visit dates and trip references) only when you tap it, and hands it to your device's share sheet. It never includes passport or identity details. TripEase doesn't upload it. <em>Import</em> reads a TripEase or Petros Labs export file you pick, on your device. Deleting a past trip keeps its country stamp until you remove it on the stamp map.</li>
       <li><strong>Trips and checklists.</strong> Destination, arrival airport, dates, the passport country used for a trip, and which checklist items you have ticked are stored in the app’s local storage on your device. On Android this is excluded from cloud backups; on iOS it may be included in your own encrypted device backup.</li>
       <li><strong>Optional lock.</strong> If you turn on Face ID / Touch ID / fingerprint lock, the check is done by your device’s operating system. TripEase never receives your biometric data.</li>
       <li><strong>Copy buttons.</strong> When you copy a field, it is placed on your device’s clipboard marked as sensitive and set to clear after about 2 minutes (iOS: this device only, not Universal Clipboard).</li>
@@ -192,14 +189,14 @@
       If the app displays map tiles from OpenStreetMap, requests go to OpenStreetMap’s tile infrastructure (or a configured tile provider). Those requests typically include your IP address. OpenStreetMap’s usage policies and privacy notices apply to that traffic.
     </p>
 
+    <h3 id="met-norway">5.3a MET Norway (landing weather)</h3>
+    <p>
+      If you use TripEase Pro’s landing weather, the app requests the forecast from the MET Weather API (api.met.no) of the Norwegian Meteorological Institute (MET Norway). The request contains only the latitude and longitude of your destination airport, rounded to four decimals (a public location, not your own position), and an app identifier with our public contact details (“TripEase/&lt;version&gt; tripeaseapp.com apptripease@gmail.com”), which MET Norway requires. It does not contain your name, passport or trip details, email address, or any identifier we assign. Like any web request, it reaches MET Norway from your IP address; MET Norway stores the IP address and the requested coordinates in its access logs in its own data centre in Oslo, Norway. The app only asks when you open TripEase, never in the background. The forecast is stored only on your device so it can be shown offline, and is replaced when it is refreshed. Weather data: “Data from MET Norway”, licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a> (source: <a href="https://api.met.no/" rel="noopener">api.met.no</a>); TripEase summarises the hourly data into daily highs and lows. See MET Norway’s <a href="https://api.met.no/doc/TermsOfService" rel="noopener">terms of service</a> and privacy statement.
+    </p>
+
     <h3>5.4 Website hosting</h3>
     <p>
       This website is hosted on GitHub Pages. When you visit the site, GitHub may process standard server logs (such as IP address and browser type) under GitHub’s privacy policy.
-    </p>
-
-    <h3 id="travelpayouts">5.4a Travelpayouts script on this website</h3>
-    <p>
-      This website (not the TripEase app) loads a script from Travelpayouts, an affiliate network we use for travel partner links. The script may set cookies and collect usage data, such as the pages you visit and the links you click, so that bookings made through partner links can be attributed to TripEase. Travelpayouts processes this data under its own <a href="https://support.travelpayouts.com/hc/en-us/articles/360004121052-Privacy-Policy" rel="noopener">Privacy Policy</a>. You can block or delete these cookies in your browser settings. The TripEase app does not include this script or any other Travelpayouts code.
     </p>
 
     <h3>5.5 Legal requirements</h3>
@@ -220,7 +217,7 @@
       Support emails are kept only as long as needed to handle your request and for reasonable follow-up or legal records.
       Crash reports are kept by Firebase Crashlytics for up to 90 days and then deleted.
       Purchase entitlement data is retained as needed to provide Pro access, prevent abuse, and meet accounting or tax requirements.
-      On-device data (travel profile, trips, checklists and preferences) remains on your device until you delete it. You can remove all passport and trip details at any time with “Delete all details” in Your travel profile, delete a single trip from its page, or uninstall the app. On a fresh install TripEase clears any secure-storage data left on the device by a previous install.
+      On-device data (travel profile, trips, checklists and preferences) remains on your device until you delete it. You can remove all passport and trip details at any time with “Delete all details” in Your travel profile, delete a single trip from its page (deleting a past trip keeps its country stamp until you remove it on the stamp map), or uninstall the app. On a fresh install TripEase clears any secure-storage data left on the device by a previous install.
     </p>
 
     <h2 id="security">8. Security</h2>
@@ -230,7 +227,7 @@
 
     <h2 id="rights">9. Your choices and rights</h2>
     <ul>
-      <li><strong>Email us</strong> at <a href="mailto:apptripease@gmail.com">apptripease@gmail.com</a> to access, correct, or delete personal information we hold about you from support correspondence, subject to legal exceptions.</li>
+      <li><strong>Email us</strong> at <a href="mailto:privacy@tripeaseapp.com">privacy@tripeaseapp.com</a> to access, correct, or delete personal information we hold about you from support correspondence, subject to legal exceptions.</li>
       <li><strong>Your on-device data:</strong> view, edit or delete your passport and trip details in the app at any time (Your travel profile → Delete all details). Because we never receive this data, we cannot access or delete it for you — it is fully under your control on your device.</li>
       <li><strong>Permissions:</strong> camera (only for scanning), notifications (only for reminders) and Face ID / biometrics (only for the optional lock) are each optional and can be turned off in your device settings. TripEase works without them; you can always type details by hand.</li>
       <li><strong>Crash reports:</strong> turn them off in the app under Settings → Privacy → “Send crash reports”.</li>
@@ -241,12 +238,12 @@
 
     <h2 id="children">10. Children</h2>
     <p>
-      TripEase is not directed at children under 13 (or the minimum age required in your country). We do not knowingly collect personal information from children. If you believe a child has provided us information, contact <a href="mailto:apptripease@gmail.com">apptripease@gmail.com</a> and we will take appropriate steps.
+      TripEase is not directed at children under 13 (or the minimum age required in your country). We do not knowingly collect personal information from children. If you believe a child has provided us information, contact <a href="mailto:privacy@tripeaseapp.com">privacy@tripeaseapp.com</a> and we will take appropriate steps.
     </p>
 
     <h2 id="international">11. International transfers</h2>
     <p>
-      Our service providers (including Google, Apple, Google Play / RevenueCat infrastructure, and GitHub) may process data in countries other than your own. Where required, we rely on appropriate safeguards offered by those providers’ terms and transfer mechanisms.
+      Our service providers (including Google, Apple, Google Play / RevenueCat infrastructure, MET Norway, and GitHub) may process data in countries other than your own. Where required, we rely on appropriate safeguards offered by those providers’ terms and transfer mechanisms.
     </p>
 
     <h2 id="changes">12. Changes</h2>
@@ -257,14 +254,14 @@
     <h2 id="contact">13. Contact</h2>
     <div class="legal-box">
       <p style="margin:0;"><strong>TripEase</strong></p>
-      <p style="margin:0.4rem 0 0;">Email: <a href="mailto:apptripease@gmail.com">apptripease@gmail.com</a></p>
+      <p style="margin:0.4rem 0 0;">Email: <a href="mailto:privacy@tripeaseapp.com">privacy@tripeaseapp.com</a></p>
       <p style="margin:0.4rem 0 0;">Website: <a href="index.html">TripEase home</a></p>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-grid">
-      <div>© 2026 TripEase · <a href="mailto:apptripease@gmail.com">apptripease@gmail.com</a></div>
+      <div>© 2026 TripEase · <a href="mailto:privacy@tripeaseapp.com">privacy@tripeaseapp.com</a></div>
       <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="privacy.html">Privacy Policy</a>

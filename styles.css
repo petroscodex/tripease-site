@@ -445,3 +445,7 @@ h1 {
   .shots { grid-template-columns: 1fr; justify-items: center; }
   .shot { max-width: 300px; }
 }
+
+.tagline { font-size: 1.25rem; color: var(--brand); font-weight: 700; margin: -0.4rem 0 0.8rem; }
+.social-links { color: var(--muted); font-size: 0.95rem; }
+.social-links a { color: var(--brand); }
