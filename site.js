@@ -1,5 +1,14 @@
 (function(){
   "use strict";
+  // Fade-up on scroll. Skipped entirely when the visitor prefers reduced motion.
+  var rmq=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(!rmq&&"IntersectionObserver" in window){
+    document.documentElement.classList.add("js");
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{rootMargin:"0px 0px -8% 0px"});
+    document.querySelectorAll("main section:not(.hero):not(.trust-strip):not(.guide-hero):not(.help-hero) .wrap > *").forEach(function(el){el.classList.add("reveal");io.observe(el);});
+  }
+  // Pre-launch sign-up: no provider yet, so nothing is sent anywhere.
+  document.querySelectorAll("form.signup").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();});});
   // Hero video: pause control + respect reduced motion
   var v=document.getElementById("heroVideo"),mb=document.getElementById("motionBtn");
   if(v&&mb){
@@ -10,11 +19,11 @@
   }
 
   // Sample checker (brief 4.2a). Peter: re-check against the app's data before launch.
-  var PP={TW:"Taiwan",US:"United States",IN:"India",MY:"Malaysia"};
+  var PP={MY:"Malaysia",US:"United States",IN:"India",VN:"Vietnam"};
   var TO={JP:"Japan",TH:"Thailand",GB:"United Kingdom",KR:"South Korea",US:"United States"};
-  var M={TW:{JP:"F90",TH:"F30",GB:"T180",KR:"F90",US:"T90"},US:{JP:"F90",TH:"F30",GB:"T180",KR:"F90",US:"own"},IN:{JP:"E90",TH:"F30",GB:"V",KR:"V",US:"V"},MY:{JP:"F90",TH:"F30",GB:"T180",KR:"T90",US:"V"}};
+  var M={VN:{JP:"V",TH:"F30",GB:"V",KR:"V",US:"V"},US:{JP:"F90",TH:"F30",GB:"T180",KR:"F90",US:"own"},IN:{JP:"E90",TH:"F30",GB:"V",KR:"V",US:"V"},MY:{JP:"F90",TH:"F30",GB:"T180",KR:"T90",US:"V"}};
   var FORM={JP:["Visit Japan Web","Optional. Register before you fly. TripEase keeps your passport and trip details ready to copy across."],TH:["Thailand Digital Arrival Card (TDAC)","Required for every visitor. Free on the official site; submit within 3 days before you arrive."],GB:["UK Electronic Travel Authorisation","Apply on GOV.UK before you travel if your passport needs one."],KR:["Korea e-Arrival Card","Submit online up to 3 days before arrival. Some passports also need a K-ETA."],US:["ESTA","Required for Visa Waiver Program passports before you board."]};
-  var st={pp:"TW",to:"JP"};
+  var st={pp:"MY",to:"JP"};
   function $(id){return document.getElementById(id);}
   function render(){
     if(!$("mCode"))return;
@@ -56,7 +65,7 @@
       if(!f.checkValidity()){ m.textContent="Please check the highlighted field."; f.reportValidity&&f.reportValidity(); return; }
       if(check){ var err=check(f); if(err){ m.textContent=err; return; } }
       var ep=f.getAttribute("action")||"";
-      if(!ep||ep.charAt(0)==="["){ m.innerHTML='This form isn\u2019t connected yet. Please email <a href="mailto:support@tripeaseapp.com">support@tripeaseapp.com</a> for now.'; return; }
+      if(!ep||ep.charAt(0)==="["){ m.textContent='Sign-up opens soon.'; return; }
       fetch(ep,{method:"POST",body:new FormData(f)}).then(function(r){ m.textContent=r.ok?ok:"Something went wrong. Please try again."; if(r.ok)f.reset(); }).catch(function(){ m.textContent="Something went wrong. Please try again."; });
     });
   }
