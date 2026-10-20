@@ -1,5 +1,14 @@
 (function(){
   "use strict";
+  // Fade-up on scroll. Skipped entirely when the visitor prefers reduced motion.
+  var rmq=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(!rmq&&"IntersectionObserver" in window){
+    document.documentElement.classList.add("js");
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{rootMargin:"0px 0px -8% 0px"});
+    document.querySelectorAll("main section:not(.hero):not(.trust-strip):not(.guide-hero):not(.help-hero) .wrap > *").forEach(function(el){el.classList.add("reveal");io.observe(el);});
+  }
+  // Pre-launch sign-up: no provider yet, so nothing is sent anywhere.
+  document.querySelectorAll("form.signup").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();});});
   // Hero video: pause control + respect reduced motion
   var v=document.getElementById("heroVideo"),mb=document.getElementById("motionBtn");
   if(v&&mb){
@@ -56,7 +65,7 @@
       if(!f.checkValidity()){ m.textContent="Please check the highlighted field."; f.reportValidity&&f.reportValidity(); return; }
       if(check){ var err=check(f); if(err){ m.textContent=err; return; } }
       var ep=f.getAttribute("action")||"";
-      if(!ep||ep.charAt(0)==="["){ m.innerHTML='This form isn\u2019t connected yet. Please email <a href="mailto:support@tripeaseapp.com">support@tripeaseapp.com</a> for now.'; return; }
+      if(!ep||ep.charAt(0)==="["){ m.textContent='Sign-up opens soon.'; return; }
       fetch(ep,{method:"POST",body:new FormData(f)}).then(function(r){ m.textContent=r.ok?ok:"Something went wrong. Please try again."; if(r.ok)f.reset(); }).catch(function(){ m.textContent="Something went wrong. Please try again."; });
     });
   }
