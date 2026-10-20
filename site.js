@@ -10,11 +10,11 @@
   }
 
   // Sample checker (brief 4.2a). Peter: re-check against the app's data before launch.
-  var PP={TW:"Taiwan",US:"United States",IN:"India",MY:"Malaysia"};
+  var PP={MY:"Malaysia",US:"United States",IN:"India",VN:"Vietnam"};
   var TO={JP:"Japan",TH:"Thailand",GB:"United Kingdom",KR:"South Korea",US:"United States"};
-  var M={TW:{JP:"F90",TH:"F30",GB:"T180",KR:"F90",US:"T90"},US:{JP:"F90",TH:"F30",GB:"T180",KR:"F90",US:"own"},IN:{JP:"E90",TH:"F30",GB:"V",KR:"V",US:"V"},MY:{JP:"F90",TH:"F30",GB:"T180",KR:"T90",US:"V"}};
+  var M={VN:{JP:"V",TH:"F30",GB:"V",KR:"V",US:"V"},US:{JP:"F90",TH:"F30",GB:"T180",KR:"F90",US:"own"},IN:{JP:"E90",TH:"F30",GB:"V",KR:"V",US:"V"},MY:{JP:"F90",TH:"F30",GB:"T180",KR:"T90",US:"V"}};
   var FORM={JP:["Visit Japan Web","Optional. Register before you fly. TripEase keeps your passport and trip details ready to copy across."],TH:["Thailand Digital Arrival Card (TDAC)","Required for every visitor. Free on the official site; submit within 3 days before you arrive."],GB:["UK Electronic Travel Authorisation","Apply on GOV.UK before you travel if your passport needs one."],KR:["Korea e-Arrival Card","Submit online up to 3 days before arrival. Some passports also need a K-ETA."],US:["ESTA","Required for Visa Waiver Program passports before you board."]};
-  var st={pp:"TW",to:"JP"};
+  var st={pp:"MY",to:"JP"};
   function $(id){return document.getElementById(id);}
   function render(){
     if(!$("mCode"))return;

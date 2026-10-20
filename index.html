@@ -46,19 +46,26 @@
 
 <main id="main">
 <section class="hero" id="top" aria-labelledby="hero-title">
-  <picture class="hero-bg"><source srcset="assets/hero-sky.webp" type="image/webp" /><img src="assets/hero-sky.jpg" width="1024" height="576" fetchpriority="high" alt="A jet flies over a calm golden sea at sunset" /></picture>
+  <picture class="hero-bg"><source srcset="assets/hero-sky.webp" type="image/webp" /><img src="assets/hero-sky.jpg" width="1024" height="576" fetchpriority="high" alt="" /></picture>
   <div class="wrap">
     <div>
-      <p class="kicker">Arrivals · 250 countries &amp; territories</p>
-      <h1 id="hero-title">Arrive prepared.</h1>
-      <p class="tag">One journey. Endless stories.</p>
-      <p class="sub">Breathe out. TripEase knows the way in: the rules for your passport, the official links, and your first hour on the ground. Calm, simple, and kept on your phone.</p>
+      <p class="kicker">Visa rules · Arrival forms · Landing help</p>
+      <h1 id="hero-title">Know you'll get in. Before you fly.</h1>
+      <p class="sub">No more guessing at visa rules or last-minute hunts for the right arrival form. TripEase shows exactly what your passport needs, links every official form with its deadline, and gets you through your first hour on the ground.</p>
+      <ul class="benefits">
+        <li><b>Visa-free, eVisa or ETA?</b> Answered for your exact passport, in 250 countries and territories.</li>
+        <li><b>Every required arrival form</b>, with the official link and when to submit it.</li>
+        <li><b>Just landed?</b> Taxi, SIM, money and emergency numbers, even offline.</li>
+      </ul>
       <div class="actions">
-        <a class="btn btn-light" href="#get">Coming soon</a>
-        <a class="btn btn-outline" href="#how">See how it feels</a>
+        <a class="btn btn-primary" href="#get">Get early access</a>
+        <a class="btn btn-outline" href="#try">Check your passport</a>
       </div>
-      <p class="soon-note">Coming soon to iPhone, iPad and Android.</p>
+      <p class="trust">Free for entry rules · No sign-up · Your passport never leaves your phone</p>
     </div>
+    <figure class="hero-phone">
+      <img src="assets/tripease-iphone-japan-entry.webp" width="540" height="1169" alt="TripEase showing Japan's entry rules for a Malaysian passport: visa-free for up to 90 days, with the official Visit Japan Web link" />
+    </figure>
   </div>
 </section>
 
@@ -83,6 +90,22 @@
   </div>
 </section>
 
+<section class="trust-band" aria-labelledby="fake-title">
+  <div class="wrap">
+    <div>
+      <div class="stat">1 in 10</div>
+      <p style="margin-top:12px">foreign arrivals in Thailand registered through a <b style="color:#fff">fake arrival-card website</b>, some paying for a form that's free.</p>
+      <p class="src">Press report: Thailand's Immigration Bureau, as reported by <a href="https://www.bangkokpost.com/thailand/general/3226524/immigration-warns-of-scam-digital-arrival-card-websites" rel="noopener">Bangkok Post</a> and <a href="https://www.khaosodenglish.com/tourism/2026/03/29/10-of-foreign-arrivals-used-fake-tdac-sites-immigration-warns/" rel="noopener">Khaosod English</a>, 29 March 2026. No official bulletin with this figure was found online.</p>
+    </div>
+    <div>
+      <p class="kicker">Official links only</p>
+      <h2 id="fake-title">Never pay a fake form site again.</h2>
+      <p class="lead" style="color:var(--on-dark)">Search "Thailand arrival card" and lookalike sites can show up first, charging for a form that's free. TripEase only ever opens the real government site, and tells you when the form opens and what's free.</p>
+      <p><a class="btn btn-light" href="arrival-forms.html">See the official forms</a></p>
+    </div>
+  </div>
+</section>
+
 <section class="dark" id="privacy" aria-labelledby="priv-title">
   <div class="wrap split">
     <div>
@@ -99,7 +122,7 @@
   </div>
 </section>
 
-<section aria-labelledby="try-title">
+<section id="try" aria-labelledby="try-title">
   <div class="wrap checker">
     <div class="pickers">
       <p class="kicker">Try it</p>
@@ -111,7 +134,7 @@
     </div>
     <div class="mock" aria-live="polite" aria-atomic="true">
       <div class="mock-in">
-        <div class="mock-top"><div class="code" id="mCode">ENTRY · JP</div><div class="dest" id="mDest">Japan</div><div class="pp" id="mPp">On your Taiwan passport</div></div>
+        <div class="mock-top"><div class="code" id="mCode">ENTRY · JP</div><div class="dest" id="mDest">Japan</div><div class="pp" id="mPp">On your Malaysia passport</div></div>
         <div class="mock-body">
           <div class="status s-ok" id="mStatus"><div class="k" id="mK">You can go</div><div class="t" id="mT">Visa-free</div><p id="mB">Stay up to 90 days as a visitor.</p></div>
           <div class="mcard"><div class="k">ARRIVAL FORM</div><b id="mForm">Visit Japan Web</b><p id="mNote"></p></div>
@@ -188,8 +211,9 @@
 <section class="get" id="get" aria-labelledby="get-title">
   <div class="wrap">
     <h2 id="get-title">Land like you've been there before.</h2>
-    <p>TripEase is coming to iPhone, iPad and Android.</p>
-    <p><a class="btn btn-primary" href="mailto:support@tripeaseapp.com">Email us</a></p>
+    <p>TripEase is coming to iPhone, iPad and Android. <b>Android early access opens first:</b> join the test, use it on your next trip, and tell us what to fix.</p>
+    <p><a class="btn btn-primary" href="mailto:support@tripeaseapp.com?subject=Android%20early%20access&amp;body=Please%20add%20me%20to%20the%20TripEase%20Android%20test.%20My%20Google%20Play%20email%20is%3A%20">Join Android early access</a></p>
+    <p class="small" style="color:var(--on-dark)">Send us the email address you use on Google Play. iPhone and iPad: email us and we'll tell you the day it's live.</p>
     <div class="stores">
       <!-- [APP STORE URL] and [PLAY STORE URL]: replace with official badges at launch -->
       <a class="btn btn-outline" aria-disabled="true" role="link" tabindex="-1">App Store · coming soon</a>
@@ -204,10 +228,10 @@
     <div class="foot-grid">
       <div>
         <a class="brand" href="index.html"><img src="icon-192.png?v=v5" width="32" height="32" alt="" /><span>TripEase</span></a>
-        <p>One journey. Endless stories.<br />Made by Petros Codex.</p>
+        <p>Know before you land.<br />Made by Petros Codex.</p>
         <p><a href="https://www.tiktok.com/@tripease.travel" rel="me noopener" aria-label="TripEase on TikTok">TikTok</a> · <a href="https://www.instagram.com/tripease_travel/" rel="me noopener" aria-label="TripEase on Instagram">Instagram</a> · <a href="https://www.youtube.com/@TripEase.Travel" rel="me noopener" aria-label="TripEase on YouTube">YouTube</a> · <a href="https://x.com/TripEase4travel" rel="me noopener" aria-label="TripEase on X">X</a></p>
       </div>
-      <ul aria-label="Product"><li><a href="index.html#how">How it works</a></li><li><a href="index.html#pricing">Pricing</a></li><li><a href="index.html#arrivals">Popular arrivals</a></li></ul>
+      <ul aria-label="Product"><li><a href="index.html#how">How it works</a></li><li><a href="arrival-forms.html">Official arrival forms</a></li><li><a href="index.html#pricing">Pricing</a></li><li><a href="index.html#arrivals">Popular arrivals</a></li></ul>
       <ul aria-label="Support"><li><a href="help.html">Help centre</a></li><li><a href="help.html#new">What's new</a></li><li><a href="help.html#contact">Contact</a></li></ul>
       <ul aria-label="Legal"><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="press.html">Press kit</a></li></ul>
     </div>
