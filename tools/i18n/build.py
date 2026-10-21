@@ -32,7 +32,9 @@ ROOT = Path(__file__).resolve().parents[2]
 I18N = ROOT / "i18n"
 SITE = "https://tripeaseapp.com"
 # English source pages that have translations. Add more as their strings get translated.
-PAGES = ["index.html"]
+PAGES = ["index.html", "arrival-forms.html", "arrival/index.html"] + sorted(
+    str(p.relative_to(ROOT)) for p in [*ROOT.glob("arrival-*.html"), *ROOT.glob("arrival/*/index.html")]
+    if p.name != "arrival-forms.html")
 LANGS = {  # url folder: (BCP-47 code, menu label, html lang attribute)
     "zh-hans": ("zh-Hans", "简体中文", "zh-Hans"),
     "zh-hant": ("zh-Hant", "繁體中文", "zh-Hant"),
@@ -53,7 +55,8 @@ INLINE = {"a", "b", "strong", "em", "i", "span", "small", "br", "code", "abbr"}
 ATTRS = ("alt", "title", "aria-label")
 META = {("name", "description"), ("property", "og:title"), ("property", "og:description"),
         ("property", "og:image:alt"), ("name", "twitter:title"), ("name", "twitter:description")}
-JSONLD_KEYS = {"alternateName", "description", "slogan", "featureList", "name", "text"}
+JSONLD_KEYS = {"alternateName", "description", "slogan", "featureList", "name", "text", "headline"}
+LD_NAMED = {"Question", "ListItem", "Country"}  # types whose "name" is prose, not a brand
 HAS_WORDS = re.compile(r"[A-Za-z]")
 BRAND = {"TripEase", "Petros Codex", "EN"}
 # Same in every language: airport codes, plug types, handles, names of publications and datasets.
@@ -67,8 +70,11 @@ def norm(s: str) -> str:
     return " ".join(s.split())
 
 
+URLISH = re.compile(r"^(?:https?://\S+|[a-z0-9-]+(?:\.[a-z0-9-]+)+(?:/\S*)?)$")  # links and domains stay as written
+
+
 def skip(text: str) -> bool:
-    return text in BRAND or bool(KEEP.match(text)) or not HAS_WORDS.search(text)
+    return text in BRAND or bool(KEEP.match(text)) or bool(URLISH.match(text)) or not HAS_WORDS.search(text)
 
 
 def in_lang_ui(el) -> bool:
@@ -137,7 +143,7 @@ def ld_translatable(o: dict, k: str, v) -> bool:
     if not isinstance(v, str) or skip(norm(v)):
         return False
     if k == "name":
-        return o.get("@type") == "Question"
+        return o.get("@type") in LD_NAMED
     return k in JSONLD_KEYS
 
 
@@ -186,7 +192,8 @@ def cmd_extract() -> None:
 
 
 def url_for(page: str, lang: str | None) -> str:
-    path = "/" if page == "index.html" else f"/{page}"
+    """index.html pages are served as their folder: arrival/japan/index.html -> /arrival/japan/."""
+    path = "/" + (page[: -len("index.html")] if page.endswith("index.html") else page)
     return path if not lang else f"/{lang}{path}"
 
 
@@ -313,12 +320,15 @@ def translate_page(page: str, lang: str, tr: dict, missing: set) -> BeautifulSou
     # Links into pages that exist in this language stay in this language; the rest go to English.
     for a in doc.find_all("a", href=True):
         path, frag = (a["href"].split("#", 1) + [None])[:2]
+        if path.startswith(SITE + "/"):
+            path = path[len(SITE):]
         for p in PAGES:
             if path in {url_for(p, None), "/" + p} or (p == "index.html" and path == ""):
                 if path == "" and frag is not None:
                     break  # same-page anchor (#pricing): already fine
                 a["href"] = url_for(p, lang) + (f"#{frag}" if frag is not None else "")
                 break
+    site_urls = {SITE + url_for(p, None): SITE + url_for(p, lang) for p in PAGES}
     for s in doc.find_all("script", type="application/ld+json"):
         data = json.loads(s.string)
 
@@ -331,8 +341,8 @@ def translate_page(page: str, lang: str, tr: dict, missing: set) -> BeautifulSou
                         o[k] = plain(t(norm(v)))
                     elif k == "inLanguage" and isinstance(v, str):
                         o[k] = code
-                    elif k == "url" and v == SITE + "/":
-                        o[k] = SITE + url_for(page, lang)
+                    elif k in ("url", "item") and isinstance(v, str) and v in site_urls:
+                        o[k] = site_urls[v]
                     else:
                         walk(v)
             elif isinstance(o, list):
