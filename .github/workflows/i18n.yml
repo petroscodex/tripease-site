@@ -1,0 +1,22 @@
+name: Translations
+# Fails a PR when a translation is missing or the generated language pages are out of date
+# (GitHub Pages serves the committed files, so /<lang>/ must be rebuilt and committed).
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  i18n:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install beautifulsoup4==4.15.0
+      - name: Build and check every language
+        run: python3 tools/i18n/build.py check
+      - name: Generated pages are committed
+        run: git diff --exit-code || { echo "::error::Run 'python3 tools/i18n/build.py build' and commit the result."; exit 1; }

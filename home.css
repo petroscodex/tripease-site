@@ -413,3 +413,25 @@ section{padding:var(--pad) 0}
   .moment,.arr,.how-card,.plan,.tile,.form-list a,.guide-card,.cards3>div,.qa a{transition:none}
   .moment:hover,.arr:hover,.how-card:hover,.plan:hover,.tile:hover,.form-list a:hover,.guide-card:hover,.cards3>div:hover,.qa a:hover{transform:none}
 }
+
+/* Languages (tools/i18n). The header menu shows on wide screens; the footer list everywhere. */
+details.lang{position:relative}
+details.lang>summary{list-style:none;cursor:pointer;min-height:44px;min-width:52px;display:inline-flex;align-items:center;justify-content:center;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,.5);color:#fff;font:700 15px var(--mono)}
+details.lang>summary::-webkit-details-marker{display:none}
+details.lang ul{position:absolute;right:0;top:calc(100% + 8px);z-index:20;list-style:none;margin:0;padding:8px;min-width:180px;background:#121619;border:1px solid rgba(255,255,255,.18);border-radius:14px;box-shadow:0 12px 32px rgba(0,0,0,.35)}
+details.lang li a{display:block;padding:10px 12px;min-height:44px;box-sizing:border-box;color:#fff;text-decoration:none;border-radius:10px}
+details.lang li a:hover,details.lang li a:focus-visible{background:rgba(255,255,255,.1)}
+details.lang li a[aria-current]{font-weight:700;text-decoration:underline}
+.foot-langs{margin:24px 0 8px;line-height:2.2}
+.foot-langs a{display:inline-block;min-height:44px;line-height:44px;padding:0 4px}
+.foot-langs a[aria-current]{font-weight:700;text-decoration:none}
+/* Atkinson Hyperlegible has no CJK or Thai glyphs: name good system fonts for each script. */
+html:lang(zh-Hant){--font:"Atkinson Hyperlegible Next","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif}
+html:lang(zh-Hans){--font:"Atkinson Hyperlegible Next","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif}
+html:lang(ja){--font:"Atkinson Hyperlegible Next","Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif}
+html:lang(ko){--font:"Atkinson Hyperlegible Next","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}
+html:lang(th){--font:"Atkinson Hyperlegible Next","Thonburi","Noto Sans Thai","Leelawadee UI",sans-serif;line-height:1.7}
+html:lang(zh-Hant) .kicker,html:lang(zh-Hans) .kicker,html:lang(ja) .kicker,html:lang(ko) .kicker,html:lang(th) .kicker{letter-spacing:.04em}
+/* Line breaking: Japanese between phrases (where supported), Korean never inside a word. */
+html:lang(ja) h1,html:lang(ja) h2,html:lang(ja) h3,html:lang(ja) .tag{word-break:auto-phrase}
+html:lang(ko){word-break:keep-all}
