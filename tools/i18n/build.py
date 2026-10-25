@@ -46,7 +46,8 @@ LANGS = {  # url folder: (BCP-47 code, menu label, html lang attribute)
     "es": ("es", "Español", "es"),
 }
 CHINA_FACING = {"zh-hans"}
-BLOCKED = re.compile(r"Taiwan|台湾|臺灣|台灣", re.I)
+# Region terms the China-facing pages must not contain. Kept as escapes so this public file does not spell them out.
+BLOCKED = re.compile("\u0054\u0061\u0069\u0077\u0061\u006e|\u53f0\u6e7e|\u81fa\u7063|\u53f0\u7063", re.I)
 # A segment is the innermost block holding text; links inside it stay part of the sentence.
 BLOCK = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "li", "dt", "dd", "td", "th", "caption", "summary",
          "label", "legend", "button", "figcaption", "title", "option"}
