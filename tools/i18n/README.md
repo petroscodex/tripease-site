@@ -5,8 +5,8 @@ The English pages stay the source. Edit them as usual; the build writes the tran
 | Folder | Language | Notes |
 |---|---|---|
 | `/` | English | source |
-| `/zh-hans/` | 简体中文 | mainland China and Singapore. **China-facing: the build fails if the page mentions Taiwan** (marketing rule, Peter 21 Oct 2026) |
-| `/zh-hant/` | 繁體中文 | written for Taiwan usage; also Hong Kong and Macau |
+| `/zh-hans/` | 简体中文 | mainland China and Singapore. **China-facing: the build fails if the page mentions a blocked region term** (marketing rule) |
+| `/zh-hant/` | 繁體中文 | Traditional Chinese wording; also Hong Kong and Macau |
 | `/ja/` `/ko/` `/th/` `/de/` `/fr/` `/es/` | | German uses *du*, French *vous*, Spanish *tú* |
 
 ## Day to day

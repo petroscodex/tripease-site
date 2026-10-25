@@ -100,6 +100,38 @@
    "arrival/united-kingdom/index.html",
    "arrival/united-states/index.html"
   ],
+  "Land &amp; Sea": [
+   "index.html",
+   "arrival-forms.html",
+   "arrival/index.html",
+   "arrival-all-indonesia-arrival-card.html",
+   "arrival-australia-eta.html",
+   "arrival-canada-eta.html",
+   "arrival-india-e-arrival-card.html",
+   "arrival-korea-e-arrival-card.html",
+   "arrival-korea-k-eta.html",
+   "arrival-malaysia-mdac.html",
+   "arrival-nzeta.html",
+   "arrival-philippines-etravel.html",
+   "arrival-singapore-sg-arrival-card.html",
+   "arrival-thailand-tdac.html",
+   "arrival-uk-eta.html",
+   "arrival-us-esta.html",
+   "arrival-visit-japan-web.html",
+   "arrival/australia/index.html",
+   "arrival/canada/index.html",
+   "arrival/india/index.html",
+   "arrival/indonesia/index.html",
+   "arrival/japan/index.html",
+   "arrival/malaysia/index.html",
+   "arrival/new-zealand/index.html",
+   "arrival/philippines/index.html",
+   "arrival/singapore/index.html",
+   "arrival/south-korea/index.html",
+   "arrival/thailand/index.html",
+   "arrival/united-kingdom/index.html",
+   "arrival/united-states/index.html"
+  ],
   "Pricing": [
    "index.html",
    "arrival-forms.html",
@@ -205,7 +237,7 @@
   "Know if you can get in, before you fly.": [
    "index.html"
   ],
-  "No more guessing at visa rules or last-minute hunts for the right arrival form. TripEase shows what your passport needs, links every official form with its deadline, and walks you through your first hour on the ground.": [
+  "No more guessing at visa rules or last-minute hunts for the right arrival form. TripEase shows what your passport needs, links every official form with its deadline, and walks you through your first hour on the ground. Flying, crossing a land border or taking a ferry: TripEase helps with all three, and Land &amp; Sea is free in the main app.": [
    "index.html"
   ],
   "Be first to land": [
@@ -441,6 +473,63 @@
   "Everything for your first hour, even offline": [
    "index.html"
   ],
+  "Two ways to arrive": [
+   "index.html"
+  ],
+  "Fly in, or cross by land.": [
+   "index.html"
+  ],
+  "Pick how you're getting there and TripEase sorts the border: the same calm steps and the same official links, whichever way you arrive.": [
+   "index.html"
+  ],
+  "Fly": [
+   "index.html"
+  ],
+  "Airports and every arrival form. Entry rules for your passport, official links with their deadlines, terminal maps and your first hour on the ground.": [
+   "index.html"
+  ],
+  "Cross by land or ferry": [
+   "index.html"
+  ],
+  "Borders, bridges and ferry ports: opening hours where officials publish them, cautions, and links to the official entry and customs pages.": [
+   "index.html"
+  ],
+  "<a>See Land &amp; Sea</a>": [
+   "index.html"
+  ],
+  "The start screen: Fly or Cross by land.": [
+   "index.html"
+  ],
+  "Land &amp; Sea: busiest crossings, ranked by official traffic figures.": [
+   "index.html"
+  ],
+  "Illustrations created with AI (Created with Grok Imagine). App screenshots on this page show AI-generated illustrations too.": [
+   "index.html"
+  ],
+  "The new look": [
+   "index.html"
+  ],
+  "Built like airport signage: calm and easy to read.": [
+   "index.html"
+  ],
+  "Charcoal name plates, big clear type and colour that never works alone. Every result says it in words as well as colour, in light or dark.": [
+   "index.html"
+  ],
+  "Set in Atkinson Hyperlegible Next, made for easy reading": [
+   "index.html"
+  ],
+  "Text and background contrast meet WCAG AA": [
+   "index.html"
+  ],
+  "Results flip in like a departure board, and simply fade if you use Reduce Motion": [
+   "index.html"
+  ],
+  "Yellow means one thing only: an official link, tap now": [
+   "index.html"
+  ],
+  "A result in the new look. Sample passport: the country is picked for the demo, nothing is saved.": [
+   "index.html"
+  ],
   "foreign arrivals in Thailand registered through a <b>fake arrival-card website</b>, some paying for a form that's free.": [
    "index.html"
   ],
@@ -466,6 +555,9 @@
    "index.html"
   ],
   "A travel app shouldn't need your identity on a server. No accounts, no server copy of your details. Nothing to leak, nothing to worry about.": [
+   "index.html"
+  ],
+  "Settings › Privacy, in the app.": [
    "index.html"
   ],
   "On-device scanning": [
@@ -763,6 +855,39 @@
    "arrival/united-kingdom/index.html",
    "arrival/united-states/index.html"
   ],
+  "Travel basics": [
+   "index.html"
+  ],
+  "The small things that make landing easy.": [
+   "index.html"
+  ],
+  "Which plug do I need?": [
+   "index.html"
+  ],
+  "Pictures of all 14 plug types, with the voltage for your destination.": [
+   "index.html"
+  ],
+  "<a>See plug types</a>": [
+   "index.html"
+  ],
+  "Do I tip, and how much?": [
+   "index.html"
+  ],
+  "Short notes from official tourism and government pages, with the source one tap away.": [
+   "index.html"
+  ],
+  "<a>Read the tipping guide</a>": [
+   "index.html"
+  ],
+  "The apps people use there": [
+   "index.html"
+  ],
+  "Ride, transit and SIM apps that operate where you land, local options first.": [
+   "index.html"
+  ],
+  "<a>See local apps</a>": [
+   "index.html"
+  ],
   "Your stamp map": [
    "index.html"
   ],
@@ -790,7 +915,7 @@
   "Travel often, or with family? Pro gives you more room to roam.": [
    "index.html"
   ],
-  "Yearly · save 44%": [
+  "Yearly · save 50%": [
    "index.html"
   ],
   "Monthly": [
@@ -811,7 +936,13 @@
   "Official visa and arrival-form links": [
    "index.html"
   ],
-  "1 saved passport, 2 trips in total": [
+  "Land &amp; Sea: land, ferry and sea crossings": [
+   "index.html"
+  ],
+  "1 saved passport, 2 trips in any 12 months": [
+   "index.html"
+  ],
+  "Plug types, tipping notes and emergency numbers": [
    "index.html"
   ],
   "Your data stays on your phone": [
@@ -823,34 +954,46 @@
   "TripEase Pro": [
    "index.html"
   ],
-  "US$19.99 <span>per year</span>": [
+  "US$29.99 <span>per year</span>": [
    "index.html"
   ],
-  "That's about $1.67 a month.": [
+  "That's about $2.50 a month.": [
    "index.html"
   ],
   "Up to 6 passports, with the best one picked per country": [
    "index.html"
   ],
-  "Family Sharing on the yearly plan (up to 6 family members)": [
-   "index.html"
-  ],
   "Unlimited trips": [
    "index.html"
   ],
-  "The full stamp map": [
+  "Form helper, copy only: you submit on the official site": [
    "index.html"
   ],
-  "Arrival preview links": [
+  "Offline travel wallet": [
+   "index.html"
+  ],
+  "Home Screen widget and Lock Screen countdown": [
+   "index.html"
+  ],
+  "Reminders when optional forms open": [
+   "index.html"
+  ],
+  "Schengen 90/180 day counter": [
+   "index.html"
+  ],
+  "Every local service per country": [
    "index.html"
   ],
   "Landing weather": [
    "index.html"
   ],
+  "Family Sharing on the yearly plan (up to 6 family members)": [
+   "index.html"
+  ],
   "Get Pro at launch": [
    "index.html"
   ],
-  "Prices in USD; your store shows local pricing. Both paid plans include a 14-day free trial. Launch price: subscribe early and you keep it. Subscriptions renew automatically unless cancelled at least 24 hours before the period ends. Cancel anytime in your App Store or Google Play account.": [
+  "Prices are shown in your app store for your region. The US$ figures above are indicative. Land &amp; Sea is free in the main app. Both paid plans include a 14-day free trial. Launch price: subscribe early and you keep it. Subscriptions renew automatically unless cancelled at least 24 hours before the period ends. Cancel anytime in your App Store or Google Play account.": [
    "index.html"
   ],
   "Questions": [
@@ -875,7 +1018,13 @@
   "<a>Visit the help centre</a>": [
    "index.html"
   ],
-  "Sea and Land modes are coming later.": [
+  "Cruises and trip tracking are coming as optional, opt-in extras as we build them.": [
+   "index.html"
+  ],
+  "Is TripEase only for flights?": [
+   "index.html"
+  ],
+  "No. TripEase helps with flights and, through Land &amp; Sea, land, ferry and sea crossings. Land &amp; Sea is free in the main app: opening hours, notes and the official links for each crossing. Rules and hours can change, so always check with the officials before you travel. Cruises and trip tracking are coming as optional, opt-in extras as we build them.": [
    "index.html"
   ],
   "Is the visa information up to date?": [
@@ -899,7 +1048,19 @@
   "What's free and what's in Pro?": [
    "index.html"
   ],
-  "Free gives you entry rules and official links for any passport, 2 trips in total and 1 saved passport. Pro (US$2.99 a month or US$19.99 a year, with a 14-day free trial) adds up to 6 passports, unlimited trips, Family Sharing on the yearly plan for up to 6 family members, the full stamp map, arrival preview links and landing weather.": [
+  "Free gives you entry rules and official links for any passport, Land &amp; Sea (land, ferry and sea crossings), the stamp map, 1 saved passport and 2 trips in any 12 months. Pro (US$4.99 a month or US$29.99 a year, with a 14-day free trial) adds up to 6 passports with the best one picked per country, unlimited trips, the copy-only form helper, the offline wallet, the Home Screen widget and Lock Screen countdown, reminders for optional forms, the Schengen 90/180 counter, every local service per country, landing weather, and Family Sharing on the yearly plan.": [
+   "index.html"
+  ],
+  "What is Land &amp; Sea?": [
+   "index.html"
+  ],
+  "Land &amp; Sea helps you cross borders by road, rail or ferry. It lists 468 crossings in 91 countries and territories with official opening hours where they are published, cautions where hours can change, and links to the official entry, customs and crossing pages. It is free, part of the main app.": [
+   "index.html"
+  ],
+  "Does TripEase cover plugs, tipping and local apps?": [
+   "index.html"
+  ],
+  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": [
    "index.html"
   ],
   "Which languages does it speak?": [
@@ -1076,7 +1237,135 @@
    "arrival/united-kingdom/index.html",
    "arrival/united-states/index.html"
   ],
+  "<a>Land &amp; Sea</a>": [
+   "index.html",
+   "arrival-forms.html",
+   "arrival/index.html",
+   "arrival-all-indonesia-arrival-card.html",
+   "arrival-australia-eta.html",
+   "arrival-canada-eta.html",
+   "arrival-india-e-arrival-card.html",
+   "arrival-korea-e-arrival-card.html",
+   "arrival-korea-k-eta.html",
+   "arrival-malaysia-mdac.html",
+   "arrival-nzeta.html",
+   "arrival-philippines-etravel.html",
+   "arrival-singapore-sg-arrival-card.html",
+   "arrival-thailand-tdac.html",
+   "arrival-uk-eta.html",
+   "arrival-us-esta.html",
+   "arrival-visit-japan-web.html",
+   "arrival/australia/index.html",
+   "arrival/canada/index.html",
+   "arrival/india/index.html",
+   "arrival/indonesia/index.html",
+   "arrival/japan/index.html",
+   "arrival/malaysia/index.html",
+   "arrival/new-zealand/index.html",
+   "arrival/philippines/index.html",
+   "arrival/singapore/index.html",
+   "arrival/south-korea/index.html",
+   "arrival/thailand/index.html",
+   "arrival/united-kingdom/index.html",
+   "arrival/united-states/index.html"
+  ],
   "<a>Official arrival forms</a>": [
+   "index.html",
+   "arrival-forms.html",
+   "arrival/index.html",
+   "arrival-all-indonesia-arrival-card.html",
+   "arrival-australia-eta.html",
+   "arrival-canada-eta.html",
+   "arrival-india-e-arrival-card.html",
+   "arrival-korea-e-arrival-card.html",
+   "arrival-korea-k-eta.html",
+   "arrival-malaysia-mdac.html",
+   "arrival-nzeta.html",
+   "arrival-philippines-etravel.html",
+   "arrival-singapore-sg-arrival-card.html",
+   "arrival-thailand-tdac.html",
+   "arrival-uk-eta.html",
+   "arrival-us-esta.html",
+   "arrival-visit-japan-web.html",
+   "arrival/australia/index.html",
+   "arrival/canada/index.html",
+   "arrival/india/index.html",
+   "arrival/indonesia/index.html",
+   "arrival/japan/index.html",
+   "arrival/malaysia/index.html",
+   "arrival/new-zealand/index.html",
+   "arrival/philippines/index.html",
+   "arrival/singapore/index.html",
+   "arrival/south-korea/index.html",
+   "arrival/thailand/index.html",
+   "arrival/united-kingdom/index.html",
+   "arrival/united-states/index.html"
+  ],
+  "<a>Plug types</a>": [
+   "index.html",
+   "arrival-forms.html",
+   "arrival/index.html",
+   "arrival-all-indonesia-arrival-card.html",
+   "arrival-australia-eta.html",
+   "arrival-canada-eta.html",
+   "arrival-india-e-arrival-card.html",
+   "arrival-korea-e-arrival-card.html",
+   "arrival-korea-k-eta.html",
+   "arrival-malaysia-mdac.html",
+   "arrival-nzeta.html",
+   "arrival-philippines-etravel.html",
+   "arrival-singapore-sg-arrival-card.html",
+   "arrival-thailand-tdac.html",
+   "arrival-uk-eta.html",
+   "arrival-us-esta.html",
+   "arrival-visit-japan-web.html",
+   "arrival/australia/index.html",
+   "arrival/canada/index.html",
+   "arrival/india/index.html",
+   "arrival/indonesia/index.html",
+   "arrival/japan/index.html",
+   "arrival/malaysia/index.html",
+   "arrival/new-zealand/index.html",
+   "arrival/philippines/index.html",
+   "arrival/singapore/index.html",
+   "arrival/south-korea/index.html",
+   "arrival/thailand/index.html",
+   "arrival/united-kingdom/index.html",
+   "arrival/united-states/index.html"
+  ],
+  "<a>Tipping guide</a>": [
+   "index.html",
+   "arrival-forms.html",
+   "arrival/index.html",
+   "arrival-all-indonesia-arrival-card.html",
+   "arrival-australia-eta.html",
+   "arrival-canada-eta.html",
+   "arrival-india-e-arrival-card.html",
+   "arrival-korea-e-arrival-card.html",
+   "arrival-korea-k-eta.html",
+   "arrival-malaysia-mdac.html",
+   "arrival-nzeta.html",
+   "arrival-philippines-etravel.html",
+   "arrival-singapore-sg-arrival-card.html",
+   "arrival-thailand-tdac.html",
+   "arrival-uk-eta.html",
+   "arrival-us-esta.html",
+   "arrival-visit-japan-web.html",
+   "arrival/australia/index.html",
+   "arrival/canada/index.html",
+   "arrival/india/index.html",
+   "arrival/indonesia/index.html",
+   "arrival/japan/index.html",
+   "arrival/malaysia/index.html",
+   "arrival/new-zealand/index.html",
+   "arrival/philippines/index.html",
+   "arrival/singapore/index.html",
+   "arrival/south-korea/index.html",
+   "arrival/thailand/index.html",
+   "arrival/united-kingdom/index.html",
+   "arrival/united-states/index.html"
+  ],
+  "<a>Local apps</a>": [
    "index.html",
    "arrival-forms.html",
    "arrival/index.html",
@@ -1268,6 +1557,9 @@
    "arrival/united-kingdom/index.html",
    "arrival/united-states/index.html"
   ],
+  "Illustrations created with AI. App screenshots show AI-generated illustrations. Created with Grok Imagine for Petros Codex.": [
+   "index.html"
+  ],
   "General information, not legal advice. Rules can change at short notice: confirm with the official authority or your airline before you travel. TripEase isn't affiliated with any government, never fills in or submits forms for you, and keeps your data on your phone.": [
    "index.html",
    "arrival-forms.html",
@@ -1332,7 +1624,7 @@
    "arrival/united-kingdom/index.html",
    "arrival/united-states/index.html"
   ],
-  "Entry data: <a>TravelRequirements.info Entry Requirements Dataset</a> (CC BY 4.0). Advisories: Government of Canada. Plugs and emergency numbers: Wikidata (CC0). Pictograms: AIGA/DOT symbols (public domain). Set in Atkinson Hyperlegible Next and Mono by the Braille Institute (<a>SIL Open Font License</a>).": [
+  "Entry data: <a>TravelRequirements.info Entry Requirements Dataset</a> (CC BY 4.0). Advisories: Government of Canada. Plug types and emergency numbers: Wikidata (CC0), with plugs checked against IEC World Plugs where noted. Tipping and land-border notes come from the official sources linked beside each note. Pictograms: AIGA/DOT symbols (public domain). Set in Atkinson Hyperlegible Next and Mono by the Braille Institute (<a>SIL Open Font License</a>).": [
    "index.html",
    "arrival-forms.html",
    "arrival/index.html",
@@ -1405,6 +1697,21 @@
   "03 · Just landed": [
    "index.html"
   ],
+  "Air": [
+   "index.html"
+  ],
+  "Land & Sea": [
+   "index.html"
+  ],
+  "Go": [
+   "index.html"
+  ],
+  "Apply first": [
+   "index.html"
+  ],
+  "Stop and plan": [
+   "index.html"
+  ],
   "1 in 10": [
    "index.html"
   ],
@@ -1431,6 +1738,9 @@
   "Open official site ↗": [
    "index.html"
   ],
+  "Local apps": [
+   "index.html"
+  ],
   "14-day free trial": [
    "index.html"
   ],
@@ -1443,7 +1753,7 @@
   "TripEase – Travel checklist & arrival guide app | Entry rules for your passport": [
    "index.html"
   ],
-  "A passenger jet flying over the sea at sunset": [
+  "TripEase logo: a globe with a plane, ship and car on a coral route, on a teal background": [
    "index.html"
   ],
   "Primary": [
@@ -1496,10 +1806,31 @@
   "TripEase app screens": [
    "index.html"
   ],
-  "TripEase showing Japan's entry rules for a Malaysian passport: visa-free for up to 90 days, with the official Visit Japan Web link": [
+  "TripEase Entry requirements for Thailand in plain words, with an Open official eVisa site button and the Thailand Digital Arrival Card listed as required up to 3 days before arrival": [
    "index.html"
   ],
-  "TripEase airport screen for Tokyo Haneda with a button to open the official terminal map": [
+  "TripEase Just landed in Japan screen: a Welcome to Japan card, an Open official Visit Japan Web site button, landing weather and an Open terminal map button": [
+   "index.html"
+  ],
+  "Illustration: an airliner climbing at sunset, seen from the front, with its landing lights on": [
+   "index.html"
+  ],
+  "Illustration: a train crossing a stone viaduct through misty hills at sunrise": [
+   "index.html"
+  ],
+  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or ferry, for borders, bridges and ferry ports": [
+   "index.html"
+  ],
+  "TripEase Land & Sea home: a search box for a country and the busiest crossings ranked by official traffic figures, including Lo Wu, San Ysidro and Sarp, with tabs at the bottom to switch between Air and land crossings": [
+   "index.html"
+  ],
+  "Colour roles": [
+   "index.html"
+  ],
+  "TripEase Entry requirements for India with a sample Germany passport selected: an eVisa needed before you travel result on a charcoal card and a yellow Open official eVisa site button": [
+   "index.html"
+  ],
+  "The Privacy screen in TripEase Settings, starting: No account. Your details stay on this phone.": [
    "index.html"
   ],
   "A lantern-lit Japanese side street at night, a traveller with a suitcase": [
@@ -1730,10 +2061,34 @@
   "Arrival guide for your first hour": [
    "index.html"
   ],
+  "Land & Sea: land, ferry and sea crossings with hours, notes and official links, free": [
+   "index.html"
+  ],
+  "Plug types and voltage for each destination": [
+   "index.html"
+  ],
+  "Tipping notes from official sources": [
+   "index.html"
+  ],
+  "Local ride, transit and SIM apps": [
+   "index.html"
+  ],
   "Travel stamp map": [
    "index.html"
   ],
   "We are detail-oriented solvers of problems; we provide apps that work well and provide tangible benefits.": [
+   "index.html"
+  ],
+  "No. TripEase helps with flights and, through Land & Sea, land, ferry and sea crossings. Land & Sea is free in the main app: opening hours, notes and the official links for each crossing. Rules and hours can change, so always check with the officials before you travel. Cruises and trip tracking are coming as optional, opt-in extras as we build them.": [
+   "index.html"
+  ],
+  "Free gives you entry rules and official links for any passport, Land & Sea (land, ferry and sea crossings), the stamp map, 1 saved passport and 2 trips in any 12 months. Pro (US$4.99 a month or US$29.99 a year, with a 14-day free trial) adds up to 6 passports with the best one picked per country, unlimited trips, the copy-only form helper, the offline wallet, the Home Screen widget and Lock Screen countdown, reminders for optional forms, the Schengen 90/180 counter, every local service per country, landing weather, and Family Sharing on the yearly plan.": [
+   "index.html"
+  ],
+  "What is Land & Sea?": [
+   "index.html"
+  ],
+  "Land & Sea helps you cross borders by road, rail or ferry. It lists 468 crossings in 91 countries and territories with official opening hours where they are published, cautions where hours can change, and links to the official entry, customs and crossing pages. It is free, part of the main app.": [
    "index.html"
   ],
   "Official arrival forms by country: TDAC, Visit Japan Web, K-ETA, ESTA | TripEase": [
@@ -3879,9 +4234,9 @@
   "stop_b": "Apply through the embassy or official visa site well before travel.",
   "entry": "ENTRY · {c}",
   "onPassport": "On your {p} passport",
-  "priceYear": "US$19.99 <span>per year</span>",
-  "priceMonth": "US$2.99 <span>per month</span>",
-  "noteYear": "That's about $1.67 a month.",
+  "priceYear": "US$29.99 <span>per year</span>",
+  "priceMonth": "US$4.99 <span>per month</span>",
+  "noteYear": "That's about $2.50 a month.",
   "noteMonth": "Switch to yearly any time.",
   "checkField": "Please check the highlighted field.",
   "signupSoon": "Sign-up opens soon.",

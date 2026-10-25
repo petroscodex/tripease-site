@@ -15,7 +15,7 @@ How it works
   so editing the English page never breaks a translated one.
 * Links: anchors to a page that exists in that language point to it; everything else points to
   the English page. Relative URLs become root-relative so they work from /<lang>/.
-* China-facing rule: the Simplified Chinese pages must not mention Taiwan (build fails if they do).
+* China-facing rule: the Simplified Chinese pages must not mention the blocked region terms in BLOCKED (build fails if they do).
 """
 from __future__ import annotations
 
@@ -46,7 +46,7 @@ LANGS = {  # url folder: (BCP-47 code, menu label, html lang attribute)
     "es": ("es", "Español", "es"),
 }
 CHINA_FACING = {"zh-hans"}
-TAIWAN = re.compile(r"Taiwan|台湾|臺灣|台灣", re.I)
+BLOCKED = re.compile(r"Taiwan|台湾|臺灣|台灣", re.I)
 # A segment is the innermost block holding text; links inside it stay part of the sentence.
 BLOCK = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "li", "dt", "dd", "td", "th", "caption", "summary",
          "label", "legend", "button", "figcaption", "title", "option"}
@@ -407,8 +407,8 @@ def cmd_build(strict: bool) -> int:
             inject_js(doc, data.get("js", {}))
             out = ROOT / lang / page
             write(doc, out)
-            if lang in CHINA_FACING and TAIWAN.search(out.read_text(encoding="utf-8")):
-                print(f"ERROR {lang}/{page}: mentions Taiwan (China-facing marketing rule)")
+            if lang in CHINA_FACING and BLOCKED.search(out.read_text(encoding="utf-8")):
+                print(f"ERROR {lang}/{page}: mentions a blocked region term (China-facing marketing rule)")
                 problems += 1
         js_missing = [k for k in JS_STRINGS if k not in data.get("js", {})]
         print(f"{lang}: {len(missing)} missing strings, {len(js_missing)} missing script strings")

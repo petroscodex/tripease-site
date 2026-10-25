@@ -56,8 +56,8 @@
   tg.forEach(function(b){ b.addEventListener("click",function(){
     tg.forEach(function(x){x.setAttribute("aria-pressed","false");}); b.setAttribute("aria-pressed","true");
     var y=b.getAttribute("data-period")==="year";
-    $("proPrice").innerHTML=y?L("priceYear","US$19.99 <span>per year</span>"):L("priceMonth","US$2.99 <span>per month</span>");
-    $("proNote").textContent=y?L("noteYear","That's about $1.67 a month."):L("noteMonth","Switch to yearly any time.");
+    $("proPrice").innerHTML=y?L("priceYear","US$29.99 <span>per year</span>"):L("priceMonth","US$4.99 <span>per month</span>");
+    $("proNote").textContent=y?L("noteYear","That's about $2.50 a month."):L("noteMonth","Switch to yearly any time.");
   });});
 
   // Forms: static UI only. Endpoints are placeholders until a backend is approved.
