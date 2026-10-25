@@ -4,9 +4,10 @@
 <rect x="0" y="0" width="1024" height="1024" rx="0" fill="url(#bg)"/>
 
 <g transform="translate(512 490) scale(0.86) translate(-512 -500)">
- <circle cx="512" cy="500" r="300" fill="none" stroke="#06403B" stroke-width="15"/>
+ <g transform="translate(512 500) scale(1.12) translate(-512 -500)">
+ <circle cx="512" cy="500" r="300" fill="#16A094" fill-opacity="0.55" stroke="#06403B" stroke-width="17"/>
  <clipPath id="g"><circle cx="512" cy="500" r="300"/></clipPath>
- <g clip-path="url(#g)" fill="none" stroke="#06403B" stroke-width="13">
+ <g clip-path="url(#g)" fill="none" stroke="#06403B" stroke-width="14">
   <ellipse cx="512" cy="500" rx="140" ry="300"/>
   <ellipse cx="512" cy="500" rx="235" ry="300"/>
   <line x1="512" y1="200" x2="512" y2="800"/>
@@ -15,29 +16,31 @@
   <path d="M230 640 Q512 580 794 640" opacity="0"/>
   <path d="M250 660 Q512 600 774 660" />
  </g>
+ </g>
  <!-- swoop -->
- <path d="M150 560 C140 700 280 800 450 765 C630 725 760 540 805 335 L750 312 C705 470 600 625 440 655 C350 672 290 640 270 590 C255 548 215 530 150 560 Z" fill="#E8604A" stroke="#06403B" stroke-width="10" stroke-linejoin="round"/>
- <path d="M215 665 C300 735 410 735 490 700 C620 645 710 520 765 360" fill="none" stroke="#fff" stroke-width="9" stroke-dasharray="28 18" stroke-linecap="round"/>
+ <path d="M150 560 C140 700 280 800 450 765 C590 735 700 590 770 355 L728 340 C690 480 590 625 440 655 C350 672 290 640 270 590 C255 548 215 530 150 560 Z" fill="#E8604A" stroke="#06403B" stroke-width="10" stroke-linejoin="round"/>
+ <path d="M215 665 C300 735 410 735 490 700 C600 655 690 540 742 375" fill="none" stroke="#fff" stroke-width="9" stroke-dasharray="28 18" stroke-linecap="round"/>
  <!-- plane -->
- <g transform="translate(805 292) rotate(36) scale(1.3)" fill="#E8604A" stroke="#06403B" stroke-width="7" stroke-linejoin="round">
+ <g transform="translate(747 355) rotate(16) scale(1.8)" fill="#fff" stroke="#111" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
   <path d="M0 -78 C11 -78 15 -62 15 -45 L15 -12 L82 28 L82 45 L15 22 L15 58 L36 74 L36 88 L0 80 L-36 88 L-36 74 L-15 58 L-15 22 L-82 45 L-82 28 L-15 -12 L-15 -45 C-15 -62 -11 -78 0 -78 Z"/>
  </g>
- <!-- ship (bigger, up-left of swoop) -->
- <g transform="translate(395 420)" fill="#fff" stroke="#06403B" stroke-width="7" stroke-linejoin="round">
-  <path d="M-135 28 L135 28 L98 82 L-98 82 Z"/>
-  <rect x="-100" y="-12" width="190" height="40"/>
-  <rect x="-70" y="-50" width="130" height="38"/>
-  <rect x="-40" y="-84" width="70" height="34"/>
-  <rect x="-18" y="-112" width="20" height="28"/>
-  <rect x="14" y="-104" width="20" height="20"/>
+ <!-- ship: bow on the left, stern on the right -->
+ <g transform="translate(372 408) scale(1.2)" fill="#fff" stroke="#06403B" stroke-width="6" stroke-linejoin="round">
+  <path d="M-150 18 L140 18 L128 82 L-98 82 Q-132 66 -150 18 Z"/>
+  <rect x="-92" y="-20" width="205" height="38"/>
+  <rect x="-62" y="-56" width="150" height="36"/>
+  <rect x="-84" y="-82" width="44" height="26"/>
+  <rect x="36" y="-92" width="34" height="36" fill="#fff"/>
+  <rect x="36" y="-92" width="34" height="11" fill="#111" stroke="none"/>
+  <path d="M-150 18 L-150 6" stroke-width="6"/>
   <g fill="#111" stroke="none">
-   <rect x="-85" y="-2" width="22" height="18" rx="3"/><rect x="-50" y="-2" width="22" height="18" rx="3"/><rect x="-15" y="-2" width="22" height="18" rx="3"/><rect x="20" y="-2" width="22" height="18" rx="3"/><rect x="55" y="-2" width="22" height="18" rx="3"/>
-   <rect x="-55" y="-40" width="20" height="16" rx="3"/><rect x="-20" y="-40" width="20" height="16" rx="3"/><rect x="15" y="-40" width="20" height="16" rx="3"/>
-   <circle cx="-85" cy="52" r="7"/><circle cx="-50" cy="52" r="7"/><circle cx="-15" cy="52" r="7"/><circle cx="20" cy="52" r="7"/><circle cx="55" cy="52" r="7"/>
+   <rect x="-80" y="-10" width="18" height="16" rx="3"/><rect x="-50" y="-10" width="18" height="16" rx="3"/><rect x="-20" y="-10" width="18" height="16" rx="3"/><rect x="10" y="-10" width="18" height="16" rx="3"/><rect x="40" y="-10" width="18" height="16" rx="3"/><rect x="70" y="-10" width="18" height="16" rx="3"/>
+   <rect x="-48" y="-46" width="18" height="14" rx="3"/><rect x="-18" y="-46" width="18" height="14" rx="3"/><rect x="12" y="-46" width="18" height="14" rx="3"/><rect x="-74" y="-74" width="24" height="12" rx="3"/>
+   <circle cx="-75" cy="52" r="7"/><circle cx="-45" cy="52" r="7"/><circle cx="-15" cy="52" r="7"/><circle cx="15" cy="52" r="7"/><circle cx="45" cy="52" r="7"/><circle cx="75" cy="52" r="7"/>
   </g>
  </g>
  <!-- car on road -->
- <g transform="translate(325 678) rotate(-30) scale(1.2)" fill="#fff" stroke="#06403B" stroke-width="7" stroke-linejoin="round">
+ <g transform="translate(412 706) scale(1.5)" fill="#fff" stroke="#06403B" stroke-width="7" stroke-linejoin="round">
   <path d="M-62 22 L-62 2 Q-58 -8 -38 -10 L-24 -36 Q-18 -44 -6 -44 L34 -44 Q44 -44 50 -36 L62 -10 Q78 -8 78 6 L78 22 Z"/>
   <path d="M-20 -12 L-10 -32 L12 -32 L12 -12 Z M22 -12 L22 -32 L36 -32 L48 -12 Z" fill="#06403B" stroke="none"/>
   <circle cx="-34" cy="24" r="17"/><circle cx="48" cy="24" r="17"/>
