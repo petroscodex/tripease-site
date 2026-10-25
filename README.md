@@ -4,6 +4,6 @@ Public landing page, privacy policy, and terms of use for [TripEase](https://tri
 
 **Live site:** https://tripeaseapp.com/
 
-**Contact:** apptripease@gmail.com
+**Contact:** support@tripeaseapp.com (privacy@ and partners@ for those topics)
 
 Hosted on GitHub Pages from the `main` branch (root).
