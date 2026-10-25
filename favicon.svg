@@ -1,1 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><rect width="1024" height="1024" rx="224" fill="#E8604A"/><g transform="translate(512 512) scale(1.2) translate(-512 -512)"><rect x="292" y="198" width="490" height="652" rx="50" fill="#F6EBDD"/><rect x="306" y="212" width="476" height="632" rx="46" fill="none" stroke="#1C2126" stroke-width="6"/><rect x="242" y="180" width="500" height="664" rx="56" fill="#1C2126"/><rect x="372" y="260" width="240" height="28" rx="14" fill="#4FD3C8"/><circle cx="492" cy="470" r="105" fill="none" stroke="#4FD3C8" stroke-width="24"/><ellipse cx="492" cy="470" rx="47" ry="105" fill="none" stroke="#4FD3C8" stroke-width="20.4"/><rect x="387" y="459.8" width="210" height="20.4" fill="#4FD3C8"/><rect x="412" y="652" width="160" height="96" rx="13.4" fill="none" stroke="#E8604A" stroke-width="17"/><circle cx="492" cy="700" r="28.8" fill="none" stroke="#E8604A" stroke-width="17"/><rect x="412" y="691.5" width="51.2" height="17" fill="#E8604A"/><rect x="520.8" y="691.5" width="51.2" height="17" fill="#E8604A"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F8A80"/><stop offset="1" stop-color="#0A756C"/></linearGradient></defs>
+<rect width="1024" height="1024" fill="none"/>
+<rect x="0" y="0" width="1024" height="1024" rx="0" fill="url(#bg)"/>
+
+<g transform="translate(512 500) scale(1.0) translate(-512 -500)">
+ <circle cx="512" cy="500" r="300" fill="none" stroke="#06403B" stroke-width="15"/>
+ <clipPath id="g"><circle cx="512" cy="500" r="300"/></clipPath>
+ <g clip-path="url(#g)" fill="none" stroke="#06403B" stroke-width="13">
+  <ellipse cx="512" cy="500" rx="140" ry="300"/>
+  <ellipse cx="512" cy="500" rx="235" ry="300"/>
+  <line x1="512" y1="200" x2="512" y2="800"/>
+  <line x1="212" y1="500" x2="812" y2="500"/>
+  <path d="M230 360 Q512 420 794 360"/>
+  <path d="M230 640 Q512 580 794 640" opacity="0"/>
+  <path d="M250 660 Q512 600 774 660" />
+ </g>
+ <!-- swoop -->
+ <path d="M150 560 C140 700 280 800 450 765 C630 725 760 540 805 335 L750 312 C705 470 600 625 440 655 C350 672 290 640 270 590 C255 548 215 530 150 560 Z" fill="#E8604A" stroke="#06403B" stroke-width="10" stroke-linejoin="round"/>
+ <path d="M215 665 C300 735 410 735 490 700 C620 645 710 520 765 360" fill="none" stroke="#fff" stroke-width="9" stroke-dasharray="28 18" stroke-linecap="round"/>
+ <!-- plane -->
+ <g transform="translate(805 292) rotate(36) scale(1.3)" fill="#E8604A" stroke="#06403B" stroke-width="7" stroke-linejoin="round">
+  <path d="M0 -78 C11 -78 15 -62 15 -45 L15 -12 L82 28 L82 45 L15 22 L15 58 L36 74 L36 88 L0 80 L-36 88 L-36 74 L-15 58 L-15 22 L-82 45 L-82 28 L-15 -12 L-15 -45 C-15 -62 -11 -78 0 -78 Z"/>
+ </g>
+ <!-- ship (bigger, up-left of swoop) -->
+ <g transform="translate(395 420)" fill="#fff" stroke="#06403B" stroke-width="7" stroke-linejoin="round">
+  <path d="M-135 28 L135 28 L98 82 L-98 82 Z"/>
+  <rect x="-100" y="-12" width="190" height="40"/>
+  <rect x="-70" y="-50" width="130" height="38"/>
+  <rect x="-40" y="-84" width="70" height="34"/>
+  <rect x="-18" y="-112" width="20" height="28"/>
+  <rect x="14" y="-104" width="20" height="20"/>
+  <g fill="#111" stroke="none">
+   <rect x="-85" y="-2" width="22" height="18" rx="3"/><rect x="-50" y="-2" width="22" height="18" rx="3"/><rect x="-15" y="-2" width="22" height="18" rx="3"/><rect x="20" y="-2" width="22" height="18" rx="3"/><rect x="55" y="-2" width="22" height="18" rx="3"/>
+   <rect x="-55" y="-40" width="20" height="16" rx="3"/><rect x="-20" y="-40" width="20" height="16" rx="3"/><rect x="15" y="-40" width="20" height="16" rx="3"/>
+   <circle cx="-85" cy="52" r="7"/><circle cx="-50" cy="52" r="7"/><circle cx="-15" cy="52" r="7"/><circle cx="20" cy="52" r="7"/><circle cx="55" cy="52" r="7"/>
+  </g>
+ </g>
+ <!-- car on road -->
+ <g transform="translate(325 678) rotate(-30) scale(1.2)" fill="#fff" stroke="#06403B" stroke-width="7" stroke-linejoin="round">
+  <path d="M-62 22 L-62 2 Q-58 -8 -38 -10 L-24 -36 Q-18 -44 -6 -44 L34 -44 Q44 -44 50 -36 L62 -10 Q78 -8 78 6 L78 22 Z"/>
+  <path d="M-20 -12 L-10 -32 L12 -32 L12 -12 Z M22 -12 L22 -32 L36 -32 L48 -12 Z" fill="#06403B" stroke="none"/>
+  <circle cx="-34" cy="24" r="17"/><circle cx="48" cy="24" r="17"/>
+ </g>
+</g>
+</svg>
