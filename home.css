@@ -470,3 +470,4 @@ section{padding:var(--pad) 0}
 .device.scroll .scroller{max-height:560px;overflow-y:auto;border-radius:33px}
 .device.scroll .scroller:focus-visible{outline:3px solid var(--mint,#4FD3C8);outline-offset:2px}
 @media (max-width:600px){.shot,.shot .device{width:min(78vw,260px)}}
+.badge-free{display:inline-block;font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;background:#E5F2E2;color:#1E4D14;border-radius:999px;padding:4px 10px;margin-left:6px;vertical-align:middle}
