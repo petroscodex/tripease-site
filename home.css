@@ -446,12 +446,6 @@ section{padding:var(--pad) 0}
 .tip-table a{overflow-wrap:anywhere}
 .steps-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
 .look-demo{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.nameplate{background:#1C2124;color:#fff;border-radius:16px;padding:14px 18px;font-weight:800;font-size:22px;display:flex;justify-content:space-between;gap:12px;align-items:center;box-shadow:0 24px 50px rgba(0,0,0,.35)}
-.nameplate small{font:700 12px var(--mono);letter-spacing:.12em;color:var(--mint)}
-.look-demo .stack{display:grid;gap:14px}
-.look-demo .pane{background:#fff;color:var(--ink);border-radius:18px;padding:18px;box-shadow:0 18px 40px rgba(0,0,0,.25)}
-.look-demo .pane.ok{border-left:8px solid #2E6B1F}
-.look-demo .pane.apply{border-left:8px solid #1E4E8C}.look-demo .pane.stop{border-left:8px solid #A11D1D}.look-demo .pane b{display:block;font-size:20px}.look-demo .pane .k{font:700 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#3E474C}.demo-tag{font-size:13px;color:#C9D1D5;margin-top:14px}
 .swatches{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
 .swatches span{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#E6ECEE}
 .swatches i{width:22px;height:22px;border-radius:7px;border:1px solid rgba(255,255,255,.35)}
@@ -466,3 +460,13 @@ section{padding:var(--pad) 0}
 .table-wrap{overflow-x:auto}
 @media (max-width:1000px){.modes-grid,.look-demo,.steps-3{grid-template-columns:1fr}.stat-row{grid-template-columns:repeat(2,1fr)}.mode-card{grid-template-columns:minmax(0,150px) 1fr}}
 @media (max-width:560px){.mode-card{grid-template-columns:1fr}.mode-card .art img{height:220px}.src-list{columns:1}.tip-table td:first-child{white-space:normal}}
+
+/* App screenshots */
+.shots-row{display:flex;flex-wrap:wrap;gap:28px;justify-content:center;align-items:flex-start;margin-top:32px}
+.shot{margin:0;width:240px;max-width:100%;text-align:center}
+.shot .device{width:240px;max-width:100%}
+.shot figcaption{margin-top:12px;font-size:14px;line-height:1.4;opacity:.85}
+.device img{display:block}
+.device.scroll .scroller{max-height:560px;overflow-y:auto;border-radius:33px}
+.device.scroll .scroller:focus-visible{outline:3px solid var(--mint,#4FD3C8);outline-offset:2px}
+@media (max-width:600px){.shot,.shot .device{width:min(78vw,260px)}}
