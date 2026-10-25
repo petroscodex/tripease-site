@@ -731,7 +731,6 @@
   "Built like airport signage: calm and easy to read.": "공항 안내 표지판처럼 차분하고 읽기 쉽게 만들었습니다.",
   "Charcoal name plates, big clear type and colour that never works alone. Every result says it in words as well as colour, in light or dark.": "차콜색 이름판, 크고 또렷한 글자, 색에만 의존하지 않는 표시. 모든 결과를 밝은 모드와 어두운 모드 모두에서 글과 색으로 함께 알려 줍니다.",
   "Colour roles": "색상의 역할",
-  "Cross by land or ferry": "육로 또는 페리로 건너기",
   "Cruises and trip tracking are coming as optional, opt-in extras as we build them.": "크루즈와 여행 추적은 개발되는 대로 선택해서 켜는(옵트인) 추가 기능으로 제공될 예정입니다.",
   "Do I tip, and how much?": "팁을 줘야 하나요, 얼마나요?",
   "Does TripEase cover plugs, tipping and local apps?": "TripEase는 플러그, 팁, 현지 앱도 다루나요?",
@@ -778,7 +777,6 @@
   "Text and background contrast meet WCAG AA": "글자와 배경의 대비가 WCAG AA를 충족합니다",
   "That's about $2.50 a month.": "한 달에 약 $2.50이에요.",
   "The Privacy screen in TripEase Settings, starting: No account. Your details stay on this phone.": "TripEase 설정의 개인정보 화면. 첫 문장은 '계정이 없습니다. 내 정보는 이 휴대전화에 머뭅니다.'",
-  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or ferry, for borders, bridges and ferry ports": "TripEase 시작 화면 '다음 목적지는?'. 큰 카드 두 장: 공항과 모든 입국 서류를 위한 '항공', 국경·다리·페리 항구를 위한 '육로 또는 페리로 건너기'",
   "The apps people use there": "그곳에서 사람들이 쓰는 앱",
   "The new look": "새로운 디자인",
   "The small things that make landing easy.": "도착을 쉽게 해 주는 작은 것들.",
@@ -797,7 +795,9 @@
   "Which plug do I need?": "어떤 플러그가 필요한가요?",
   "Yearly · save 50%": "연간 · 50% 절약",
   "Yellow means one thing only: an official link, tap now": "노란색은 한 가지 뜻뿐입니다: 공식 링크, 지금 탭하세요",
-  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "네. 각 목적지에서 플러그 종류와 전압, 공식 관광·정부 페이지에서 가져온 짧은 팁 안내, 그곳에서 쓸 수 있는 차량 호출·대중교통·유심 앱을 볼 수 있습니다. 플러그 사진, 팁 가이드, 현지 앱 개요는 이 사이트에도 있습니다."
+  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "네. 각 목적지에서 플러그 종류와 전압, 공식 관광·정부 페이지에서 가져온 짧은 팁 안내, 그곳에서 쓸 수 있는 차량 호출·대중교통·유심 앱을 볼 수 있습니다. 플러그 사진, 팁 가이드, 현지 앱 개요는 이 사이트에도 있습니다.",
+  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or sea, for borders, bridges and ferry ports": "TripEase 시작 화면 '다음 목적지는?'. 큰 카드 두 장: 공항과 모든 입국 서류를 위한 '항공', 국경·다리·페리 항구를 위한 '육로 또는 해상으로 건너기'",
+  "<span>Land &amp; Sea</span>": "<span>육로·해상</span>"
  },
  "js": {
   "playVideo": "동영상 재생",

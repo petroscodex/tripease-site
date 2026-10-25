@@ -731,7 +731,6 @@
   "Built like airport signage: calm and easy to read.": "Diseñado como la señalización de un aeropuerto: tranquilo y fácil de leer.",
   "Charcoal name plates, big clear type and colour that never works alone. Every result says it in words as well as colour, in light or dark.": "Placas de nombre en gris carbón, tipografía grande y clara y color que nunca actúa solo. Cada resultado lo dice con palabras y con color, en modo claro u oscuro.",
   "Colour roles": "Funciones del color",
-  "Cross by land or ferry": "Cruzar por tierra o en ferri",
   "Cruises and trip tracking are coming as optional, opt-in extras as we build them.": "Los cruceros y el seguimiento de viajes llegarán como extras opcionales, que podrás activar tú, a medida que los desarrollemos.",
   "Do I tip, and how much?": "¿Dejo propina y cuánto?",
   "Does TripEase cover plugs, tipping and local apps?": "¿TripEase incluye enchufes, propinas y apps locales?",
@@ -778,7 +777,6 @@
   "Text and background contrast meet WCAG AA": "El contraste entre texto y fondo cumple WCAG AA",
   "That's about $2.50 a month.": "Unos 2,50 $ al mes.",
   "The Privacy screen in TripEase Settings, starting: No account. Your details stay on this phone.": "La pantalla Privacidad en los Ajustes de TripEase, que empieza así: Sin cuenta. Tus datos se quedan en este teléfono.",
-  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or ferry, for borders, bridges and ferry ports": "La pantalla de inicio de TripEase, ¿Adónde vas ahora?, con dos tarjetas grandes: Volar, para aeropuertos y cada formulario de llegada, y Cruzar por tierra o en ferri, para fronteras, puentes y puertos de ferri",
   "The apps people use there": "Las apps que usa la gente allí",
   "The new look": "El nuevo aspecto",
   "The small things that make landing easy.": "Los pequeños detalles que facilitan la llegada.",
@@ -797,7 +795,9 @@
   "Which plug do I need?": "¿Qué enchufe necesito?",
   "Yearly · save 50%": "Anual · ahorra un 50 %",
   "Yellow means one thing only: an official link, tap now": "El amarillo significa una sola cosa: un enlace oficial, toca ahora",
-  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "Sí. Cada destino muestra sus tipos de enchufe y su voltaje, una breve nota de propinas tomada de una página oficial de turismo o gobierno, y las apps de transporte, transporte público y SIM que funcionan allí. Las imágenes de enchufes, la guía de propinas y el resumen de apps locales también están en este sitio."
+  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "Sí. Cada destino muestra sus tipos de enchufe y su voltaje, una breve nota de propinas tomada de una página oficial de turismo o gobierno, y las apps de transporte, transporte público y SIM que funcionan allí. Las imágenes de enchufes, la guía de propinas y el resumen de apps locales también están en este sitio.",
+  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or sea, for borders, bridges and ferry ports": "La pantalla de inicio de TripEase, ¿Adónde vas ahora?, con dos tarjetas grandes: Volar, para aeropuertos y cada formulario de llegada, y Cruzar por tierra o mar, para fronteras, puentes y puertos de ferri",
+  "<span>Land &amp; Sea</span>": "<span>Tierra y mar</span>"
  },
  "js": {
   "playVideo": "Reproducir vídeo",

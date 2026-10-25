@@ -731,7 +731,6 @@
   "Built like airport signage: calm and easy to read.": "像機場指示牌一樣設計：沉穩，易讀。",
   "Charcoal name plates, big clear type and colour that never works alone. Every result says it in words as well as colour, in light or dark.": "炭灰色名牌、清晰的大字，以及從不單獨依賴顏色的提示。無論淺色還是深色模式，每個結果都用文字和顏色一起說明。",
   "Colour roles": "顏色的作用",
-  "Cross by land or ferry": "陸路或渡輪通行",
   "Cruises and trip tracking are coming as optional, opt-in extras as we build them.": "郵輪和行程追蹤將在我們開發完成後，作為可自願開啟的可選附加功能推出。",
   "Do I tip, and how much?": "需要給小費嗎？給多少？",
   "Does TripEase cover plugs, tipping and local apps?": "TripEase 涵蓋插頭、小費和本地 App 嗎？",
@@ -778,7 +777,6 @@
   "Text and background contrast meet WCAG AA": "文字與背景的對比度符合 WCAG AA",
   "That's about $2.50 a month.": "約等於每月 $2.50。",
   "The Privacy screen in TripEase Settings, starting: No account. Your details stay on this phone.": "TripEase 設定中的隱私頁面，開頭寫著：無需帳戶。你的資訊只保留在這部手機上。",
-  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or ferry, for borders, bridges and ferry ports": "TripEase 開始頁面「下一站去哪裡？」，有兩張大卡片：飛行，用於機場和每一種入境表格；陸路或渡輪通行，用於邊境、橋樑和渡輪碼頭",
   "The apps people use there": "當地人使用的 App",
   "The new look": "新外觀",
   "The small things that make landing easy.": "讓落地更輕鬆的小細節。",
@@ -797,7 +795,9 @@
   "Which plug do I need?": "我需要哪種插頭？",
   "Yearly · save 50%": "按年 · 省 50%",
   "Yellow means one thing only: an official link, tap now": "黃色只表示一件事：官方連結，立即點選",
-  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "是的。每個目的地都會顯示插頭類型和電壓、取自官方旅遊或政府頁面的簡短小費說明，以及當地可用的叫車、大眾運輸和 SIM 卡 App。插頭圖片、小費指南和本地 App 概覽在本網站上也能找到。"
+  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "是的。每個目的地都會顯示插頭類型和電壓、取自官方旅遊或政府頁面的簡短小費說明，以及當地可用的叫車、大眾運輸和 SIM 卡 App。插頭圖片、小費指南和本地 App 概覽在本網站上也能找到。",
+  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or sea, for borders, bridges and ferry ports": "TripEase 開始頁面「下一站去哪裡？」，有兩張大卡片：飛行，用於機場和每一種入境表格；陸路或海路通行，用於邊境、橋樑和渡輪碼頭",
+  "<span>Land &amp; Sea</span>": "<span>陸路與海路</span>"
  },
  "js": {
   "playVideo": "播放影片",

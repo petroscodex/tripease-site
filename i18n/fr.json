@@ -731,7 +731,6 @@
   "Built like airport signage: calm and easy to read.": "Conçu comme la signalétique d'un aéroport : calme et facile à lire.",
   "Charcoal name plates, big clear type and colour that never works alone. Every result says it in words as well as colour, in light or dark.": "Plaques de nom anthracite, grands caractères lisibles et couleurs qui ne travaillent jamais seules. Chaque résultat le dit en mots comme en couleur, en mode clair ou sombre.",
   "Colour roles": "Rôles des couleurs",
-  "Cross by land or ferry": "Passer par voie terrestre ou en ferry",
   "Cruises and trip tracking are coming as optional, opt-in extras as we build them.": "Les croisières et le suivi de voyage arriveront sous forme d'extras facultatifs, à activer, au fur et à mesure de leur développement.",
   "Do I tip, and how much?": "Dois-je laisser un pourboire, et combien ?",
   "Does TripEase cover plugs, tipping and local apps?": "TripEase couvre-t-il les prises, les pourboires et les applis locales ?",
@@ -778,7 +777,6 @@
   "Text and background contrast meet WCAG AA": "Le contraste entre texte et arrière-plan respecte WCAG AA",
   "That's about $2.50 a month.": "Soit environ 2,50 $ par mois.",
   "The Privacy screen in TripEase Settings, starting: No account. Your details stay on this phone.": "L'écran Confidentialité dans les Réglages de TripEase, qui commence par : Pas de compte. Vos informations restent sur ce téléphone.",
-  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or ferry, for borders, bridges and ferry ports": "L'écran d'accueil de TripEase, Où allez-vous ensuite ?, avec deux grandes cartes : Voler, pour les aéroports et chaque formulaire d'arrivée, et Passer par voie terrestre ou en ferry, pour les frontières, les ponts et les ports de ferry",
   "The apps people use there": "Les applis que les gens utilisent sur place",
   "The new look": "Le nouveau look",
   "The small things that make landing easy.": "Les petits détails qui facilitent l'arrivée.",
@@ -797,7 +795,9 @@
   "Which plug do I need?": "Quelle prise me faut-il ?",
   "Yearly · save 50%": "Annuel · économisez 50 %",
   "Yellow means one thing only: an official link, tap now": "Le jaune ne veut dire qu'une chose : un lien officiel, touchez maintenant",
-  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "Oui. Chaque destination indique ses types de prises et sa tension, une courte note sur les pourboires tirée d'une page officielle de tourisme ou de gouvernement, et les applis de transport, de transports en commun et de SIM qui fonctionnent sur place. Les images de prises, le guide des pourboires et l'aperçu des applis locales sont aussi sur ce site."
+  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "Oui. Chaque destination indique ses types de prises et sa tension, une courte note sur les pourboires tirée d'une page officielle de tourisme ou de gouvernement, et les applis de transport, de transports en commun et de SIM qui fonctionnent sur place. Les images de prises, le guide des pourboires et l'aperçu des applis locales sont aussi sur ce site.",
+  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or sea, for borders, bridges and ferry ports": "L'écran d'accueil de TripEase, Où allez-vous ensuite ?, avec deux grandes cartes : Voler, pour les aéroports et chaque formulaire d'arrivée, et Passer par voie terrestre ou maritime, pour les frontières, les ponts et les ports de ferry",
+  "<span>Land &amp; Sea</span>": "<span>Terre et mer</span>"
  },
  "js": {
   "playVideo": "Lire la vidéo",
