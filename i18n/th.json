@@ -731,7 +731,6 @@
   "Built like airport signage: calm and easy to read.": "ออกแบบเหมือนป้ายในสนามบิน: สงบและอ่านง่าย",
   "Charcoal name plates, big clear type and colour that never works alone. Every result says it in words as well as colour, in light or dark.": "ป้ายชื่อสีถ่าน ตัวอักษรใหญ่ชัดเจน และสีที่ไม่เคยสื่อความหมายเพียงลำพัง ทุกผลลัพธ์บอกด้วยคำพูดและสี ทั้งในโหมดสว่างและมืด",
   "Colour roles": "บทบาทของสี",
-  "Cross by land or ferry": "ข้ามด่านทางบกหรือนั่งเฟอร์รี่",
   "Cruises and trip tracking are coming as optional, opt-in extras as we build them.": "การล่องเรือสำราญและการติดตามทริปจะมาเป็นส่วนเสริมที่เลือกเปิดใช้เองได้ เมื่อเราพัฒนาเสร็จ",
   "Do I tip, and how much?": "ต้องให้ทิปไหม และเท่าไร",
   "Does TripEase cover plugs, tipping and local apps?": "TripEase ครอบคลุมปลั๊กไฟ ทิป และแอปท้องถิ่นด้วยหรือไม่",
@@ -778,7 +777,6 @@
   "Text and background contrast meet WCAG AA": "ค่าคอนทราสต์ของตัวอักษรและพื้นหลังเป็นไปตาม WCAG AA",
   "That's about $2.50 a month.": "ตกเดือนละประมาณ $2.50",
   "The Privacy screen in TripEase Settings, starting: No account. Your details stay on this phone.": "หน้าจอความเป็นส่วนตัวในการตั้งค่า TripEase ขึ้นต้นว่า: ไม่ต้องมีบัญชี ข้อมูลของคุณอยู่บนโทรศัพท์เครื่องนี้",
-  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or ferry, for borders, bridges and ferry ports": "หน้าจอเริ่มต้นของ TripEase \"ไปไหนต่อ\" พร้อมการ์ดใหญ่สองใบ: บิน สำหรับสนามบินและแบบฟอร์มขาเข้าทุกแบบ และ ข้ามด่านทางบกหรือนั่งเฟอร์รี่ สำหรับด่านพรมแดน สะพาน และท่าเรือเฟอร์รี่",
   "The apps people use there": "แอปที่คนในพื้นที่ใช้กัน",
   "The new look": "รูปลักษณ์ใหม่",
   "The small things that make landing easy.": "เรื่องเล็ก ๆ ที่ทำให้การถึงที่หมายง่ายขึ้น",
@@ -797,7 +795,9 @@
   "Which plug do I need?": "ฉันต้องใช้ปลั๊กแบบไหน",
   "Yearly · save 50%": "รายปี · ประหยัด 50%",
   "Yellow means one thing only: an official link, tap now": "สีเหลืองมีความหมายเดียวเท่านั้น: ลิงก์ทางการ แตะได้เลย",
-  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "ใช่ แต่ละปลายทางแสดงประเภทปลั๊กไฟและแรงดันไฟฟ้า บันทึกเรื่องทิปสั้น ๆ จากหน้าทางการด้านการท่องเที่ยวหรือรัฐบาล และแอปเรียกรถ ขนส่งสาธารณะ และซิมที่ใช้ได้ที่นั่น ภาพปลั๊กไฟ คู่มือการให้ทิป และภาพรวมแอปท้องถิ่นมีอยู่ในเว็บไซต์นี้ด้วย"
+  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "ใช่ แต่ละปลายทางแสดงประเภทปลั๊กไฟและแรงดันไฟฟ้า บันทึกเรื่องทิปสั้น ๆ จากหน้าทางการด้านการท่องเที่ยวหรือรัฐบาล และแอปเรียกรถ ขนส่งสาธารณะ และซิมที่ใช้ได้ที่นั่น ภาพปลั๊กไฟ คู่มือการให้ทิป และภาพรวมแอปท้องถิ่นมีอยู่ในเว็บไซต์นี้ด้วย",
+  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or sea, for borders, bridges and ferry ports": "หน้าจอเริ่มต้นของ TripEase \"ไปไหนต่อ\" พร้อมการ์ดใหญ่สองใบ: บิน สำหรับสนามบินและแบบฟอร์มขาเข้าทุกแบบ และ ข้ามด่านทางบกหรือทางทะเล สำหรับด่านพรมแดน สะพาน และท่าเรือเฟอร์รี่",
+  "<span>Land &amp; Sea</span>": "<span>ทางบกและทางทะเล</span>"
  },
  "js": {
   "playVideo": "เล่นวิดีโอ",

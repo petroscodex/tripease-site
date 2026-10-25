@@ -731,7 +731,6 @@
   "Built like airport signage: calm and easy to read.": "Gestaltet wie Flughafenbeschilderung: ruhig und leicht lesbar.",
   "Charcoal name plates, big clear type and colour that never works alone. Every result says it in words as well as colour, in light or dark.": "Anthrazitfarbene Namensschilder, große klare Schrift und Farben, die nie allein wirken. Jedes Ergebnis sagt es in Worten und in Farbe, im hellen wie im dunklen Modus.",
   "Colour roles": "Farbrollen",
-  "Cross by land or ferry": "Per Land oder Fähre einreisen",
   "Cruises and trip tracking are coming as optional, opt-in extras as we build them.": "Kreuzfahrten und Reiseverfolgung kommen als optionale Extras zum Aktivieren, sobald wir sie entwickeln.",
   "Do I tip, and how much?": "Gebe ich Trinkgeld, und wie viel?",
   "Does TripEase cover plugs, tipping and local apps?": "Deckt TripEase Stecker, Trinkgeld und lokale Apps ab?",
@@ -778,7 +777,6 @@
   "Text and background contrast meet WCAG AA": "Kontrast von Text und Hintergrund erfüllt WCAG AA",
   "That's about $2.50 a month.": "Das sind etwa 2,50 $ im Monat.",
   "The Privacy screen in TripEase Settings, starting: No account. Your details stay on this phone.": "Der Datenschutz-Bildschirm in den TripEase-Einstellungen, beginnend mit: Kein Konto. Deine Angaben bleiben auf diesem Telefon.",
-  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or ferry, for borders, bridges and ferry ports": "Der TripEase-Startbildschirm „Wohin als Nächstes?“ mit zwei großen Karten: Fliegen, für Flughäfen und jedes Einreiseformular, und Per Land oder Fähre einreisen, für Grenzen, Brücken und Fährhäfen",
   "The apps people use there": "Die Apps, die dort alle nutzen",
   "The new look": "Der neue Look",
   "The small things that make landing easy.": "Die kleinen Dinge, die das Ankommen leicht machen.",
@@ -797,7 +795,9 @@
   "Which plug do I need?": "Welchen Stecker brauche ich?",
   "Yearly · save 50%": "Jährlich · 50 % sparen",
   "Yellow means one thing only: an official link, tap now": "Gelb bedeutet nur eines: ein offizieller Link, jetzt tippen",
-  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "Ja. Jedes Reiseziel zeigt seine Steckertypen und die Spannung, einen kurzen Trinkgeld-Hinweis von einer offiziellen Tourismus- oder Regierungsseite und die Apps für Fahrten, Nahverkehr und SIM, die dort funktionieren. Steckerbilder, der Trinkgeld-Ratgeber und die Übersicht der lokalen Apps findest du auch auf dieser Website."
+  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "Ja. Jedes Reiseziel zeigt seine Steckertypen und die Spannung, einen kurzen Trinkgeld-Hinweis von einer offiziellen Tourismus- oder Regierungsseite und die Apps für Fahrten, Nahverkehr und SIM, die dort funktionieren. Steckerbilder, der Trinkgeld-Ratgeber und die Übersicht der lokalen Apps findest du auch auf dieser Website.",
+  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or sea, for borders, bridges and ferry ports": "Der TripEase-Startbildschirm „Wohin als Nächstes?“ mit zwei großen Karten: Fliegen, für Flughäfen und jedes Einreiseformular, und Per Land oder See einreisen, für Grenzen, Brücken und Fährhäfen",
+  "<span>Land &amp; Sea</span>": "<span>Land &amp; See</span>"
  },
  "js": {
   "playVideo": "Video abspielen",

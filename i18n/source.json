@@ -488,7 +488,7 @@
   "Airports and every arrival form. Entry rules for your passport, official links with their deadlines, terminal maps and your first hour on the ground.": [
    "index.html"
   ],
-  "Cross by land or ferry": [
+  "<span>Land &amp; Sea</span>": [
    "index.html"
   ],
   "Borders, bridges and ferry ports: opening hours where officials publish them, cautions, and links to the official entry and customs pages.": [
@@ -1818,7 +1818,7 @@
   "Illustration: a train crossing a stone viaduct through misty hills at sunrise": [
    "index.html"
   ],
-  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or ferry, for borders, bridges and ferry ports": [
+  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or sea, for borders, bridges and ferry ports": [
    "index.html"
   ],
   "TripEase Land & Sea home: a search box for a country and the busiest crossings ranked by official traffic figures, including Lo Wu, San Ysidro and Sarp, with tabs at the bottom to switch between Air and land crossings": [

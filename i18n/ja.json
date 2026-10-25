@@ -731,7 +731,6 @@
   "Built like airport signage: calm and easy to read.": "空港のサインのように、落ち着いて読みやすく作られています。",
   "Charcoal name plates, big clear type and colour that never works alone. Every result says it in words as well as colour, in light or dark.": "チャコールのネームプレート、大きくて見やすい文字、色だけに頼らない表示。どの結果も、ライトでもダークでも、色と言葉の両方で伝えます。",
   "Colour roles": "色の役割",
-  "Cross by land or ferry": "陸路またはフェリーで渡る",
   "Cruises and trip tracking are coming as optional, opt-in extras as we build them.": "クルーズと旅行の記録は、開発が進み次第、オプトイン（選んで使う）の追加機能として提供する予定です。",
   "Do I tip, and how much?": "チップは必要？ いくら？",
   "Does TripEase cover plugs, tipping and local apps?": "TripEaseはプラグ、チップ、現地のアプリにも対応していますか？",
@@ -778,7 +777,6 @@
   "Text and background contrast meet WCAG AA": "文字と背景のコントラストはWCAG AAを満たしています",
   "That's about $2.50 a month.": "月あたり約 $2.50 です。",
   "The Privacy screen in TripEase Settings, starting: No account. Your details stay on this phone.": "TripEaseの設定にあるプライバシー画面。冒頭は「アカウント不要。あなたの情報はこのスマートフォンに残ります。」",
-  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or ferry, for borders, bridges and ferry ports": "TripEaseのスタート画面「次はどこへ？」。大きなカードが2枚あり、空港とすべての入国フォームの「飛ぶ」と、国境・橋・フェリーの港の「陸路またはフェリーで渡る」",
   "The apps people use there": "現地で人々が使うアプリ",
   "The new look": "新しいデザイン",
   "The small things that make landing easy.": "到着をラクにする、小さな工夫。",
@@ -797,7 +795,9 @@
   "Which plug do I need?": "どのプラグが必要？",
   "Yearly · save 50%": "年額・50%お得",
   "Yellow means one thing only: an official link, tap now": "黄色はひとつの意味だけ：公式リンク、今すぐタップ",
-  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "はい。各渡航先で、プラグの種類と電圧、公式の観光・政府ページからの短いチップの注記、現地で使える配車・交通・SIMアプリを確認できます。プラグの写真、チップガイド、現地アプリの概要はこのサイトにもあります。"
+  "Yes. Each destination shows its plug types and voltage, a short tipping note taken from an official tourism or government page, and the ride, transit and SIM apps that operate there. Plug pictures, the tipping guide and the local-apps overview are on this site too.": "はい。各渡航先で、プラグの種類と電圧、公式の観光・政府ページからの短いチップの注記、現地で使える配車・交通・SIMアプリを確認できます。プラグの写真、チップガイド、現地アプリの概要はこのサイトにもあります。",
+  "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or sea, for borders, bridges and ferry ports": "TripEaseのスタート画面「次はどこへ？」。大きなカードが2枚あり、空港とすべての入国フォームの「飛ぶ」と、国境・橋・フェリーの港の「陸路または海路で渡る」",
+  "<span>Land &amp; Sea</span>": "<span>陸路・海路</span>"
  },
  "js": {
   "playVideo": "動画を再生",
