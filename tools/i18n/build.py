@@ -45,12 +45,14 @@ LANGS = {  # url folder: (BCP-47 code, menu label, html lang attribute)
     "fr": ("fr", "Français", "fr"),
     "es": ("es", "Español", "es"),
     "ar": ("ar", "العربية", "ar"),
+    "pt-br": ("pt-BR", "Português (Brasil)", "pt-BR"),
 }
 RTL = {"ar"}  # right-to-left: the build adds dir="rtl" and /rtl.css
 # Pages that exist in one language only (besides PAGES). Arabic also has the land page, the help page and
 # the creators page. The legal pages (privacy, terms) stay English until a lawyer or native speaker has checked a translation.
-EXTRA = {"ar": ["land/index.html", "help.html", "creators/index.html"]}
-ALL_PAGES = PAGES + [p for ps in EXTRA.values() for p in ps if p not in PAGES]
+EXTRA = {"ar": ["land/index.html", "help.html", "creators/index.html"],
+         "pt-br": ["land/index.html", "help.html", "creators/index.html"]}
+ALL_PAGES = PAGES + list(dict.fromkeys(p for ps in EXTRA.values() for p in ps if p not in PAGES))  # each extra page once, even if several languages have it
 
 
 def pages_in(lang: str) -> list[str]:
