@@ -47,6 +47,8 @@ LANGS = {  # url folder: (BCP-47 code, menu label, html lang attribute)
     "ar": ("ar", "العربية", "ar"),
     "pt-br": ("pt-BR", "Português (Brasil)", "pt-BR"),
 }
+# English-only pages that still get the language menu (header and footer), with links to each language's home page.
+STATIC_EN = ["press.html", "404.html", "tipping/index.html", "plugs/index.html", "local-apps/index.html"]
 RTL = {"ar"}  # right-to-left: the build adds dir="rtl" and /rtl.css
 # Pages that exist in one language only (besides PAGES). Arabic also has the land page, the help page and
 # the creators page. The legal pages (privacy, terms) stay English until a lawyer or native speaker has checked a translation.
@@ -231,21 +233,31 @@ def _names(page: str):
     return [(None, "en", "English")] + [(k, LANGS[k][0], LANGS[k][1]) for k in langs_for(page)]
 
 
+def _names_home():
+    return [(None, "en", "English")] + [(k, LANGS[k][0], LANGS[k][1]) for k in LANGS]
+
+
 def _cur(k, cur) -> str:
     return ' aria-current="true"' if k == cur else ""
 
 
-def menu_html(page: str, cur: str | None) -> str:
+def _items(page: str, cur: str | None, home: bool):
+    """Language links for a page; on an English-only page (home) every other language links to its home page."""
+    return [((url_for(page, None) if k is None else f"/{k}/") if home else url_for(page, k), code, label, k)
+            for k, code, label in (_names_home() if home else _names(page))]
+
+
+def menu_html(page: str, cur: str | None, home: bool = False) -> str:
     cur_label = "EN" if not cur else LANGS[cur][1]
-    items = "".join('<li><a href="%s" hreflang="%s" lang="%s"%s>%s</a></li>' % (url_for(page, k), code, code, _cur(k, cur), label)
-                    for k, code, label in _names(page))
+    items = "".join('<li><a href="%s" hreflang="%s" lang="%s"%s>%s</a></li>' % (u, code, code, _cur(k, cur), label)
+                    for u, code, label, k in _items(page, cur, home))
     return '<details class="lang"><summary aria-label="Language">' + cur_label + "</summary><ul>" + items + "</ul></details>"
 
 
-def foot_html(page: str, cur: str | None) -> str:
-    links = " · ".join('<a href="%s" hreflang="%s" lang="%s"%s>%s</a>' % (url_for(page, k), code, code, _cur(k, cur), label)
-                        for k, code, label in _names(page))
-    return '<nav class="foot-langs" aria-label="Language">' + links + "</nav>"
+def foot_html(page: str, cur: str | None, home: bool = False) -> str:
+    links = " \u00b7 ".join('<a href="%s" hreflang="%s" lang="%s"%s>%s</a>' % (u, code, code, _cur(k, cur), label)
+                        for u, code, label, k in _items(page, cur, home))
+    return '<nav class="foot-langs" id="languages" aria-label="Language">' + links + "</nav>"
 
 
 def alt_links(page: str) -> list[tuple[str, str]]:
@@ -259,17 +271,18 @@ def alt_html(page: str) -> str:
     return "\n".join(f'  <link rel="alternate" hreflang="{c}" href="{SITE}{u}" />' for c, u in links)
 
 
-def patch_english(page: str) -> None:
+def patch_english(page: str, home: bool = False) -> None:
     """The English page is Zan's hand-written source: change only the language links, the header menu
     and the footer list, as text, so the rest of the file stays byte-for-byte as she wrote it."""
     path = ROOT / page
     x = path.read_text(encoding="utf-8")
-    x = re.sub(r'\n[ \t]*<link rel="alternate" hreflang="[^"]*" href="[^"]*" ?/?>', "", x)
-    x = re.sub(r'(<link rel="canonical"[^>]*>)', lambda m: m.group(1) + ("\n" + alt_html(page) if alt_html(page) else ""), x, count=1)
+    if not home:  # an English-only page has no translations to point search engines at
+        x = re.sub(r'\n[ \t]*<link rel="alternate" hreflang="[^"]*" href="[^"]*" ?/?>', "", x)
+        x = re.sub(r'(<link rel="canonical"[^>]*>)', lambda m: m.group(1) + ("\n" + alt_html(page) if alt_html(page) else ""), x, count=1)
     x = re.sub(r'<button class="lang"[^>]*>.*?</button>|<details class="lang">.*?</details>',
-               lambda m: menu_html(page, None), x, count=1, flags=re.S)
+               lambda m: menu_html(page, None, home), x, count=1, flags=re.S)
     x = re.sub(r'<nav class="foot-langs".*?</nav>\n?[ \t]*', "", x, flags=re.S)
-    x = re.sub(r'([ \t]*)(<div class="legal-lines">)', lambda m: m.group(1) + foot_html(page, None) + "\n" + m.group(1) + m.group(2), x, count=1)
+    x = re.sub(r'([ \t]*)(<div class="legal-lines">)', lambda m: m.group(1) + foot_html(page, None, home) + "\n" + m.group(1) + m.group(2), x, count=1)
     path.write_text(x, encoding="utf-8")
 
 
@@ -472,6 +485,8 @@ def cmd_build(strict: bool) -> int:
     problems = 0
     for page in ALL_PAGES:
         patch_english(page)
+    for page in STATIC_EN:
+        patch_english(page, home=True)
     for lang in LANGS:
         f = I18N / f"{lang}.json"
         data = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {"strings": {}, "js": {}}

@@ -27,6 +27,8 @@ python3 tools/i18n/build.py extract    # refresh i18n/source.json: every string 
   change. The build puts the link addresses back.
 * The language menu, `hreflang` links, canonical URLs, `og:locale` and the sitemap are written by
   the build. In the English page it only touches those lines.
+* On a phone (820 px and below) the header links and the language list open from the menu button (`menu.js`, styles at the end of `home.css`). The footer list stays too.
+* English-only pages (`STATIC_EN` in `build.py`: press, 404, tipping, plugs, local apps) get the same language menu, linking to each language's home page. Privacy and terms link to the footer list on the home page.
 * `site.js` text (the passport checker, price toggle) comes from the `js` block of each language
   file; English is the fallback. Placeholders like `{d}` must stay.
 
