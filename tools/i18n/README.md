@@ -1,4 +1,4 @@
-# Translations (10 languages)
+# Translations (11 languages)
 
 The English pages stay the source. Edit them as usual; the build writes the translated copies.
 
@@ -9,6 +9,7 @@ The English pages stay the source. Edit them as usual; the build writes the tran
 | `/zh-hant/` | 繁體中文 | Traditional Chinese wording; also Hong Kong and Macau |
 | `/ja/` `/ko/` `/th/` `/de/` `/fr/` `/es/` | | German uses *du*, French *vous*, Spanish *tú* |
 | `/ar/` | العربية | Modern Standard Arabic, **right-to-left**. See *Arabic and RTL* below |
+| `/pt-br/` | Português (Brasil) | Brazilian Portuguese, *você*; `lang="pt-BR"`, hreflang `pt-BR`. Prices stay in US$. Like Arabic it has `land/`, `help.html` and `creators/` (noindex). **Machine draft: needs a native-speaker review** |
 
 ## Day to day
 
@@ -53,7 +54,7 @@ language (`html:lang(...)`). Nothing loads from Google: fine for mainland China.
   Logos, screenshots and photos are not mirrored (the hero photo is, so the plane stays visible).
 * Latin runs (TripEase, Petros Codex, prices, airline and form codes, dates, e-mail, URLs) are wrapped
   in `<bdi>` by the build so the surrounding Arabic punctuation does not jumble them.
-  `EXTRA` in `build.py` lists pages that exist **only** in some languages (Arabic: `land/`, `help.html`,
+  `EXTRA` in `build.py` lists pages that exist **only** in some languages (Arabic and Brazilian Portuguese: `land/`, `help.html`,
   `creators/`); the language menu, hreflang and sitemap follow that list. The English copy of those pages
   gets a language menu from `patch_english`.
 * `placeholder` attributes are translated (help search); e-mail examples are skipped.
