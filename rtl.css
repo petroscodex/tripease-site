@@ -14,6 +14,8 @@ html:lang(ar) p, html:lang(ar) li, html:lang(ar) td, html:lang(ar) th, html:lang
 html:lang(ar) * { letter-spacing: 0 !important; text-transform: none !important; }
 /* Latin runs (brand, form names, e-mail and web addresses) keep their own direction inside Arabic lines. */
 html:lang(ar) bdi { unicode-bidi: isolate; }
+/* Long web addresses inside a sentence must wrap: on a narrow right-to-left page an unbroken run otherwise pokes out past the left edge, where it is clipped and cannot be scrolled to. */
+html:lang(ar) bdi { overflow-wrap: anywhere; }
 html:lang(ar) a[href^="mailto:"], html:lang(ar) .url, html:lang(ar) code { direction: ltr; unicode-bidi: isolate; }
 html:lang(ar) input, html:lang(ar) textarea { unicode-bidi: plaintext; }
 /* Backgrounds that fade in from one side start from the other side. */
@@ -27,3 +29,5 @@ html:lang(ar) [style*="text-align:left"] { text-align: start !important; }
 html:lang(ar) .hero-bg img { object-position: 50% 50%; transform-origin: 50% 48%; transform: scaleX(-1); animation-name: kb-rtl; }
 @keyframes kb-rtl { from { transform: scaleX(-1) scale(1) translate3d(0,0,0); } to { transform: scaleX(-1) scale(1.05) translate3d(1%,-.5%,0); } }
 @media (prefers-reduced-motion: reduce) { html:lang(ar) .hero-bg img { animation: none; transform: scaleX(-1); } }
+/* At 320px the text column of the dark phone section is 310px wide inside a 288px wrapper (also true in English, where it just scrolls right). Right-to-left it would be clipped on the left, so let the column shrink. */
+html:lang(ar) .screens-in > * { min-width: 0; }
