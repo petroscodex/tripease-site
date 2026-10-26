@@ -332,6 +332,28 @@ def fix_url(u: str) -> str:
     return "/" + u
 
 
+APP_SHOT = re.compile(r"/assets/app/([a-z0-9-]+-(?:390|780)\.webp)")
+
+
+def localize_shots(doc: BeautifulSoup, lang: str) -> None:
+    """Point app screenshots at /assets/app/<lang>/ when that language has its own render of the file.
+
+    Anything without a localized file keeps the English /assets/app/ one. Covers img src/srcset, any
+    preload/meta URL and the JSON-LD "screenshot" URLs; width/height/loading attributes are not touched.
+    """
+    def swap(m: re.Match) -> str:
+        return f"/assets/app/{lang}/{m.group(1)}" if (ROOT / "assets/app" / lang / m.group(1)).is_file() else m.group(0)
+
+    for el in doc.find_all(True):
+        for attr in ("src", "srcset", "href", "content", "data-src", "imagesrcset"):
+            v = el.get(attr)
+            if isinstance(v, str) and "/assets/app/" in v:
+                el[attr] = APP_SHOT.sub(swap, v)
+    for s in doc.find_all("script", type="application/ld+json"):
+        if s.string and "/assets/app/" in s.string:
+            s.string = APP_SHOT.sub(swap, s.string)
+
+
 def translate_page(page: str, lang: str, tr: dict, missing: set) -> BeautifulSoup:
     doc = soup(ROOT / page)
     code, _, html_lang = LANGS[lang]
@@ -405,6 +427,7 @@ def translate_page(page: str, lang: str, tr: dict, missing: set) -> BeautifulSou
                     walk(x)
         walk(data)
         s.string = json.dumps(data, ensure_ascii=False)
+    localize_shots(doc, lang)
     doc.html["lang"] = html_lang
     if lang in RTL:
         doc.html["dir"] = "rtl"
