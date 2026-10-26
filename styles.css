@@ -196,9 +196,10 @@ h1 {
   font-size: 1rem;
   margin: 0;
   padding: 0.85rem 1rem;
-  border-left: 4px solid var(--brand);
+  border-inline-start: 4px solid var(--brand);
   background: var(--surface);
-  border-radius: 0 10px 10px 0;
+  border-start-end-radius: 10px;
+  border-end-end-radius: 10px;
   max-width: 36rem;
 }
 .store-note strong { color: var(--ink); }
@@ -316,20 +317,20 @@ h1 {
 }
 .checklist li {
   position: relative;
-  padding-left: 1.4rem;
+  padding-inline-start: 1.4rem;
   margin: 0.45rem 0;
   color: var(--muted);
 }
 .checklist li::before {
   content: "✓";
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   color: var(--accent);
   font-weight: 700;
 }
 .soon {
   display: inline-block;
-  margin-left: 0.35rem;
+  margin-inline-start: 0.35rem;
   padding: 0.05rem 0.5rem;
   border-radius: 6px;
   background: transparent;
@@ -395,7 +396,7 @@ h1 {
   font-size: 1.05rem;
 }
 .legal p, .legal li { color: var(--ink); }
-.legal ul { padding-left: 1.2rem; }
+.legal ul { padding-inline-start: 1.2rem; }
 .legal li { margin: 0.35rem 0; }
 .toc {
   background: var(--surface);
@@ -405,7 +406,7 @@ h1 {
   margin: 0 0 1.5rem;
 }
 .toc a { text-decoration: none; }
-.toc ol { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.toc ol { margin: 0.4rem 0 0; padding-inline-start: 1.2rem; }
 
 @media (max-width: 960px) {
   .grid { grid-template-columns: repeat(2, 1fr); }

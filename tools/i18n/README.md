@@ -1,4 +1,4 @@
-# Translations (9 languages)
+# Translations (10 languages)
 
 The English pages stay the source. Edit them as usual; the build writes the translated copies.
 
@@ -8,6 +8,7 @@ The English pages stay the source. Edit them as usual; the build writes the tran
 | `/zh-hans/` | 简体中文 | mainland China and Singapore. **China-facing: the build fails if the page mentions a blocked region term** (marketing rule) |
 | `/zh-hant/` | 繁體中文 | Traditional Chinese wording; also Hong Kong and Macau |
 | `/ja/` `/ko/` `/th/` `/de/` `/fr/` `/es/` | | German uses *du*, French *vous*, Spanish *tú* |
+| `/ar/` | العربية | Modern Standard Arabic, **right-to-left**. See *Arabic and RTL* below |
 
 ## Day to day
 
@@ -41,3 +42,21 @@ pricing, FAQ and legal lines in each language, because they make promises.
 
 Fonts: Atkinson Hyperlegible has no CJK or Thai glyphs, so `home.css` names system fonts per
 language (`html:lang(...)`). Nothing loads from Google: fine for mainland China.
+
+## Arabic and RTL
+
+* `/ar/` pages get `<html lang="ar" dir="rtl">` and load `/rtl.css` (only on Arabic pages).
+* The shared CSS (`styles.css`, `home.css`) uses logical properties (`margin-inline-start`,
+  `inset-inline-end`, ...), so English renders exactly as before and Arabic mirrors by itself.
+  `rtl.css` holds only the Arabic extras: font stack (system Arabic fonts; Atkinson has no Arabic
+  glyphs), taller line-height, no letter-spacing, and mirrored hero image and gradients.
+  Logos, screenshots and photos are not mirrored (the hero photo is, so the plane stays visible).
+* Latin runs (TripEase, Petros Codex, prices, airline and form codes, dates, e-mail, URLs) are wrapped
+  in `<bdi>` by the build so the surrounding Arabic punctuation does not jumble them.
+  `EXTRA` in `build.py` lists pages that exist **only** in some languages (Arabic: `land/`, `help.html`,
+  `creators/`); the language menu, hreflang and sitemap follow that list. The English copy of those pages
+  gets a language menu from `patch_english`.
+* `placeholder` attributes are translated (help search); e-mail examples are skipped.
+* Privacy and terms stay English. Tipping, local apps, plugs, press and 404 are not translated yet.
+* `i18n/ar.json` is a **draft that needs a native-speaker review**, above all the pricing, FAQ,
+  creators (payout, tax, terms) and the country, authority and airport names.
