@@ -2,6 +2,7 @@
  "lang": "ar",
  "_note": "Modern Standard Arabic draft prepared for TripEase. Needs a native-speaker review before relying on it, especially creator payout/tax text, pricing and FAQ lines, country and authority names. Official form names and acronyms stay in Latin script.",
  "strings": {
+ "Menu": "القائمة",
   "TripEase – Travel checklist &amp; arrival guide app | Entry rules for your passport": "TripEase – تطبيق قائمة السفر ودليل الوصول | قواعد الدخول لجواز سفرك",
   "Skip to content": "انتقل إلى المحتوى",
   "How it works": "كيف يعمل",
