@@ -28,6 +28,7 @@ python3 tools/i18n/build.py extract    # refresh i18n/source.json: every string 
 * The language menu, `hreflang` links, canonical URLs, `og:locale` and the sitemap are written by
   the build. In the English page it only touches those lines.
 * On a phone (820 px and below) the header links and the language list open from the menu button (`menu.js`, styles at the end of `home.css`). The footer list stays too.
+* On a phone the header also has a globe language button right next to "Get the app" (`.lang-btn`, written by `menu_html` in `build.py`). It opens the language list on its own; the menu button still shows links and languages. At 340 px and below the TripEase wordmark is visually hidden (logo only) so "Get the app", the globe and the menu button all fit.
 * English-only pages (`STATIC_EN` in `build.py`: press, 404, tipping, plugs, local apps) get the same language menu, linking to each language's home page. Privacy and terms link to the footer list on the home page.
 * `site.js` text (the passport checker, price toggle) comes from the `js` block of each language
   file; English is the fallback. Placeholders like `{d}` must stay.
