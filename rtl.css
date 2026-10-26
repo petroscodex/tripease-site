@@ -1,0 +1,33 @@
+/* Right-to-left layout for the Arabic pages (/ar/). Loaded after home.css or styles.css, only on pages with dir="rtl".
+   The shared stylesheets already use logical properties (inline-start / inline-end), so most of the page mirrors on its own.
+   This file adds what logical properties cannot: the Arabic font stack, text rhythm, and the pieces that are drawn at a fixed angle. */
+html:lang(ar) {
+  --font: "Atkinson Hyperlegible Next", "Segoe UI", "Noto Sans Arabic", "Geeza Pro", "Tahoma", "Arial", system-ui, sans-serif;
+  --mono: "Atkinson Hyperlegible Mono", "Segoe UI", "Noto Sans Arabic", "Geeza Pro", "Tahoma", "Arial", sans-serif;
+  /* Arabic needs more line height than Latin for its tall marks. */
+  --glow: linear-gradient(245deg, rgba(18,22,25,.94) 0%, rgba(18,22,25,.72) 38%, rgba(10,117,108,.18) 70%, rgba(232,96,74,.10) 100%);
+}
+html:lang(ar) body { line-height: 1.8; }
+html:lang(ar) h1, html:lang(ar) h2, html:lang(ar) h3, html:lang(ar) h4 { line-height: 1.4; }
+html:lang(ar) p, html:lang(ar) li, html:lang(ar) td, html:lang(ar) th, html:lang(ar) dd, html:lang(ar) summary { line-height: 1.8; }
+/* Letter spacing breaks the joins between Arabic letters, and upper-casing means nothing in Arabic. */
+html:lang(ar) * { letter-spacing: 0 !important; text-transform: none !important; }
+/* Latin runs (brand, form names, e-mail and web addresses) keep their own direction inside Arabic lines. */
+html:lang(ar) bdi { unicode-bidi: isolate; }
+/* Long web addresses inside a sentence must wrap: on a narrow right-to-left page an unbroken run otherwise pokes out past the left edge, where it is clipped and cannot be scrolled to. */
+html:lang(ar) bdi { overflow-wrap: anywhere; }
+html:lang(ar) a[href^="mailto:"], html:lang(ar) .url, html:lang(ar) code { direction: ltr; unicode-bidi: isolate; }
+html:lang(ar) input, html:lang(ar) textarea { unicode-bidi: plaintext; }
+/* Backgrounds that fade in from one side start from the other side. */
+html:lang(ar) .stampcard::after { background: linear-gradient(270deg, rgba(14,17,19,.9), rgba(14,17,19,.2)); }
+html:lang(ar) .hero::before { background: var(--glow), linear-gradient(0deg, rgba(18,22,25,.55), transparent 35%); }
+/* Screen-reader-only text is hidden with a physical offset in the English pages; off the right edge of a right-to-left page that offset widens the page. Clip it instead. */
+html:lang(ar) .sr, html:lang(ar) [style*="-9999px"] { left: auto !important; inset-inline-start: 0 !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+html:lang(ar) [style*="text-align:left"] { text-align: start !important; }
+/* The hero photo is mirrored so the text (now on the right) stays clear of the plane, which then flies toward the reading direction.
+   It is a sky photo with no text or logo in it. The slow zoom keeps the mirror. */
+html:lang(ar) .hero-bg img { object-position: 50% 50%; transform-origin: 50% 48%; transform: scaleX(-1); animation-name: kb-rtl; }
+@keyframes kb-rtl { from { transform: scaleX(-1) scale(1) translate3d(0,0,0); } to { transform: scaleX(-1) scale(1.05) translate3d(1%,-.5%,0); } }
+@media (prefers-reduced-motion: reduce) { html:lang(ar) .hero-bg img { animation: none; transform: scaleX(-1); } }
+/* At 320px the text column of the dark phone section is 310px wide inside a 288px wrapper (also true in English, where it just scrolls right). Right-to-left it would be clipped on the left, so let the column shrink. */
+html:lang(ar) .screens-in > * { min-width: 0; }

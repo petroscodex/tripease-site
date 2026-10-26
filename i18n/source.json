@@ -34,7 +34,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "How it works": [
    "index.html",
@@ -66,7 +69,9 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "creators/index.html"
   ],
   "Arrival guides": [
    "index.html",
@@ -98,7 +103,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Land &amp; Sea": [
    "index.html",
@@ -130,7 +138,8 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html"
   ],
   "Pricing": [
    "index.html",
@@ -162,7 +171,9 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "creators/index.html"
   ],
   "Help": [
    "index.html",
@@ -194,7 +205,9 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "creators/index.html"
   ],
   "Get the app": [
    "index.html",
@@ -226,7 +239,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Visa rules · Arrival forms · Landing help": [
    "index.html"
@@ -270,7 +286,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Check your passport": [
    "index.html"
@@ -305,7 +324,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Opening soon": [
    "index.html",
@@ -337,7 +359,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Be first to land: one email on launch day, nothing else. Sign-up opens soon.": [
    "index.html",
@@ -369,7 +394,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "No account": [
    "index.html"
@@ -683,7 +711,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Form": [
    "index.html"
@@ -762,7 +793,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "TDAC (required)": [
    "index.html"
@@ -803,7 +837,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "e-Arrival Card · K-ETA": [
    "index.html"
@@ -853,7 +890,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Travel basics": [
    "index.html"
@@ -862,7 +902,8 @@
    "index.html"
   ],
   "Which plug do I need?": [
-   "index.html"
+   "index.html",
+   "help.html"
   ],
   "Pictures of all 14 plug types, with the voltage for your destination.": [
    "index.html"
@@ -1010,7 +1051,8 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html"
   ],
   "Good to know before you download": [
    "index.html"
@@ -1019,7 +1061,8 @@
    "index.html"
   ],
   "Cruises and trip tracking are coming as optional, opt-in extras as we build them.": [
-   "index.html"
+   "index.html",
+   "land/index.html"
   ],
   "Is TripEase only for flights?": [
    "index.html"
@@ -1052,7 +1095,8 @@
    "index.html"
   ],
   "What is Land &amp; Sea?": [
-   "index.html"
+   "index.html",
+   "help.html"
   ],
   "Land &amp; Sea helps you cross borders by road, rail or ferry. It lists 468 crossings in 91 countries and territories with official opening hours where they are published, cautions where hours can change, and links to the official entry, customs and crossing pages. It is free, part of the main app.": [
    "index.html"
@@ -1139,7 +1183,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "“We are detail-oriented solvers of problems; we provide apps that work well and provide tangible benefits.” <span>Petros Codex</span>": [
    "index.html",
@@ -1171,7 +1218,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "<a>How it works</a>": [
    "index.html",
@@ -1203,7 +1253,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "<a>Pricing</a>": [
    "index.html",
@@ -1235,7 +1288,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "<a>Land &amp; Sea</a>": [
    "index.html",
@@ -1267,7 +1323,9 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html"
   ],
   "<a>Official arrival forms</a>": [
    "index.html",
@@ -1299,7 +1357,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "<a>Plug types</a>": [
    "index.html",
@@ -1331,7 +1392,9 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html"
   ],
   "<a>Tipping guide</a>": [
    "index.html",
@@ -1363,7 +1426,9 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html"
   ],
   "<a>Local apps</a>": [
    "index.html",
@@ -1395,7 +1460,9 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html"
   ],
   "<a>Press kit</a>": [
    "index.html",
@@ -1427,7 +1494,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "<a>Help centre</a>": [
    "index.html",
@@ -1459,7 +1529,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "<a>What's new</a>": [
    "index.html",
@@ -1491,7 +1564,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "<a>Privacy policy</a>": [
    "index.html",
@@ -1523,7 +1599,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "<a>Terms of use</a>": [
    "index.html",
@@ -1555,10 +1634,14 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Illustrations created with AI. App screenshots show AI-generated illustrations. Created with Grok Imagine for Petros Codex.": [
-   "index.html"
+   "index.html",
+   "land/index.html"
   ],
   "General information, not legal advice. Rules can change at short notice: confirm with the official authority or your airline before you travel. TripEase isn't affiliated with any government, never fills in or submits forms for you, and keeps your data on your phone.": [
    "index.html",
@@ -1590,7 +1673,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Partner picks are labelled. TripEase may earn a commission when you book through them, at no extra cost to you. Official visa and arrival-form links are never partner links.": [
    "index.html",
@@ -1622,7 +1708,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Entry data: <a>TravelRequirements.info Entry Requirements Dataset</a> (CC BY 4.0). Advisories: Government of Canada. Plug types and emergency numbers: Wikidata (CC0), with plugs checked against IEC World Plugs where noted. Tipping and land-border notes come from the official sources linked beside each note. Pictograms: AIGA/DOT symbols (public domain). Set in Atkinson Hyperlegible Next and Mono by the Braille Institute (<a>SIL Open Font License</a>).": [
    "index.html",
@@ -1654,7 +1743,9 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html"
   ],
   "© 2026 Petros Codex · Made with care for travellers worldwide · <a>Sitemap</a>": [
    "index.html",
@@ -1686,7 +1777,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "01 · Before you fly": [
    "index.html"
@@ -1701,7 +1795,8 @@
    "index.html"
   ],
   "Land & Sea": [
-   "index.html"
+   "index.html",
+   "land/index.html"
   ],
   "Go": [
    "index.html"
@@ -1754,7 +1849,9 @@
    "index.html"
   ],
   "TripEase logo: a globe with a plane, ship and car on a coral route, on a teal background": [
-   "index.html"
+   "index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Primary": [
    "index.html",
@@ -1786,7 +1883,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "A passenger jet flying over a calm sea at sunset": [
    "index.html"
@@ -1816,13 +1916,15 @@
    "index.html"
   ],
   "Illustration: a train crossing a stone viaduct through misty hills at sunrise": [
-   "index.html"
+   "index.html",
+   "land/index.html"
   ],
   "The TripEase start screen, Where to next?, with two large cards: Fly, for airports and every arrival form, and Cross by land or sea, for borders, bridges and ferry ports": [
    "index.html"
   ],
   "TripEase Land & Sea home: a search box for a country and the busiest crossings ranked by official traffic figures, including Lo Wu, San Ysidro and Sarp, with tabs at the bottom to switch between Air and land crossings": [
-   "index.html"
+   "index.html",
+   "land/index.html"
   ],
   "Colour roles": [
    "index.html"
@@ -1884,7 +1986,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "TripEase on Instagram (@tripease_travel)": [
    "index.html",
@@ -1916,7 +2021,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "TripEase on YouTube (@TripEase.Travel)": [
    "index.html",
@@ -1948,7 +2056,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "TripEase on X (@TripEase4travel)": [
    "index.html",
@@ -1980,7 +2091,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Product": [
    "index.html",
@@ -2012,7 +2126,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "Help and legal": [
    "index.html",
@@ -2044,7 +2161,10 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html",
+   "help.html",
+   "creators/index.html"
   ],
   "TripEase: Travel checklist & arrival guide": [
    "index.html"
@@ -2095,7 +2215,8 @@
    "arrival-forms.html"
   ],
   "Arrival forms": [
-   "arrival-forms.html"
+   "arrival-forms.html",
+   "help.html"
   ],
   "The official forms, and only the official forms.": [
    "arrival-forms.html"
@@ -2185,7 +2306,8 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html"
   ],
   "Wherever you land, arrive prepared.": [
    "arrival/index.html"
@@ -2269,7 +2391,8 @@
    "arrival/south-korea/index.html",
    "arrival/thailand/index.html",
    "arrival/united-kingdom/index.html",
-   "arrival/united-states/index.html"
+   "arrival/united-states/index.html",
+   "land/index.html"
   ],
   "Japan arrival guide": [
    "arrival/index.html",
@@ -2422,7 +2545,8 @@
    "arrival-thailand-tdac.html",
    "arrival-uk-eta.html",
    "arrival-us-esta.html",
-   "arrival-visit-japan-web.html"
+   "arrival-visit-japan-web.html",
+   "land/index.html"
   ],
   "Required": [
    "arrival-all-indonesia-arrival-card.html",
@@ -4194,6 +4318,657 @@
   ],
   "USA arrival guide: ESTA or visa? Official links & airports | TripEase": [
    "arrival/united-states/index.html"
+  ],
+  "Land &amp; Sea: land, ferry and sea crossings with official links | TripEase": [
+   "land/index.html"
+  ],
+  "Cross by land or sea. Know what to check at the border.": [
+   "land/index.html"
+  ],
+  "Every busy border has its own rules, hours and official pages. Land &amp; Sea puts them in one calm place: 468 road, rail, ferry and foot crossings in 91 countries and territories.": [
+   "land/index.html"
+  ],
+  "Illustration created with AI (Created with Grok Imagine). App screenshots on this page show AI-generated illustrations too.": [
+   "land/index.html"
+  ],
+  "What's inside": [
+   "land/index.html"
+  ],
+  "A border guide, built from official sources.": [
+   "land/index.html"
+  ],
+  "Leave one country, enter the next, step by step.": [
+   "land/index.html"
+  ],
+  "Pick a country, then a crossing. TripEase shows both sides of the border and where to read the rules.": [
+   "land/index.html"
+  ],
+  "<b>Cross the border.</b> Choose the direction. Leave one country, enter the other, and switch direction in one tap.": [
+   "land/index.html"
+  ],
+  "<b>Opening hours.</b> Shown for the side that publishes them, with the official source. If no official hours are published, TripEase says so.": [
+   "land/index.html"
+  ],
+  "<b>Official links.</b> Entry rules, customs and the crossing page for each side, plus the EU Entry/Exit System where it applies.": [
+   "land/index.html"
+  ],
+  "<b>After the crossing.</b> The normal entry rules of the country you enter apply, and TripEase opens that country's page.": [
+   "land/index.html"
+  ],
+  "Illustration created with AI. It shows no real place.": [
+   "land/index.html"
+  ],
+  "In the app": [
+   "land/index.html"
+  ],
+  "See Land &amp; Sea on your phone.": [
+   "land/index.html"
+  ],
+  "Real screens from the app: the busiest crossings, then two crossing pages with opening hours, a caution where officials flag one, and the official links.": [
+   "land/index.html"
+  ],
+  "Land &amp; Sea home: busiest crossings.": [
+   "land/index.html"
+  ],
+  "El Amatillo: caution, hours and official links.": [
+   "land/index.html"
+  ],
+  "Lo Wu: hours for the side that publishes them.": [
+   "land/index.html"
+  ],
+  "Opening hours come from the official sources named on each crossing. Where a side publishes none, the app says so.": [
+   "land/index.html"
+  ],
+  "Check with officials first": [
+   "land/index.html"
+  ],
+  "Borders change. TripEase tells you when to double-check.": [
+   "land/index.html"
+  ],
+  "Hours can change": [
+   "land/index.html"
+  ],
+  "Snow, holidays and staffing can change opening hours. Crossings where this matters carry a \"Check with officials first\" note.": [
+   "land/index.html"
+  ],
+  "Official notices, dated": [
+   "land/index.html"
+  ],
+  "When an official source publishes a status such as open, closed or restricted, TripEase shows it with the date of the notice, not as live information.": [
+   "land/index.html"
+  ],
+  "Where they exist": [
+   "land/index.html"
+  ],
+  "Some crossings have electronic gates for eligible travellers. Where an official page says so, TripEase notes it and links to it.": [
+   "land/index.html"
+  ],
+  "TripEase is general information, not legal advice, and it never decides whether you can cross. The border officer does. Always confirm on the official site before you travel.": [
+   "land/index.html"
+  ],
+  "Official sources": [
+   "land/index.html"
+  ],
+  "Links go to government pages. Always.": [
+   "land/index.html"
+  ],
+  "Each crossing links to the official entry, customs or border-crossing page of the countries it connects. Here are two examples of the kind of page you will open.": [
+   "land/index.html"
+  ],
+  "EU Entry/Exit System (official) <span>↗</span>": [
+   "land/index.html"
+  ],
+  "Hong Kong Immigration Department: control points (official) <span>↗</span>": [
+   "land/index.html"
+  ],
+  "Yellow buttons mean one thing: an official government link.": [
+   "land/index.html"
+  ],
+  "Price": [
+   "land/index.html"
+  ],
+  "Free, in the main app.": [
+   "land/index.html"
+  ],
+  "Land &amp; Sea is free and part of the main TripEase app, along with entry rules, official visa and form links and advisories for every country.": [
+   "land/index.html"
+  ],
+  "<a>Get the app</a>": [
+   "land/index.html"
+  ],
+  "Land &amp; Sea, answered": [
+   "land/index.html"
+  ],
+  "Do I still need a visa if I cross by land?": [
+   "land/index.html"
+  ],
+  "The country you are entering sets its own entry rules, and they can differ from the rules for arriving by air. After the crossing, that country's normal entry rules apply. TripEase links to that country's official entry page so you can check before you travel.": [
+   "land/index.html"
+  ],
+  "Are land borders open all day?": [
+   "land/index.html"
+  ],
+  "Not always. Hours and status can change with the season, holidays, staffing and local events. Where an official source publishes opening hours, TripEase shows them with the source; where none is published, it says so. Always confirm with the official crossing page before you set off.": [
+   "land/index.html"
+  ],
+  "Does Land &amp; Sea include ferries and trains?": [
+   "land/index.html"
+  ],
+  "Yes. Land &amp; Sea lists road, rail, ferry and foot crossings. 72 of them are ranked by official traffic figures so the busiest crossings come first.": [
+   "land/index.html"
+  ],
+  "Is Land &amp; Sea free?": [
+   "land/index.html"
+  ],
+  "Yes. Land &amp; Sea is free and part of the main TripEase app. Entry rules and official links for every country are free too.": [
+   "land/index.html"
+  ],
+  "Does TripEase decide whether I can cross?": [
+   "land/index.html"
+  ],
+  "No. Border officers make that decision. TripEase helps you know what to check and where the official sources are, so you can plan with confidence.": [
+   "land/index.html"
+  ],
+  "› Land & Sea": [
+   "land/index.html"
+  ],
+  "road, rail, ferry and foot crossings": [
+   "land/index.html"
+  ],
+  "countries and territories": [
+   "land/index.html"
+  ],
+  "with opening hours from an official source": [
+   "land/index.html"
+  ],
+  "ranked by official traffic figures": [
+   "land/index.html"
+  ],
+  "Caution": [
+   "land/index.html"
+  ],
+  "Electronic gates": [
+   "land/index.html"
+  ],
+  "Cross by land or sea with TripEase Land & Sea: 468 border crossings in 91 countries and territories, opening hours where officials publish them, cautions, and links to the official entry, customs and border pages.": [
+   "land/index.html"
+  ],
+  "Land & Sea: land, ferry and sea crossings with official links | TripEase": [
+   "land/index.html"
+  ],
+  "Illustration: a railway viaduct above misty hills at sunrise": [
+   "land/index.html"
+  ],
+  "TripEase crossing screen for El Amatillo between El Salvador and Honduras: a Check with officials first caution, steps for leaving and entering, opening hours for each side, and official link buttons for entry rules and crossing pages": [
+   "land/index.html"
+  ],
+  "TripEase crossing screen for Lo Wu, China to Hong Kong SAR China, by train or on foot: electronic gates note, opening hours for the Hong Kong side, and official links for entry rules, customs and the crossing page": [
+   "land/index.html"
+  ],
+  "Does Land & Sea include ferries and trains?": [
+   "land/index.html"
+  ],
+  "Yes. Land & Sea lists road, rail, ferry and foot crossings. 72 of them are ranked by official traffic figures so the busiest crossings come first.": [
+   "land/index.html"
+  ],
+  "Is Land & Sea free?": [
+   "land/index.html"
+  ],
+  "Yes. Land & Sea is free and part of the main TripEase app. Entry rules and official links for every country are free too.": [
+   "land/index.html"
+  ],
+  "Help centre – TripEase | Subscriptions, passport scanning, arrival forms, offline use": [
+   "help.html"
+  ],
+  "Topics": [
+   "help.html"
+  ],
+  "Data status": [
+   "help.html"
+  ],
+  "What's new": [
+   "help.html"
+  ],
+  "Contact": [
+   "help.html"
+  ],
+  "TripEase Help": [
+   "help.html"
+  ],
+  "How can we help?": [
+   "help.html"
+  ],
+  "Short, calm answers you can read anywhere, even at the gate.": [
+   "help.html"
+  ],
+  "Search help": [
+   "help.html"
+  ],
+  "<b>Restore purchases</b><span>Pro not showing on a new or reset phone</span>": [
+   "help.html"
+  ],
+  "<b>Manage subscription</b><span>Change plan or cancel through your store</span>": [
+   "help.html"
+  ],
+  "<b>Passport scan help</b><span>Tips for a clean, fast read</span>": [
+   "help.html"
+  ],
+  "<b>Delete my data</b><span>Remove every detail from this phone</span>": [
+   "help.html"
+  ],
+  "Browse by topic": [
+   "help.html"
+  ],
+  "Answers": [
+   "help.html"
+  ],
+  "Subscription": [
+   "help.html"
+  ],
+  "I paid but Pro isn't showing": [
+   "help.html"
+  ],
+  "Open Settings › TripEase Pro › Restore purchases, signed in with the same Apple ID or Google account you paid with.": [
+   "help.html"
+  ],
+  "How do I cancel?": [
+   "help.html"
+  ],
+  "Settings › TripEase Pro › Manage subscription takes you to your store. Cancel at least 24 hours before renewal.": [
+   "help.html"
+  ],
+  "What stays free if I cancel?": [
+   "help.html"
+  ],
+  "Entry rules, official links, Land &amp; Sea, advisories and your stamp map stay free. Free keeps 1 passport and 2 trips in any 12 months.": [
+   "help.html"
+  ],
+  "Can I get a refund?": [
+   "help.html"
+  ],
+  "Refunds are handled by the App Store or Google Play.": [
+   "help.html"
+  ],
+  "Passport &amp; privacy": [
+   "help.html"
+  ],
+  "Where is my passport stored?": [
+   "help.html"
+  ],
+  "Only on your phone, in its secure storage. There is no server copy.": [
+   "help.html"
+  ],
+  "The scanner won't read my passport": [
+   "help.html"
+  ],
+  "Lay the passport flat in good light, fill the frame with the two lines at the bottom of the photo page, and avoid glare. You can also type the details.": [
+   "help.html"
+  ],
+  "How do I delete everything?": [
+   "help.html"
+  ],
+  "Profile › Delete all details. Deleting the app also removes everything.": [
+   "help.html"
+  ],
+  "Why doesn't TripEase submit forms?": [
+   "help.html"
+  ],
+  "On purpose. Government forms belong on government sites. TripEase links you to the official site and gives you copy buttons for your details; you submit there yourself.": [
+   "help.html"
+  ],
+  "A site is charging me for an arrival card": [
+   "help.html"
+  ],
+  "Most arrival cards are free on the official site. TripEase only links to official sites. If you paid an unofficial site, contact your bank.": [
+   "help.html"
+  ],
+  "When can I submit Thailand's TDAC?": [
+   "help.html"
+  ],
+  "Within 3 days before you arrive. Your trip checklist shows when it opens.": [
+   "help.html"
+  ],
+  "Land &amp; Sea, plugs, tipping &amp; local apps": [
+   "help.html"
+  ],
+  "A guide for crossing a border by road, rail or ferry. It lists crossings with opening hours where published, cautions, and links to the official source for each one. It does not tell you that a crossing is open right now: check the official link before you travel. See the <a>Land &amp; Sea page</a>.": [
+   "help.html"
+  ],
+  "Does Land &amp; Sea work offline?": [
+   "help.html"
+  ],
+  "Yes. The crossing data is bundled in the app. Official links open in your browser and need a connection.": [
+   "help.html"
+  ],
+  "Each country page shows the plug types and voltage used there, with a picture of every type. Check them before you pack and carry an adapter. See <a>Plug types</a>.": [
+   "help.html"
+  ],
+  "Should I tip?": [
+   "help.html"
+  ],
+  "The app shows a short tipping note for many countries, taken from official tourism or government sources linked beside it. Customs vary and these notes are a guide, not a rule. See the <a>tipping guide</a>.": [
+   "help.html"
+  ],
+  "What are local apps?": [
+   "help.html"
+  ],
+  "After you land, the app suggests ride, transit and SIM or eSIM apps that locals and visitors use in that country. Some are partner links, labelled Partner. Official visa and arrival links are never partner links. See <a>Local apps</a>.": [
+   "help.html"
+  ],
+  "Trips &amp; wallet": [
+   "help.html"
+  ],
+  "Can I use TripEase offline?": [
+   "help.html"
+  ],
+  "Yes: your saved entry rules, the wallet, emergency numbers and the driver card work without signal.": [
+   "help.html"
+  ],
+  "New phone": [
+   "help.html"
+  ],
+  "Will my trips move to a new phone?": [
+   "help.html"
+  ],
+  "Your trips and stamps move with a manual export file: export them on the old phone and import the file on the new one. A Settings “Move to a new phone” screen is coming in an app update. Your wallet is never backed up or moved, so keep your originals safe, and you’ll need to scan your passport again. Restore purchases brings Pro back.": [
+   "help.html"
+  ],
+  "Is my wallet backed up?": [
+   "help.html"
+  ],
+  "No. Wallet documents are encrypted on your phone, left out of backups and phone transfers, and never uploaded. Keep your originals safe.": [
+   "help.html"
+  ],
+  "How fresh is the data?": [
+   "help.html"
+  ],
+  "Source": [
+   "help.html"
+  ],
+  "Refreshed": [
+   "help.html"
+  ],
+  "Last update": [
+   "help.html"
+  ],
+  "Loading…": [
+   "help.html"
+  ],
+  "No applications are being collected. Sites charging for ETIAS today are not official. TripEase will update the moment the EU announces a start date.": [
+   "help.html"
+  ],
+  "Spotted a mistake?": [
+   "help.html"
+  ],
+  "Report a wrong entry rule": [
+   "help.html"
+  ],
+  "Reporting opens with the app: you'll be able to flag a rule right from the country screen. Please include your passport country, the destination, what's different and, if you have it, the official link. No passport numbers, please. We only need the rule.": [
+   "help.html"
+  ],
+  "Release notes": [
+   "help.html"
+  ],
+  "Launch": [
+   "help.html"
+  ],
+  "Entry rules for your passport across 250 countries and territories, with official links": [
+   "help.html"
+  ],
+  "Passport scanning on your phone; best passport per country (Pro)": [
+   "help.html"
+  ],
+  "Copy-only form helper for official arrival forms": [
+   "help.html"
+  ],
+  "Just landed: driver card, phrases, ride apps, eSIM and money": [
+   "help.html"
+  ],
+  "Offline travel wallet and stamp map": [
+   "help.html"
+  ],
+  "Land &amp; Sea: road, rail and ferry border crossings with official links, free": [
+   "help.html"
+  ],
+  "Plug types, tipping notes from official sources and local ride, transit and SIM apps": [
+   "help.html"
+  ],
+  "9 languages": [
+   "help.html"
+  ],
+  "Talk to us": [
+   "help.html"
+  ],
+  "Email us": [
+   "help.html"
+  ],
+  "A real person reads every message. We reply within 3 working days.": [
+   "help.html"
+  ],
+  "Privacy: <a>privacy@tripeaseapp.com</a><br>Partners &amp; press: <a>partners@tripeaseapp.com</a>": [
+   "help.html"
+  ],
+  "Invites": [
+   "help.html"
+  ],
+  "Find your code in Profile › Tell a friend. When a friend subscribes and their first paid month starts, you get a free month of Pro. Free trials don't count.": [
+   "help.html"
+  ],
+  "Follow the journey": [
+   "help.html"
+  ],
+  "<a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a>": [
+   "help.html"
+  ],
+  "ETIAS for Europe is not live yet": [
+   "help.html"
+  ],
+  "Version 1.0": [
+   "help.html"
+  ],
+  "Help for TripEase: subscriptions, passport scanning, privacy, arrival forms, offline use and contact.": [
+   "help.html"
+  ],
+  "TripEase Help — answers for travellers": [
+   "help.html"
+  ],
+  "Try \"restore purchase\" or \"TDAC\"": [
+   "help.html"
+  ],
+  "Creator programme | TripEase": [
+   "creators/index.html"
+  ],
+  "Privacy": [
+   "creators/index.html"
+  ],
+  "TripEase for creators": [
+   "creators/index.html"
+  ],
+  "Share TripEase. Get rewarded.": [
+   "creators/index.html"
+  ],
+  "TripEase is a travel app for travellers worldwide. It's free for flights and for Land &amp; Sea (land, ferry and sea crossings), and it links to the official government sites instead of replacing them. TripEase Pro is an optional subscription. If you'd like to tell your audience about it, here's how we'd work together.": [
+   "creators/index.html"
+  ],
+  "<a>Email partners@tripeaseapp.com</a>": [
+   "creators/index.html"
+  ],
+  "Your choice": [
+   "creators/index.html"
+  ],
+  "Two ways to work with us: pick one": [
+   "creators/index.html"
+  ],
+  "Choose the reward that suits you. Everything below is about people who move from the free app to Pro.": [
+   "creators/index.html"
+  ],
+  "Affiliate: cash": [
+   "creators/index.html"
+  ],
+  "Earn a percentage of what TripEase receives from each customer you bring, for that customer's first year. The rate depends on how many confirmed customers you've brought in so far:": [
+   "creators/index.html"
+  ],
+  "Each rate applies only to the customers in its band.": [
+   "creators/index.html"
+  ],
+  "Only each customer's first year of net receipts counts.": [
+   "creators/index.html"
+  ],
+  "Only free-to-Pro conversions count.": [
+   "creators/index.html"
+  ],
+  "Paid once your accrued net-receipts earnings reach US$100, by PayPal, Wise or Payoneer. The payment provider's transfer fee is deducted from your payout.": [
+   "creators/index.html"
+  ],
+  "Affiliates are confirmed for creators with an established audience: roughly 50,000 followers or roughly 10,000 average views per recent post, to be confirmed. See \"How to join\" below.": [
+   "creators/index.html"
+  ],
+  "Referrer: free Pro months": [
+   "creators/index.html"
+  ],
+  "Earn one free month of TripEase Pro for every confirmed sale, with no cap. Use the months yourself or gift them to friends.": [
+   "creators/index.html"
+  ],
+  "No limit: 20 confirmed sales is 20 free months.": [
+   "creators/index.html"
+  ],
+  "After 10 confirmed sales you can switch to the Affiliate track.": [
+   "creators/index.html"
+  ],
+  "You can change track once a year. Your audience gets a welcome offer on Pro with your code or link; the details are confirmed when you join.": [
+   "creators/index.html"
+  ],
+  "The one rule that matters": [
+   "creators/index.html"
+  ],
+  "What counts as a confirmed sale": [
+   "creators/index.html"
+  ],
+  "A confirmed sale is a free user who signs up to Pro with your code or link <b>and pays for their first Pro month</b>. Free trials, installs and free members don't count.": [
+   "creators/index.html"
+  ],
+  "Each sale is confirmed after a short hold period, so refunds are handled fairly. We confirm the length of that period when you join. Rewards you've already earned are always honoured.": [
+   "creators/index.html"
+  ],
+  "Affiliate track": [
+   "creators/index.html"
+  ],
+  "What does \"net receipts\" mean?": [
+   "creators/index.html"
+  ],
+  "Affiliate rewards are a share of <b>net receipts</b>: what TripEase actually receives from the app stores for a customer, after store fees, sales tax and VAT, refunds and chargebacks. It isn't profit. TripEase's own running costs aren't deducted.": [
+   "creators/index.html"
+  ],
+  "Example: one monthly Pro payment": [
+   "creators/index.html"
+  ],
+  "Customer pays for one month of Pro": [
+   "creators/index.html"
+  ],
+  "TripEase receives after store fees and sales tax or VAT (varies by country)": [
+   "creators/index.html"
+  ],
+  "about $3.80–$4.20": [
+   "creators/index.html"
+  ],
+  "Your 20% share, for customers 1–100": [
+   "creators/index.html"
+  ],
+  "about $0.80": [
+   "creators/index.html"
+  ],
+  "Real amounts depend on the customer's country, the store and the plan they choose.": [
+   "creators/index.html"
+  ],
+  "How you get paid": [
+   "creators/index.html"
+  ],
+  "<b>US$100 minimum.</b> We pay once your accrued net-receipts earnings reach US$100.": [
+   "creators/index.html"
+  ],
+  "<b>PayPal, Wise or Payoneer only.</b> We collect just your payout email or Wise tag, sent in a simple email to partners@tripeaseapp.com.": [
+   "creators/index.html"
+  ],
+  "<b>We never ask for bank account numbers,</b> ID or passport scans, or tax IDs.": [
+   "creators/index.html"
+  ],
+  "<b>Transfer fees:</b> the payment provider's transfer fee is deducted from your payout.": [
+   "creators/index.html"
+  ],
+  "<b>Monthly, by hand.</b> At first we make payouts manually, once a month.": [
+   "creators/index.html"
+  ],
+  "<b>Taxes:</b> you are responsible for your own taxes on anything you earn.": [
+   "creators/index.html"
+  ],
+  "Keeping it honest": [
+   "creators/index.html"
+  ],
+  "Disclosure and ground rules": [
+   "creators/index.html"
+  ],
+  "<b>Always disclose.</b> Say clearly that you get a reward or are sponsored, in line with US FTC and UK ASA guidance. For example: \"#ad\" or \"I get a reward if you join with my code.\"": [
+   "creators/index.html"
+  ],
+  "<b>No misleading claims,</b> spam or fake reviews.": [
+   "creators/index.html"
+  ],
+  "<b>No visa or entry guarantees.</b> TripEase doesn't guarantee entry anywhere, and it isn't a government service.": [
+   "creators/index.html"
+  ],
+  "<b>Official links only.</b> Use the links and codes we give you.": [
+   "creators/index.html"
+  ],
+  "We may change the programme and will give you notice first. Either side can stop at any time.": [
+   "creators/index.html"
+  ],
+  "Get started": [
+   "creators/index.html"
+  ],
+  "How to join": [
+   "creators/index.html"
+  ],
+  "Email us with a link to your channel and which track you'd like. We'll reply with your code and link, and confirm the remaining details.": [
+   "creators/index.html"
+  ],
+  "<b>For the Affiliate track, we check your audience first.</b> We're looking for roughly 50,000 followers <b>or</b> roughly 10,000 average views on your recent posts (the average of your last 10), to be confirmed. Engagement counts for more than follower count.": [
+   "creators/index.html"
+  ],
+  "Share the public profile link for each platform, so we can check.": [
+   "creators/index.html"
+  ],
+  "If we're unsure, we may ask for a screenshot of your own analytics.": [
+   "creators/index.html"
+  ],
+  "The Referrer track has no audience requirement.": [
+   "creators/index.html"
+  ],
+  "<b>Cruise Pass sales aren't part of this programme at this time.</b> The programme covers free-to-Pro conversions only.": [
+   "creators/index.html"
+  ],
+  "Entry data: <a>TravelRequirements.info Entry Requirements Dataset</a> (CC BY 4.0). Advisories: Government of Canada. Plugs and emergency numbers: Wikidata (CC0). Pictograms: AIGA/DOT symbols (public domain). Set in Atkinson Hyperlegible Next and Mono by the Braille Institute (<a>SIL Open Font License</a>).": [
+   "creators/index.html"
+  ],
+  "Track 1": [
+   "creators/index.html"
+  ],
+  "customers": [
+   "creators/index.html"
+  ],
+  "customer 301": [
+   "creators/index.html"
+  ],
+  "onwards": [
+   "creators/index.html"
+  ],
+  "Track 2": [
+   "creators/index.html"
+  ],
+  "Illustration only": [
+   "creators/index.html"
+  ],
+  "How to work with TripEase as a creator: choose cash affiliate rewards or free Pro months. Clear rules, honest disclosure.": [
+   "creators/index.html"
   ]
  },
  "js": {
