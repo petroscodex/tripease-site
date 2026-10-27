@@ -33,6 +33,41 @@ python3 tools/i18n/build.py extract    # refresh i18n/source.json: every string 
 * `site.js` text (the passport checker, price toggle) comes from the `js` block of each language
   file; English is the fallback. Placeholders like `{d}` must stay.
 
+## Optional languages: hi, id, ru, tr, it, vi, bn, ur, fil
+
+Hindi (`/hi/`), Bahasa Indonesia (`/id/`), Russian (`/ru/`), Turkish (`/tr/`), Italian (`/it/`), Vietnamese (`/vi/`), Bengali (`/bn/`), Urdu (`/ur/`, right-to-left) and Filipino (`/fil/`, Tagalog)
+are registered in `LANGS` and listed in `OPTIONAL` in `build.py`, but they only go live when their translation is ready.
+
+**The 95% rule.** For an optional language the build counts the strings of the pages that language has (`PAGES`, plus its `EXTRA` pages if any)
+and the script strings (`js_strings.json`), and checks how many have a translation in `i18n/<lang>.json` (`MIN_COVERAGE` in `build.py`).
+
+| `i18n/<lang>.json` | What the build does |
+|---|---|
+| missing, unreadable, or under 95% of the strings | Skips the language silently: no `/<lang>/` pages (an old folder is deleted), no entry in the language menu or footer list, no `hreflang`, no sitemap entry. It prints `<lang>: skipped (...)`. `check` passes. |
+| 95% or more | Language is live. The menu, footer list, `hreflang` links and sitemap entries for it appear on every page, and `/<lang>/` pages are written. Strings without a translation stay English. |
+
+`check` is strict for the first ten languages (any missing string fails CI), as before. For an optional language that is live it only prints a
+`note:` and the first 10 missing strings, so a language at 96% does not break the build. Fill the gaps anyway. Privacy and terms stay English in every language.
+The footer FAQ and any "11 languages" wording on the site are edited by hand, not by the build.
+
+**Adding a language** (either one of the nine above, or a new one):
+1. New language only: add it to `LANGS` (folder, BCP-47 code, native menu label, `html lang`), to `OPTIONAL` and to `LANG_CSS`; add its short code to `SHORT` and the word "Language" to `LANG_WORD`; add it to `RTL` if it is right-to-left.
+2. Make `i18n/<lang>.json` (same format as the others; `python3 tools/i18n/build.py extract` lists every string). Placeholders such as `{d}` and the inline tags (`<a>`, `<b>`) must stay.
+3. `python3 tools/i18n/build.py build`, then commit the generated `/<lang>/` folder, the changed English pages (menu and hreflang lines) and `sitemap.xml`. CI fails if they are not committed.
+4. Check the fonts: see below. Check the pages on a phone, and in a right-to-left language mirror and read them from the right.
+
+**Fonts.** Optional-language pages also load `/langfonts.css` (added by the build; English and the older languages never load it). It declares per-language
+font stacks and the self-hosted fallbacks in `fonts/noto/` (Noto, SIL OFL, licence texts next to the files; rebuild with `tools/fonts/make_lang_fonts.py`).
+Atkinson Hyperlegible Next covers Latin only, so Indonesian, Turkish, Italian and Filipino need nothing extra. Hindi, Bengali, Urdu, Russian and Vietnamese each load one
+subset font (12 to 73 KB, woff2) and only on their own pages, because each `@font-face` has a `unicode-range` and each family is named in one language's stack only.
+Urdu uses Noto Naskh Arabic (clearer on phones than Nastaliq). Vietnamese uses Noto Sans for all of its Latin text, because Atkinson lacks half the letters
+and two fonts in one word look uneven.
+
+**Filipino.** Folder, `html lang`, `hreflang` and `og:locale` are all `fil` (the ISO 639 code Android, Flutter and Google Play use; the label in the menu is "Filipino", the phone-button word "Wika" and short code "FIL"). Latin script, left to right, Atkinson only. Menu label and "Wika" need a native check. Not live until `i18n/fil.json` exists and covers 95%.
+
+**Right-to-left.** `RTL` in `build.py` lists the languages that get `dir="rtl"` and `/rtl.css`. The rules in `rtl.css` apply to `html[dir="rtl"]`, so a new right-to-left language
+needs only its font stack (in `langfonts.css`). The breadcrumb chevron is flipped in CSS. In translated running text write the right-to-left arrow as `‹` instead of `›` (for example in a Settings path), because the character does not mirror by itself.
+
 ## Which pages
 
 `PAGES` in `build.py`. Today: the home page. Next: `arrival-forms.html` and the 13 arrival guides
