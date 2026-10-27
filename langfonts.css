@@ -1,0 +1,33 @@
+/* Fonts and font stacks for the optional languages: hi, id, ru, tr, it, vi, bn, ur. Loaded by the build only on /<lang>/ pages of those
+   languages, after home.css or styles.css. English and the older languages never load it.
+   Atkinson Hyperlegible Next has Latin only (enough for Indonesian, Turkish and Italian), no Cyrillic, no Indic or Arabic script, and it lacks about
+   half the Vietnamese letters. The fallbacks are self-hosted subsets of Noto (SIL Open Font License, see fonts/noto/). Nothing loads from Google.
+   Each @font-face has a unicode-range and each family appears only in the stack of the language that needs it, so a page downloads
+   only the file(s) for its own script, and only if the page uses a character in that range. Rebuild the files with tools/fonts/make_lang_fonts.py. */
+@font-face{font-family:"Noto Sans Cyrillic";src:url("/fonts/noto/NotoSans-Cyrillic.woff2") format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0400-045F,U+0490-0491,U+0301,U+2116}
+@font-face{font-family:"Noto Sans Vietnamese";src:url("/fonts/noto/NotoSans-Vietnamese.woff2") format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0020-007E,U+00A0-00FF,U+0100-017F,U+0192,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303,U+0309,U+0323,U+1EA0-1EF9,U+20AB,U+2010-2027}
+@font-face{font-family:"Noto Sans Devanagari";src:url("/fonts/noto/NotoSansDevanagari.woff2") format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0900-097F,U+A8E0-A8FF,U+200C-200D,U+25CC}
+@font-face{font-family:"Noto Sans Bengali";src:url("/fonts/noto/NotoSansBengali.woff2") format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0980-09FF,U+0964-0965,U+200C-200D,U+25CC}
+@font-face{font-family:"Noto Naskh Arabic";src:url("/fonts/noto/NotoNaskhArabic.woff2") format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+200C-200F,U+25CC}
+
+/* Indonesian, Turkish, Italian: Atkinson covers every letter, nothing extra to load. */
+html:lang(id),html:lang(tr),html:lang(it){--font:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+
+/* Russian: Atkinson for Latin (TripEase, TDAC, ...), Noto Sans for Cyrillic. */
+html:lang(ru){--font:"Atkinson Hyperlegible Next","Noto Sans Cyrillic",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--mono:"Atkinson Hyperlegible Mono","Noto Sans Cyrillic",ui-monospace,Menlo,Consolas,monospace}
+
+/* Vietnamese: Atkinson lacks Ơ ơ Ư ư and the hook and dot-below vowels, and mixing two fonts inside one word looks uneven,
+   so Noto Sans (Basic Latin + Vietnamese) leads and Atkinson is only the fallback. */
+html:lang(vi){--font:"Noto Sans Vietnamese","Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--mono:"Noto Sans Vietnamese","Atkinson Hyperlegible Mono",ui-monospace,Menlo,Consolas,monospace}
+
+/* Hindi and Bengali: Atkinson for Latin and digits, Noto Sans Devanagari / Bengali for the script. Taller line height for the
+   head line (shirorekha) and the vowel signs above and below; no letter spacing, which pulls conjuncts and signs apart. */
+html:lang(hi){--font:"Atkinson Hyperlegible Next","Noto Sans Devanagari","Kohinoor Devanagari","Nirmala UI","Mangal",sans-serif;--mono:"Atkinson Hyperlegible Mono","Noto Sans Devanagari","Kohinoor Devanagari","Nirmala UI",monospace}
+html:lang(bn){--font:"Atkinson Hyperlegible Next","Noto Sans Bengali","Bangla Sangam MN","Nirmala UI","Vrinda",sans-serif;--mono:"Atkinson Hyperlegible Mono","Noto Sans Bengali","Bangla Sangam MN","Nirmala UI",monospace}
+html:lang(hi) body,html:lang(bn) body,html:lang(hi) p,html:lang(bn) p,html:lang(hi) li,html:lang(bn) li{line-height:1.7}
+html:lang(hi) *,html:lang(bn) *{letter-spacing:0 !important;text-transform:none !important}
+html:lang(hi) h1,html:lang(hi) h2,html:lang(hi) h3,html:lang(bn) h1,html:lang(bn) h2,html:lang(bn) h3{line-height:1.35}
+
+/* Urdu (right-to-left; layout comes from rtl.css): Noto Naskh Arabic, chosen for legibility at small sizes. Urdu is traditionally set in
+   Nastaliq, which needs much taller lines and is hard to read below about 18px on a phone; Naskh is what Urdu news sites and apps use on screens. */
+html:lang(ur){--font:"Atkinson Hyperlegible Next","Noto Naskh Arabic","Geeza Pro","Segoe UI","Tahoma",system-ui,sans-serif;--mono:"Atkinson Hyperlegible Mono","Noto Naskh Arabic","Geeza Pro","Segoe UI","Tahoma",sans-serif}
