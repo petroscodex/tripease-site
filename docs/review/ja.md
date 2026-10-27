@@ -1,6 +1,6 @@
 # Japanese review table (website strings)
 
-**Status: pending native review (Rana).** Not natively reviewed. These are drafts written to MSA conventions; nothing here has been signed off by a native reader.
+**Status: pending native review.** Not natively reviewed. These are drafted native-quality rewrites; nothing here has been signed off by a native reader.
 
 324 strings changed. Every changed string is listed (key, English, before, after). Unchanged strings are not listed. The CSV next to this file has the same rows.
 
