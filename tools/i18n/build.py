@@ -15,6 +15,7 @@ How it works
   so editing the English page never breaks a translated one.
 * Links: anchors to a page that exists in that language point to it; everything else points to
   the English page. Relative URLs become root-relative so they work from /<lang>/.
+* Optional languages (OPTIONAL) are built only when i18n/<lang>.json translates at least MIN_COVERAGE (95%) of the strings; otherwise they are skipped silently. See tools/i18n/README.md.
 * China-facing rule: the Simplified Chinese pages must not mention the blocked region terms in BLOCKED (build fails if they do).
 """
 from __future__ import annotations
@@ -22,6 +23,7 @@ from __future__ import annotations
 import copy
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -46,10 +48,26 @@ LANGS = {  # url folder: (BCP-47 code, menu label, html lang attribute)
     "es": ("es", "Español", "es"),
     "ar": ("ar", "العربية", "ar"),
     "pt-br": ("pt-BR", "Português (Brasil)", "pt-BR"),
+    # Optional languages (see OPTIONAL): live only once i18n/<folder>.json covers MIN_COVERAGE of the strings.
+    "hi": ("hi", "हिन्दी", "hi"),
+    "id": ("id", "Bahasa Indonesia", "id"),
+    "ru": ("ru", "Русский", "ru"),
+    "tr": ("tr", "Türkçe", "tr"),
+    "it": ("it", "Italiano", "it"),
+    "vi": ("vi", "Tiếng Việt", "vi"),
+    "bn": ("bn", "বাংলা", "bn"),
+    "ur": ("ur", "اردو", "ur"),
+    "fil": ("fil", "Filipino", "fil"),
 }
+# Languages that only go live when their translation file is there and nearly complete. Until then the build
+# skips them silently: no /<lang>/ pages, no menu entry, no hreflang, no sitemap entry. The first ten above are always built.
+OPTIONAL = {"hi", "id", "ru", "tr", "it", "vi", "bn", "ur", "fil"}
+MIN_COVERAGE = 0.95  # share of the page strings (plus script strings) that must have a translation
+# Optional languages that need /langfonts.css (self-hosted Noto fallbacks for scripts Atkinson Hyperlegible Next lacks, and their font stacks).
+LANG_CSS = set(OPTIONAL)
 # English-only pages that still get the language menu (header and footer), with links to each language's home page.
 STATIC_EN = ["press.html", "404.html", "tipping/index.html", "plugs/index.html", "local-apps/index.html"]
-RTL = {"ar"}  # right-to-left: the build adds dir="rtl" and /rtl.css
+RTL = {"ar", "ur"}  # right-to-left: the build adds dir="rtl" and /rtl.css
 # Pages that exist in one language only (besides PAGES). Arabic also has the land page, the help page and
 # the creators page. The legal pages (privacy, terms) stay English until a lawyer or native speaker has checked a translation.
 EXTRA = {"ar": ["land/index.html", "help.html", "creators/index.html"],
@@ -61,8 +79,20 @@ def pages_in(lang: str) -> list[str]:
     return PAGES + EXTRA.get(lang, [])
 
 
+_ACTIVE: list[str] | None = None
+
+
+def active() -> list[str]:
+    """Languages that get pages, a menu entry, hreflang and a sitemap entry: the always-on ones plus every
+    optional language whose i18n file is complete enough (see coverage)."""
+    global _ACTIVE
+    if _ACTIVE is None:
+        _ACTIVE = [k for k in LANGS if k not in OPTIONAL or coverage(k)[0] >= MIN_COVERAGE]
+    return _ACTIVE
+
+
 def langs_for(page: str) -> list[str]:
-    return [k for k in LANGS if page in pages_in(k)]
+    return [k for k in active() if page in pages_in(k)]
 
 
 def indexed(page: str) -> bool:
@@ -206,6 +236,29 @@ def strings(doc: BeautifulSoup) -> list[str]:
 JS_STRINGS = json.loads((Path(__file__).parent / "js_strings.json").read_text(encoding="utf-8"))
 
 
+_PAGE_STRINGS: dict[str, list[str]] = {}
+
+
+def coverage(lang: str) -> tuple[float, int]:
+    """(share of this language's strings that i18n/<lang>.json translates, number of strings). 0 if the file is missing or unreadable.
+    Counts the page strings of the pages the language has plus the script strings, using the English pages as they are now."""
+    f = I18N / f"{lang}.json"
+    try:
+        data = json.loads(f.read_text(encoding="utf-8"))
+        tr = {norm(k): v for k, v in data.get("strings", {}).items() if isinstance(v, str) and v.strip()}
+        js = data.get("js", {})
+    except (OSError, ValueError, AttributeError):
+        return 0.0, 0
+    need: dict[str, None] = {}
+    for page in pages_in(lang):
+        if page not in _PAGE_STRINGS:
+            _PAGE_STRINGS[page] = strings(soup(ROOT / page))
+        need.update(dict.fromkeys(_PAGE_STRINGS[page]))
+    total = len(need) + len(JS_STRINGS)
+    done = sum(1 for k in need if k in tr) + sum(1 for k in JS_STRINGS if js.get(k))
+    return (done / total if total else 0.0), total
+
+
 def cmd_extract() -> None:
     src = {}
     for page in ALL_PAGES:
@@ -233,7 +286,7 @@ def _names(page: str):
 
 
 def _names_home():
-    return [(None, "en", "English")] + [(k, LANGS[k][0], LANGS[k][1]) for k in LANGS]
+    return [(None, "en", "English")] + [(k, LANGS[k][0], LANGS[k][1]) for k in active()]
 
 
 def _cur(k, cur) -> str:
@@ -247,9 +300,11 @@ def _items(page: str, cur: str | None, home: bool):
 
 
 # Phone language button: short code next to the globe, and the button's name in each language.
-SHORT = {None: "EN", "zh-hans": "简", "zh-hant": "繁", "ja": "日", "ko": "한", "th": "ไทย", "de": "DE", "fr": "FR", "es": "ES", "ar": "AR", "pt-br": "PT"}
+SHORT = {None: "EN", "zh-hans": "简", "zh-hant": "繁", "ja": "日", "ko": "한", "th": "ไทย", "de": "DE", "fr": "FR", "es": "ES", "ar": "AR", "pt-br": "PT",
+         "hi": "HI", "id": "ID", "ru": "RU", "tr": "TR", "it": "IT", "vi": "VI", "bn": "BN", "ur": "UR", "fil": "FIL"}
 LANG_WORD = {None: "Language", "zh-hans": "语言", "zh-hant": "語言", "ja": "言語", "ko": "언어", "th": "ภาษา", "de": "Sprache",
-             "fr": "Langue", "es": "Idioma", "ar": "اللغة", "pt-br": "Idioma"}
+             "fr": "Langue", "es": "Idioma", "ar": "اللغة", "pt-br": "Idioma",
+             "hi": "भाषा", "id": "Bahasa", "ru": "Язык", "tr": "Dil", "it": "Lingua", "vi": "Ngôn ngữ", "bn": "ভাষা", "ur": "زبان", "fil": "Wika"}
 GLOBE = ('<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
          'aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c-2.7 2.6-4 5.8-4 9.5s1.3 6.9 4 9.5c2.7-2.6 4-5.8 4-9.5s-1.3-6.9-4-9.5z"/></svg>')
 
@@ -413,6 +468,11 @@ def translate_page(page: str, lang: str, tr: dict, missing: set) -> BeautifulSou
         if css is not None and doc.find("link", href="/rtl.css") is None:
             css.insert_after(doc.new_tag("link", rel="stylesheet", href="/rtl.css"))
             css.insert_after("\n  ")
+    if lang in LANG_CSS:  # font stacks + @font-face for this language only; the English and older pages never load it
+        css = doc.find("link", rel="stylesheet", href=re.compile(r"(^|/)(home|styles)\.css$"))
+        if css is not None and doc.find("link", href="/langfonts.css") is None:
+            css.insert_after(doc.new_tag("link", rel="stylesheet", href="/langfonts.css"))
+            css.insert_after("\n  ")
     og = doc.find("meta", property="og:url")
     if og:
         og["content"] = SITE + url_for(page, lang)
@@ -499,6 +559,11 @@ def cmd_build(strict: bool) -> int:
     for page in STATIC_EN:
         patch_english(page, home=True)
     for lang in LANGS:
+        if lang not in active():  # optional language that is not ready: no pages (and none left over from an earlier build)
+            shutil.rmtree(ROOT / lang, ignore_errors=True)
+            cov, n = coverage(lang)
+            print(f"{lang}: skipped ({'no i18n/%s.json' % lang if not (I18N / f'{lang}.json').exists() else '%.1f%% of %d strings translated, needs %d%%' % (cov * 100, n, MIN_COVERAGE * 100)})")
+            continue
         f = I18N / f"{lang}.json"
         data = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {"strings": {}, "js": {}}
         tr = {norm(k): v for k, v in data.get("strings", {}).items()}
@@ -515,7 +580,12 @@ def cmd_build(strict: bool) -> int:
                 problems += 1
         js_missing = [k for k in JS_STRINGS if k not in data.get("js", {})]
         print(f"{lang}: {len(missing)} missing strings, {len(js_missing)} missing script strings")
-        if strict and (missing or js_missing):
+        if strict and (missing or js_missing) and lang in OPTIONAL:
+            # Allowed below 100% (that is what MIN_COVERAGE is for): the gaps stay English. Listed so they get filled.
+            print(f"   note: {lang} is live with {len(missing) + len(js_missing)} string(s) still in English")
+            for m in sorted(missing)[:10]:
+                print("   missing:", m[:100])
+        elif strict and (missing or js_missing):
             problems += 1
             for m in sorted(missing)[:10]:
                 print("   missing:", m[:100])
