@@ -1,4 +1,4 @@
-/* Fonts and font stacks for the optional languages: hi, id, ru, tr, it, vi, bn, ur. Loaded by the build only on /<lang>/ pages of those
+/* Fonts and font stacks for the optional languages: hi, id, ru, tr, it, vi, bn, ur, fil. Loaded by the build only on /<lang>/ pages of those
    languages, after home.css or styles.css. English and the older languages never load it.
    Atkinson Hyperlegible Next has Latin only (enough for Indonesian, Turkish and Italian), no Cyrillic, no Indic or Arabic script, and it lacks about
    half the Vietnamese letters. The fallbacks are self-hosted subsets of Noto (SIL Open Font License, see fonts/noto/). Nothing loads from Google.
@@ -11,7 +11,7 @@
 @font-face{font-family:"Noto Naskh Arabic";src:url("/fonts/noto/NotoNaskhArabic.woff2") format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+200C-200F,U+25CC}
 
 /* Indonesian, Turkish, Italian: Atkinson covers every letter, nothing extra to load. */
-html:lang(id),html:lang(tr),html:lang(it){--font:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+html:lang(id),html:lang(tr),html:lang(it),html:lang(fil){--font:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 
 /* Russian: Atkinson for Latin (TripEase, TDAC, ...), Noto Sans for Cyrillic. */
 html:lang(ru){--font:"Atkinson Hyperlegible Next","Noto Sans Cyrillic",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--mono:"Atkinson Hyperlegible Mono","Noto Sans Cyrillic",ui-monospace,Menlo,Consolas,monospace}
