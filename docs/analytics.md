@@ -1,8 +1,10 @@
-# Website analytics (Plausible)
+# Website analytics (Plausible and Umami)
 
-tripeaseapp.com uses [Plausible Analytics](https://plausible.io) to count visits and see which links and campaigns (UTM tags) brought them. It is cookieless, so no consent banner is needed. The privacy policy says so in section 5.4a.
+tripeaseapp.com currently runs **two** cookieless analytics tools side by side: [Plausible Analytics](https://plausible.io) and [Umami](https://umami.is) (Cloud). Peter is evaluating both and will drop one later. Both count visits and show which links and campaigns (UTM tags) brought them. Neither sets cookies, so no consent banner is needed. The privacy policy says so in section 5.4a, naming both tools.
 
-## The tag
+## The tags
+
+### Plausible
 
 ```html
 <!-- Privacy-friendly analytics by Plausible -->
@@ -22,6 +24,18 @@ It sits at the end of `<head>` on **every** HTML page (all 346: the English page
 * **New pages** need the same block in their `<head>`. Check with `git ls-files '*.html' | xargs grep -L pa-zVuUTJYzhLW005VfdKnnw` (it should print nothing).
 * The `impact-site-verification` meta tag and any other verification tags are separate and untouched.
 
+### Umami (Cloud)
+
+```html
+<script defer src="https://cloud.umami.is/script.js" data-website-id="6e3b5dc3-0353-4ecc-9f30-58a6b7cd4384"></script>
+```
+
+This is the Umami Cloud script from Peter's Umami account, with website id `6e3b5dc3-0353-4ecc-9f30-58a6b7cd4384`. It sits directly after the Plausible block at the end of `<head>` on every page (346). On the generated language pages `defer` is written as `defer=""`, which is the same thing. Umami records UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`) automatically from the landing URL; see the UTM insight in the Umami dashboard ([docs](https://umami.is/docs/utm)). Check a new page with `git ls-files '*.html' | xargs grep -L 6e3b5dc3-0353-4ecc-9f30-58a6b7cd4384` (it should print nothing).
+
+### Dropping one tool later
+
+Removing a tool = delete its one block (Plausible: the comment plus two `<script>` elements; Umami: the one `<script>` line) from the English pages, then run `python3 tools/i18n/build.py build` and commit the result. If Plausible is dropped, also update `docs/analytics.md` and privacy section 5.4a to say so. If Umami is dropped, reword 5.4a the same way.
+
 ## Setup Peter must do (one time)
 
 The tag only reports once the site exists in Plausible.
@@ -33,7 +47,7 @@ The tag only reports once the site exists in Plausible.
 
 ## UTM campaigns
 
-Plausible records `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` from the landing URL with no extra setup (also `ref` and `source`). They appear in the **Campaigns** tab. Notes:
+Plausible (and Umami, see above) records `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` from the landing URL with no extra setup (also `ref` and `source`). They appear in the **Campaigns** tab. Notes:
 
 * Attribution applies to the first pageview of a session (30 minutes). To test, use a device that has not visited the site in the last 30 minutes.
 * Redirects must keep the query string. On this site nothing strips it: no page redirects with JavaScript or a meta refresh, and GitHub Pages keeps the query string when it redirects `www.` to the bare domain and when it adds a trailing slash. Unknown paths return `404.html` at the same address, so tagged links to them still get counted.
@@ -46,4 +60,4 @@ Plausible records `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and 
 * Simplest setup: one script tag, no server to run.
 * Hosted in the EU.
 
-[Umami](https://umami.is) is the alternative if a free option is wanted: it is open source and can be self-hosted (or used in its cloud), and it also reads UTM tags. The cost is that you run and update it yourself, or use a smaller hosted plan. To switch, replace the block on every page and update privacy section 5.4a.
+[Umami](https://umami.is) is the alternative if a free option is wanted: it is open source and can be self-hosted (or used in its cloud), and it also reads UTM tags. Self-hosting means you run and update it yourself; the Cloud version used here has a free tier. Both are installed for now while Peter compares them.
