@@ -57,10 +57,11 @@ LANGS = {  # url folder: (BCP-47 code, menu label, html lang attribute)
     "vi": ("vi", "Tiếng Việt", "vi"),
     "bn": ("bn", "বাংলা", "bn"),
     "ur": ("ur", "اردو", "ur"),
+    "fil": ("fil", "Filipino", "fil"),
 }
 # Languages that only go live when their translation file is there and nearly complete. Until then the build
 # skips them silently: no /<lang>/ pages, no menu entry, no hreflang, no sitemap entry. The first ten above are always built.
-OPTIONAL = {"hi", "id", "ru", "tr", "it", "vi", "bn", "ur"}
+OPTIONAL = {"hi", "id", "ru", "tr", "it", "vi", "bn", "ur", "fil"}
 MIN_COVERAGE = 0.95  # share of the page strings (plus script strings) that must have a translation
 # Optional languages that need /langfonts.css (self-hosted Noto fallbacks for scripts Atkinson Hyperlegible Next lacks, and their font stacks).
 LANG_CSS = set(OPTIONAL)
@@ -300,10 +301,10 @@ def _items(page: str, cur: str | None, home: bool):
 
 # Phone language button: short code next to the globe, and the button's name in each language.
 SHORT = {None: "EN", "zh-hans": "简", "zh-hant": "繁", "ja": "日", "ko": "한", "th": "ไทย", "de": "DE", "fr": "FR", "es": "ES", "ar": "AR", "pt-br": "PT",
-         "hi": "HI", "id": "ID", "ru": "RU", "tr": "TR", "it": "IT", "vi": "VI", "bn": "BN", "ur": "UR"}
+         "hi": "HI", "id": "ID", "ru": "RU", "tr": "TR", "it": "IT", "vi": "VI", "bn": "BN", "ur": "UR", "fil": "FIL"}
 LANG_WORD = {None: "Language", "zh-hans": "语言", "zh-hant": "語言", "ja": "言語", "ko": "언어", "th": "ภาษา", "de": "Sprache",
              "fr": "Langue", "es": "Idioma", "ar": "اللغة", "pt-br": "Idioma",
-             "hi": "भाषा", "id": "Bahasa", "ru": "Язык", "tr": "Dil", "it": "Lingua", "vi": "Ngôn ngữ", "bn": "ভাষা", "ur": "زبان"}
+             "hi": "भाषा", "id": "Bahasa", "ru": "Язык", "tr": "Dil", "it": "Lingua", "vi": "Ngôn ngữ", "bn": "ভাষা", "ur": "زبان", "fil": "Wika"}
 GLOBE = ('<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
          'aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c-2.7 2.6-4 5.8-4 9.5s1.3 6.9 4 9.5c2.7-2.6 4-5.8 4-9.5s-1.3-6.9-4-9.5z"/></svg>')
 
