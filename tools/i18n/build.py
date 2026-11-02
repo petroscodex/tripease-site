@@ -32,7 +32,7 @@ from bs4 import BeautifulSoup, Comment, NavigableString
 
 ROOT = Path(__file__).resolve().parents[2]
 I18N = ROOT / "i18n"
-SITE = "https://tripeaseapp.com"
+SITE = "https://tripveller.com"
 # English source pages that have translations. Add more as their strings get translated.
 PAGES = ["index.html", "arrival-forms.html", "arrival/index.html"] + sorted(
     str(p.relative_to(ROOT)) for p in [*ROOT.glob("arrival-*.html"), *ROOT.glob("arrival/*/index.html")]
@@ -539,7 +539,7 @@ def write(doc: BeautifulSoup, path: Path) -> None:
 def sitemap() -> None:
     p = ROOT / "sitemap.xml"
     x = p.read_text(encoding="utf-8")
-    x = re.sub(r"\n<url><loc>https://tripeaseapp.com/(" + "|".join(LANGS) + r")/[^<]*</loc>.*?</url>", "", x, flags=re.S)
+    x = re.sub(r"\n<url><loc>https://tripveller.com/(" + "|".join(LANGS) + r")/[^<]*</loc>.*?</url>", "", x, flags=re.S)
     if 'xmlns:xhtml' not in x:
         x = x.replace('xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
                       'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">')
