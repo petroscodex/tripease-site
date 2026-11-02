@@ -51,7 +51,7 @@ Plausible (and Umami, see above) records `utm_source`, `utm_medium`, `utm_campai
 
 * Attribution applies to the first pageview of a session (30 minutes). To test, use a device that has not visited the site in the last 30 minutes.
 * Redirects must keep the query string. On this site nothing strips it: no page redirects with JavaScript or a meta refresh, and GitHub Pages keeps the query string when it redirects `www.` to the bare domain and when it adds a trailing slash. Unknown paths return `404.html` at the same address, so tagged links to them still get counted.
-* Links in posts should point at real pages, for example `https://tripeaseapp.com/?utm_source=tiktok&utm_medium=social&utm_campaign=teaser&utm_content=v1`.
+* Links in posts should point at real pages, for example `https://tripveller.com/?utm_source=tiktok&utm_medium=social&utm_campaign=teaser&utm_content=v1`.
 
 ## Why Plausible (and Umami as the alternative)
 
