@@ -1,0 +1,70 @@
+/* Tripveller homepage (2026-11 redesign). Loaded after home.css on the home page only. */
+/* EARLY LIST FLAG: the early-list sign-up stays hidden until a form provider is chosen. Delete this one rule to show it everywhere. */
+.early-list{display:none!important}
+
+.sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.foot{border-top:2px solid var(--coral)}
+.tv-hero{position:relative;height:min(100vh,880px);min-height:720px;overflow:hidden;color:#fff;background:#0B1416}
+.tv-slides,.tv-slide,.tv-slide img{position:absolute;inset:0;width:100%;height:100%}
+.tv-slide img{object-fit:cover;object-position:center 65%}
+.tv-slide{opacity:0;transition:opacity .45s ease}.tv-slide.on{opacity:1}
+.tv-slides:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0B1416aa 0,#0b141633 30%,#0b141666 60%,#0B1416 100%)}
+.tv-copy{position:absolute;inset:0 0 130px;z-index:3;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:80px 6vw 0}
+.tv-eyebrow{font-size:13px;letter-spacing:5px;text-transform:uppercase;color:#cfeeea;margin:0 0 18px;font-weight:700}
+.tv-hero h1{font-size:clamp(44px,7vw,96px);line-height:1.05;letter-spacing:-1px;margin:0;text-shadow:0 4px 30px #0008;color:#fff}
+.tv-hero h1 em{font-style:normal;color:var(--coral)}
+.tv-rule{width:64px;height:3px;background:var(--coral);margin:26px auto}
+.tv-sub{font-size:clamp(17px,1.6vw,21px);max-width:640px;opacity:.92;line-height:1.5;margin:0}
+.tv-cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.tv-btn{display:inline-block;padding:15px 26px;border-radius:99px;font-weight:700;font-size:16px;color:#fff;text-decoration:none;font-family:inherit;cursor:pointer}
+.tv-btn-p{background:var(--teal);border:2px solid var(--coral);box-shadow:0 10px 30px #0A756C66}
+.tv-btn-g{border:1.5px solid #ffffff88;background:transparent}
+.tv-soon{margin:18px 0 0;font-size:14px;opacity:.8;letter-spacing:1px}
+.tv-tiles{position:absolute;z-index:4;bottom:34px;left:50%;transform:translateX(-50%);display:flex;gap:14px}
+.tv-tile{width:170px;height:96px;border-radius:14px;background-size:cover;background-position:center;position:relative;border:2px solid #ffffff44;overflow:hidden;padding:0;cursor:pointer;color:#fff;font:inherit}
+.tv-tile.on{border-color:var(--coral)}.tv-tile:after{content:"";position:absolute;inset:0;background:#0006}
+.tv-tile span{position:absolute;z-index:2;left:10px;bottom:8px;font-size:11px;letter-spacing:3px;font-weight:700;text-transform:uppercase}
+.tv-sec{padding:110px 6vw;color:#fff}
+.tv-modes{background:linear-gradient(#0B1416,#0d1f20)}
+.tv-h2{font-size:clamp(32px,4vw,52px);text-align:center;margin:0 0 12px;line-height:1.15;color:inherit}
+.tv-h2 u{text-decoration:none;border-bottom:4px solid var(--coral)}
+.tv-lead{text-align:center;opacity:.8;max-width:640px;margin:0 auto 60px;font-size:18px;line-height:1.5}
+.tv-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:1240px;margin:auto}
+.tv-card{border-radius:24px;overflow:hidden;background:#112628;border:1px solid #0A756C88;margin:0}
+.tv-card img{display:block;width:100%;height:300px;object-fit:cover}.tv-card img.land{object-position:center 85%}
+.tv-card .b{padding:26px}.tv-card h3{font-size:26px;margin:0 0 4px;color:#fff}
+.tv-card .tag{color:var(--coral);font-weight:700;letter-spacing:3px;font-size:12px;text-transform:uppercase;margin:0}
+.tv-card ul{list-style:none;padding:0;margin:16px 0 0;line-height:2;opacity:.9}.tv-card li:before{content:"— ";color:var(--coral)}
+.tv-card a{color:#9fe3dc}
+.tv-badge{display:inline-block;margin-top:12px;font-size:12px;border:1px solid #ffffff44;border-radius:99px;padding:4px 10px;opacity:.85}
+.tv-phones{background:radial-gradient(ellipse at 50% 0,#0A756C55,#0B1416 65%)}
+.tv-row{display:flex;justify-content:center;gap:34px;flex-wrap:wrap}
+.tv-row figure{margin:0}.tv-row figure:nth-of-type(2n){transform:translateY(40px)}
+.tv-ph{width:230px;border-radius:34px;padding:9px;background:#111;box-shadow:0 30px 60px #000a,0 0 0 1px #ffffff22}
+.tv-ph img{width:100%;height:auto;aspect-ratio:9/19;object-fit:cover;object-position:top;border-radius:26px;display:block}
+.tv-row figcaption{text-align:center;margin-top:14px;font-size:15px;opacity:.85}
+.tv-note{text-align:center;font-size:13px;opacity:.6;margin:80px auto 0;max-width:640px}
+.tv-trust{background:#F6F3EE;color:#13201F}.tv-trust .tv-lead{opacity:.75}
+.tv-grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:1240px;margin:auto}
+.tv-t{background:#fff;border-radius:18px;padding:26px;border-top:4px solid var(--teal)}
+.tv-t h3{font-size:19px;margin:0 0 8px}.tv-t p{opacity:.75;line-height:1.5;font-size:15px;margin:0}
+/* Yellow is reserved for official-link buttons. */
+.tv-official{display:inline-block;margin-top:14px;background:#FFCC00;color:#111;font-weight:700;border-radius:10px;padding:9px 14px;font-size:14px;text-decoration:none}
+.tv-sign{background:linear-gradient(135deg,#06403B,#0A756C);text-align:center}
+.tv-sign .tv-lead{margin-bottom:0}
+.tv-form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.tv-form input{padding:15px 20px;border-radius:99px;border:0;width:320px;font:inherit}
+.tv-form select{padding:15px;border-radius:99px;border:0;font:inherit}
+.tv-sign .stores{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.tv-sign .socials{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:24px;font-size:15px}
+.tv-sign .socials a{color:#fff}
+[dir=rtl] .tv-card li:before{content:" —"}
+@media(max-width:760px){
+ .tv-hero{height:780px;min-height:0}.tv-slide img{object-position:62% center}
+ .tv-tiles{gap:8px;bottom:22px}.tv-tile{width:108px;height:70px}.tv-tile span{font-size:9px;letter-spacing:1.5px}
+ .tv-copy{padding:70px 22px 0}
+ .tv-cards,.tv-grid4{grid-template-columns:1fr}
+ .tv-ph{width:100%}.tv-row{gap:16px;flex-wrap:nowrap}.tv-row figure{width:42%}.tv-row figure:nth-of-type(n+3){display:none}.tv-row figure:nth-of-type(2){transform:translateY(24px)}
+ .tv-sec{padding:70px 22px}.tv-form input{width:100%}
+}
+@media(prefers-reduced-motion:reduce){.tv-slide{transition:none}}

@@ -1,5 +1,5 @@
 :root {
-  /* Wayfinder, matching the TripEase app (lib/theme/tokens.dart):
+  /* Wayfinder, matching the Tripveller app (lib/theme/tokens.dart):
      charcoal plates on an off-white page, teal #0A756C as the brand accent
      (#4FD3C8 on charcoal), Atkinson Hyperlegible Next, self-hosted (SIL OFL, fonts/OFL.txt).
      Yellow (--signal) means one thing only: an official link, tap now.
@@ -450,3 +450,5 @@ h1 {
 .tagline { font-size: 1.25rem; color: var(--brand); font-weight: 700; margin: -0.4rem 0 0.8rem; }
 .social-links { color: var(--muted); font-size: 0.95rem; }
 .social-links a { color: var(--brand); }
+/* Tripveller wordmark: coral "T" */
+.brand span{display:inline-block}.brand span::first-letter{color:var(--coral)}

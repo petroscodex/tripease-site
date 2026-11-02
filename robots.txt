@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tripeaseapp.com/sitemap.xml
+Sitemap: https://tripveller.com/sitemap.xml

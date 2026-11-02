@@ -1,6 +1,6 @@
-# Licence note: AI-generated illustrations on tripeaseapp.com
+# Licence note: AI-generated illustrations on tripveller.com
 
-**Checked:** 25 Oct 2026, by the TripEase team, against xAI's (SpaceXAI) published Consumer Terms of Service (section 4, "User Content"), the Consumer FAQ, and the Acceptable Use Policy (AUP) as summarised by public sources. Sources: https://x.ai/legal/terms-of-service and https://x.ai/legal/faq
+**Checked:** 25 Oct 2026, by the Tripveller team, against xAI's (SpaceXAI) published Consumer Terms of Service (section 4, "User Content"), the Consumer FAQ, and the Acceptable Use Policy (AUP) as summarised by public sources. Sources: https://x.ai/legal/terms-of-service and https://x.ai/legal/faq
 
 ## Short answer
 Yes, commercial use is allowed, **with conditions**. This is not an unconditional "yes", and it is not legal advice.
