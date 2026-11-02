@@ -112,7 +112,7 @@ META = {("name", "description"), ("property", "og:title"), ("property", "og:desc
 JSONLD_KEYS = {"alternateName", "description", "slogan", "featureList", "name", "text", "headline"}
 LD_NAMED = {"Question", "ListItem", "Country"}  # types whose "name" is prose, not a brand
 HAS_WORDS = re.compile(r"[A-Za-z]")
-BRAND = {"TripEase", "Petros Codex", "EN"}
+BRAND = {"Tripveller", "Petros Codex", "EN"}
 # Same in every language: airport codes, plug types, handles, names of publications and datasets.
 SOCIAL = r"(?:TikTok|Instagram|YouTube|X)"
 KEEP = re.compile(r"^(?:[A-Z]{3}(?: · [A-Z]{3})*|" + SOCIAL + r"(?: · " + SOCIAL + r")+|[A-N](?:, [A-N])* · \d+ V|(?:TikTok|Instagram|YouTube|X)(?: @\S+)?"
@@ -491,7 +491,7 @@ BIDI_BLOCKS = {"p", "li", "h1", "h2", "h3", "h4", "h5", "h6", "td", "th", "dt", 
 
 
 def isolate_latin(doc: BeautifulSoup) -> None:
-    """Right-to-left pages: wrap each run of Latin text (TripEase, TDAC, e-mail and web addresses, US$ prices) in <bdi>,
+    """Right-to-left pages: wrap each run of Latin text (Tripveller, TDAC, e-mail and web addresses, US$ prices) in <bdi>,
     so punctuation next to it cannot jump to the wrong side of the run."""
     body = doc.body
     if body is None:
