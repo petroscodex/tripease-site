@@ -1,4 +1,4 @@
-/* TripEase home + help. Feeling first, details second.
+/* Tripveller home + help. Feeling first, details second.
    Brand: teal accents (#0A756C light / #4FD3C8 dark), coral decorative only,
    no yellow brand colour (yellow stays reserved for official links in the app),
    Atkinson Hyperlegible Next (self-hosted, OFL). */
@@ -560,3 +560,5 @@ html:lang(ko){word-break:keep-all}
   /* Only the logo mark fits beside the three buttons; the name stays available to screen readers. */
   .brand span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 }
+/* Tripveller wordmark: coral "T" */
+.brand span{display:inline-block}.brand span::first-letter{color:var(--coral)}
