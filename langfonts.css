@@ -13,7 +13,7 @@
 /* Indonesian, Turkish, Italian: Atkinson covers every letter, nothing extra to load. */
 html:lang(id),html:lang(tr),html:lang(it),html:lang(fil){--font:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 
-/* Russian: Atkinson for Latin (TripEase, TDAC, ...), Noto Sans for Cyrillic. */
+/* Russian: Atkinson for Latin (Tripveller, TDAC, ...), Noto Sans for Cyrillic. */
 html:lang(ru){--font:"Atkinson Hyperlegible Next","Noto Sans Cyrillic",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--mono:"Atkinson Hyperlegible Mono","Noto Sans Cyrillic",ui-monospace,Menlo,Consolas,monospace}
 
 /* Vietnamese: Atkinson lacks Ơ ơ Ư ư and the hook and dot-below vowels, and mixing two fonts inside one word looks uneven,

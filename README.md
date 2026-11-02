@@ -1,10 +1,10 @@
-# TripEase website
+# Tripveller website
 
-Public landing page, privacy policy, and terms of use for [TripEase](https://tripveller.com).
+Public landing page, privacy policy, and terms of use for [Tripveller](https://tripveller.com).
 
 **Live site:** https://tripveller.com/
 
-**Contact:** support@tripeaseapp.com (privacy@ and partners@ for those topics)
+**Contact:** support@tripveller.com (privacy@ and partners@ for those topics)
 
 Hosted on GitHub Pages from the `main` branch (root).
 
