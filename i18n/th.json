@@ -868,7 +868,9 @@
   "Emergency card and driver card": "บัตรฉุกเฉินและบัตรสำหรับคนขับ",
   "Family Sharing on the yearly plan, iPhone only (up to 5 family members)": "แชร์กับครอบครัวในแพ็กเกจรายปี เฉพาะ iPhone (สมาชิกครอบครัวสูงสุด 5 คน)",
   "What else is in the app?": "ในแอปมีอะไรอีกบ้าง",
-  "Details for 1,182 airports with official terminal maps for 184, a stamp map for each passport, a free emergency card and driver card, and ride, transit and SIM apps for 186 countries and territories: 5 per country on Free, all of them on Pro. Pro can also import trips from your booking confirmations.": "ข้อมูลสนามบิน 1,182 แห่งพร้อมแผนที่อาคารผู้โดยสารอย่างเป็นทางการ 184 แห่ง แผนที่ตราประทับแยกตามพาสปอร์ต บัตรฉุกเฉินและบัตรสำหรับคนขับแบบฟรี และแอปเรียกรถ ขนส่ง และซิมสำหรับ 186 ประเทศและดินแดน: แบบฟรี 5 แอปต่อประเทศ Pro แสดงทั้งหมด Pro ยังนำเข้าทริปจากอีเมลยืนยันการจองได้ด้วย"
+  "Details for 1,182 airports with official terminal maps for 184, a stamp map for each passport, a free emergency card and driver card, and ride, transit and SIM apps for 186 countries and territories: 5 per country on Free, all of them on Pro. Pro can also import trips from your booking confirmations.": "ข้อมูลสนามบิน 1,182 แห่งพร้อมแผนที่อาคารผู้โดยสารอย่างเป็นทางการ 184 แห่ง แผนที่ตราประทับแยกตามพาสปอร์ต บัตรฉุกเฉินและบัตรสำหรับคนขับแบบฟรี และแอปเรียกรถ ขนส่ง และซิมสำหรับ 186 ประเทศและดินแดน: แบบฟรี 5 แอปต่อประเทศ Pro แสดงทั้งหมด Pro ยังนำเข้าทริปจากอีเมลยืนยันการจองได้ด้วย",
+  "What happens if Pro ends?": "ถ้า Pro หมดอายุจะเป็นอย่างไร",
+  "If Pro ends, you keep the free app. Anything you made with Pro stays viewable but is locked until you resubscribe, and nothing is deleted.": "ถ้า Pro หมดอายุ คุณยังใช้แอปแบบฟรีได้ต่อ ทุกอย่างที่สร้างด้วย Pro ยังดูได้ แต่จะถูกล็อกจนกว่าคุณจะสมัครใหม่ และไม่มีอะไรถูกลบ"
  },
  "js": {
   "playVideo": "เล่นวิดีโอ",

@@ -868,7 +868,9 @@
   "Emergency card and driver card": "긴급 카드와 기사용 카드",
   "Family Sharing on the yearly plan, iPhone only (up to 5 family members)": "연간 요금제 가족 공유, iPhone 전용(가족 최대 5명)",
   "What else is in the app?": "앱에는 또 무엇이 있나요?",
-  "Details for 1,182 airports with official terminal maps for 184, a stamp map for each passport, a free emergency card and driver card, and ride, transit and SIM apps for 186 countries and territories: 5 per country on Free, all of them on Pro. Pro can also import trips from your booking confirmations.": "1,182개 공항 정보(184곳은 공식 터미널 지도 제공), 여권별 스탬프 지도, 무료 긴급 카드와 기사용 카드, 그리고 186개 국가 및 지역의 차량 호출·교통·SIM 앱(무료는 국가별 5개, Pro는 전부)이 있습니다. Pro에서는 예약 확인 메일에서 여행을 가져올 수도 있습니다."
+  "Details for 1,182 airports with official terminal maps for 184, a stamp map for each passport, a free emergency card and driver card, and ride, transit and SIM apps for 186 countries and territories: 5 per country on Free, all of them on Pro. Pro can also import trips from your booking confirmations.": "1,182개 공항 정보(184곳은 공식 터미널 지도 제공), 여권별 스탬프 지도, 무료 긴급 카드와 기사용 카드, 그리고 186개 국가 및 지역의 차량 호출·교통·SIM 앱(무료는 국가별 5개, Pro는 전부)이 있습니다. Pro에서는 예약 확인 메일에서 여행을 가져올 수도 있습니다.",
+  "What happens if Pro ends?": "Pro가 끝나면 어떻게 되나요?",
+  "If Pro ends, you keep the free app. Anything you made with Pro stays viewable but is locked until you resubscribe, and nothing is deleted.": "Pro가 끝나도 무료 앱은 계속 쓸 수 있습니다. Pro로 만든 항목은 볼 수 있지만 다시 구독할 때까지 잠기며, 아무것도 삭제되지 않습니다."
  },
  "js": {
   "playVideo": "동영상 재생",
