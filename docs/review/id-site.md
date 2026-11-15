@@ -281,10 +281,10 @@
 | 268 | Stamp map and invites | Peta stempel dan undangan |
 | 269 | Billing period | Periode tagihan |
 | 270 | Travel extras | Tambahan perjalanan |
-| 271 | TripEase on TikTok (@tripease.travel) | TripEase di TikTok (@tripease.travel) |
-| 272 | TripEase on Instagram (@tripease_travel) | TripEase di Instagram (@tripease_travel) |
-| 273 | TripEase on YouTube (@TripEase.Travel) | TripEase di YouTube (@TripEase.Travel) |
-| 274 | TripEase on X (@TripEase4travel) | TripEase di X (@TripEase4travel) |
+| 271 | TripEase on TikTok (@tripveller) | TripEase di TikTok (@tripveller) |
+| 272 | TripEase on Instagram (@tripveller) | TripEase di Instagram (@tripveller) |
+| 273 | TripEase on YouTube (@tripvellerapp) | TripEase di YouTube (@tripvellerapp) |
+| 274 | TripEase on X (@Tripveller) | TripEase di X (@Tripveller) |
 | 275 | Product | Produk |
 | 276 | Help and legal | Bantuan dan hukum |
 | 277 | TripEase: Travel checklist & arrival guide | TripEase: Daftar periksa perjalanan dan panduan kedatangan |
@@ -953,7 +953,7 @@
 | 940 | Invites | Undangan |
 | 941 | Find your code in Profile › Tell a friend. When a friend subscribes and their first paid month starts, you get a free month of Pro. Free trials don't count. | Temukan kode Anda di Profil › Beri tahu teman. Saat seorang teman berlangganan dan bulan berbayar pertamanya dimulai, Anda mendapat satu bulan Pro gratis. Uji coba gratis tidak dihitung. |
 | 942 | Follow the journey | Ikuti perjalanannya |
-| 943 | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> |
+| 943 | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> |
 | 944 | ETIAS for Europe is not live yet | ETIAS untuk Eropa belum berlaku |
 | 945 | Version 1.0 | Versi 1.0 |
 | 946 | Help for TripEase: subscriptions, passport scanning, privacy, arrival forms, offline use and contact. | Bantuan untuk TripEase: langganan, pemindaian paspor, privasi, formulir kedatangan, penggunaan offline, dan kontak. |

@@ -281,10 +281,10 @@
 | 268 | Stamp map and invites | स्टैम्प मैप और आमंत्रण |
 | 269 | Billing period | बिलिंग अवधि |
 | 270 | Travel extras | यात्रा के अतिरिक्त फ़ीचर |
-| 271 | TripEase on TikTok (@tripease.travel) | TikTok पर TripEase (@tripease.travel) |
-| 272 | TripEase on Instagram (@tripease_travel) | Instagram पर TripEase (@tripease_travel) |
-| 273 | TripEase on YouTube (@TripEase.Travel) | YouTube पर TripEase (@TripEase.Travel) |
-| 274 | TripEase on X (@TripEase4travel) | X पर TripEase (@TripEase4travel) |
+| 271 | TripEase on TikTok (@tripveller) | TikTok पर TripEase (@tripveller) |
+| 272 | TripEase on Instagram (@tripveller) | Instagram पर TripEase (@tripveller) |
+| 273 | TripEase on YouTube (@tripvellerapp) | YouTube पर TripEase (@tripvellerapp) |
+| 274 | TripEase on X (@Tripveller) | X पर TripEase (@Tripveller) |
 | 275 | Product | उत्पाद |
 | 276 | Help and legal | मदद और कानूनी |
 | 277 | TripEase: Travel checklist & arrival guide | TripEase: ट्रैवल चेकलिस्ट और आगमन गाइड |
@@ -953,7 +953,7 @@
 | 940 | Invites | आमंत्रण |
 | 941 | Find your code in Profile › Tell a friend. When a friend subscribes and their first paid month starts, you get a free month of Pro. Free trials don't count. | अपना कोड प्रोफ़ाइल › दोस्त को बताएँ में पाएँ। जब कोई दोस्त सब्सक्राइब करता है और उसका पहला सशुल्क महीना शुरू होता है, तो आपको Pro का एक महीना मुफ़्त मिलता है। मुफ़्त ट्रायल गिने नहीं जाते। |
 | 942 | Follow the journey | सफ़र से जुड़े रहें |
-| 943 | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> |
+| 943 | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> |
 | 944 | ETIAS for Europe is not live yet | यूरोप के लिए ETIAS अभी चालू नहीं है |
 | 945 | Version 1.0 | वर्शन 1.0 |
 | 946 | Help for TripEase: subscriptions, passport scanning, privacy, arrival forms, offline use and contact. | TripEase के लिए मदद: सब्सक्रिप्शन, पासपोर्ट स्कैन, गोपनीयता, आगमन फ़ॉर्म, ऑफ़लाइन इस्तेमाल और संपर्क। |

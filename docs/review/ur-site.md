@@ -281,10 +281,10 @@
 | 268 | Stamp map and invites | اسٹیمپ نقشہ اور دعوتیں |
 | 269 | Billing period | بلنگ کی مدت |
 | 270 | Travel extras | سفری اضافی سہولیات |
-| 271 | TripEase on TikTok (@tripease.travel) | TikTok پر TripEase (@tripease.travel) |
-| 272 | TripEase on Instagram (@tripease_travel) | Instagram پر TripEase (@tripease_travel) |
-| 273 | TripEase on YouTube (@TripEase.Travel) | YouTube پر TripEase (@TripEase.Travel) |
-| 274 | TripEase on X (@TripEase4travel) | X پر TripEase (@TripEase4travel) |
+| 271 | TripEase on TikTok (@tripveller) | TikTok پر TripEase (@tripveller) |
+| 272 | TripEase on Instagram (@tripveller) | Instagram پر TripEase (@tripveller) |
+| 273 | TripEase on YouTube (@tripvellerapp) | YouTube پر TripEase (@tripvellerapp) |
+| 274 | TripEase on X (@Tripveller) | X پر TripEase (@Tripveller) |
 | 275 | Product | پروڈکٹ |
 | 276 | Help and legal | مدد اور قانونی |
 | 277 | TripEase: Travel checklist & arrival guide | TripEase: سفری چیک لسٹ اور آمد گائیڈ |
@@ -953,7 +953,7 @@
 | 940 | Invites | دعوتیں |
 | 941 | Find your code in Profile › Tell a friend. When a friend subscribes and their first paid month starts, you get a free month of Pro. Free trials don't count. | اپنا کوڈ پروفائل › دوست کو بتائیں میں دیکھیں۔ جب کوئی دوست سبسکرائب کرے اور اس کا پہلا ادا شدہ مہینہ شروع ہو جائے تو آپ کو Pro کا ایک ماہ مفت ملتا ہے۔ مفت ٹرائل شمار نہیں ہوتے۔ |
 | 942 | Follow the journey | سفر میں ہمارے ساتھ رہیں |
-| 943 | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> |
+| 943 | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> |
 | 944 | ETIAS for Europe is not live yet | یورپ کا ETIAS ابھی شروع نہیں ہوا |
 | 945 | Version 1.0 | ورژن 1.0 |
 | 946 | Help for TripEase: subscriptions, passport scanning, privacy, arrival forms, offline use and contact. | TripEase کی مدد: سبسکرپشنز، پاسپورٹ اسکیننگ، پرائیویسی، آمد فارم، آف لائن استعمال اور رابطہ۔ |
