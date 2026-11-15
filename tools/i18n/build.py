@@ -24,6 +24,7 @@ import copy
 import json
 import re
 import shutil
+import struct
 import sys
 from pathlib import Path
 
@@ -390,20 +391,75 @@ def fix_url(u: str) -> str:
 APP_SHOT = re.compile(r"/assets/app/([a-z0-9-]+-(?:390|780)\.webp)")
 
 
+def webp_size(path: Path) -> tuple[int, int] | None:
+    """Return (width, height) of a WebP file, or None if it cannot be read.
+
+    Parses the RIFF container directly so CI does not need Pillow or another image library.
+    """
+    try:
+        data = path.read_bytes()
+    except OSError:
+        return None
+    if len(data) < 16 or data[:4] != b"RIFF" or data[8:12] != b"WEBP":
+        return None
+    pos, end = 12, len(data)
+    while pos + 8 <= end:
+        fourcc = data[pos:pos + 4]
+        size = struct.unpack_from("<I", data, pos + 4)[0]
+        chunk = data[pos + 8:pos + 8 + size]
+        if fourcc == b"VP8X" and len(chunk) >= 10:
+            w = int.from_bytes(chunk[4:7], "little") + 1
+            h = int.from_bytes(chunk[7:10], "little") + 1
+            return w, h
+        if fourcc == b"VP8 " and len(chunk) >= 10 and chunk[3:6] == b"\x9d\x01\x2a":
+            width, height = struct.unpack_from("<HH", chunk, 6)
+            return width & 0x3FFF, height & 0x3FFF
+        if fourcc == b"VP8L" and len(chunk) >= 5 and chunk[0] == 0x2F:
+            bits = struct.unpack_from("<I", chunk, 1)[0]
+            return (bits & 0x3FFF) + 1, ((bits >> 14) & 0x3FFF) + 1
+        pos = pos + 8 + size + (size & 1)
+    return None
+
+
+def sync_localized_img_size(el, old_src: str, new_src: str) -> None:
+    """When a screenshot src moves to a locale file, keep width/height in sync with that file.
+
+    Only updates attributes that already matched the English image's intrinsic size, so a
+    cropped frame (for example just-landed-full shown at 390×844) is left alone.
+    """
+    if not el.get("width") or not el.get("height"):
+        return
+    old_sz = webp_size(ROOT / old_src.lstrip("/"))
+    new_sz = webp_size(ROOT / new_src.lstrip("/"))
+    if not old_sz or not new_sz or old_sz == new_sz:
+        return
+    try:
+        current = (int(el["width"]), int(el["height"]))
+    except (TypeError, ValueError):
+        return
+    if current == old_sz:
+        el["width"], el["height"] = str(new_sz[0]), str(new_sz[1])
+
+
 def localize_shots(doc: BeautifulSoup, lang: str) -> None:
     """Point app screenshots at /assets/app/<lang>/ when that language has its own render of the file.
 
     Anything without a localized file keeps the English /assets/app/ one. Covers img src/srcset, any
-    preload/meta URL and the JSON-LD "screenshot" URLs; width/height/loading attributes are not touched.
+    preload/meta URL and the JSON-LD "screenshot" URLs. When the src is swapped to a locale file
+    whose dimensions differ, width/height are updated to that file — but only if they already
+    matched the English image, so intentionally cropped frames stay cropped.
     """
     def swap(m: re.Match) -> str:
         return f"/assets/app/{lang}/{m.group(1)}" if (ROOT / "assets/app" / lang / m.group(1)).is_file() else m.group(0)
 
     for el in doc.find_all(True):
+        old_src = el.get("src") if el.name == "img" else None
         for attr in ("src", "srcset", "href", "content", "data-src", "imagesrcset"):
             v = el.get(attr)
             if isinstance(v, str) and "/assets/app/" in v:
                 el[attr] = APP_SHOT.sub(swap, v)
+        if el.name == "img" and isinstance(old_src, str) and el.get("src") and el["src"] != old_src:
+            sync_localized_img_size(el, old_src, el["src"])
     for s in doc.find_all("script", type="application/ld+json"):
         if s.string and "/assets/app/" in s.string:
             s.string = APP_SHOT.sub(swap, s.string)
