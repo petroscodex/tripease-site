@@ -88,7 +88,7 @@
 
   // Data status dates
   var tb=$("statusBody");
-  if(tb){ fetch("data/status.json").then(function(r){return r.json();}).then(function(d){
+  if(tb){ fetch("/data/status.json").then(function(r){return r.json();}).then(function(d){
     tb.innerHTML=""; d.sources.forEach(function(s){ var tr=document.createElement("tr"); [s.name,s.refreshed,s.last].forEach(function(x){var td=document.createElement("td"); td.textContent=x; tr.appendChild(td);}); tb.appendChild(tr); });
   }).catch(function(){}); }
 })();
