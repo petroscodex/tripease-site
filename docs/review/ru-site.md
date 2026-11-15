@@ -281,10 +281,10 @@
 | 268 | Stamp map and invites | Карта штампов и приглашения |
 | 269 | Billing period | Расчётный период |
 | 270 | Travel extras | Дополнения для путешествий |
-| 271 | TripEase on TikTok (@tripease.travel) | TripEase в TikTok (@tripease.travel) |
-| 272 | TripEase on Instagram (@tripease_travel) | TripEase в Instagram (@tripease_travel) |
-| 273 | TripEase on YouTube (@TripEase.Travel) | TripEase на YouTube (@TripEase.Travel) |
-| 274 | TripEase on X (@TripEase4travel) | TripEase в X (@TripEase4travel) |
+| 271 | TripEase on TikTok (@tripveller) | TripEase в TikTok (@tripveller) |
+| 272 | TripEase on Instagram (@tripveller) | TripEase в Instagram (@tripveller) |
+| 273 | TripEase on YouTube (@tripvellerapp) | TripEase на YouTube (@tripvellerapp) |
+| 274 | TripEase on X (@Tripveller) | TripEase в X (@Tripveller) |
 | 275 | Product | Продукт |
 | 276 | Help and legal | Помощь и юридическая информация |
 | 277 | TripEase: Travel checklist & arrival guide | TripEase: чек-лист поездки и путеводитель по прибытию |
@@ -953,7 +953,7 @@
 | 940 | Invites | Приглашения |
 | 941 | Find your code in Profile › Tell a friend. When a friend subscribes and their first paid month starts, you get a free month of Pro. Free trials don't count. | Свой код вы найдёте в разделе «Профиль › Расскажите другу». Когда друг оформит подписку и начнётся его первый платный месяц, вы получите бесплатный месяц Pro. Пробный период не учитывается. |
 | 942 | Follow the journey | Следите за путешествием |
-| 943 | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> |
+| 943 | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> |
 | 944 | ETIAS for Europe is not live yet | ETIAS для Европы пока не запущен |
 | 945 | Version 1.0 | Версия 1.0 |
 | 946 | Help for TripEase: subscriptions, passport scanning, privacy, arrival forms, offline use and contact. | Справка TripEase: подписки, сканирование паспорта, конфиденциальность, анкеты прибытия, работа офлайн и контакты. |

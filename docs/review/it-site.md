@@ -275,10 +275,10 @@ All 826 strings (website segments plus page-script strings, rows starting `JS:`)
 | 267 | Stamp map and invites | Mappa dei timbri e inviti |
 | 268 | Billing period | Periodo di fatturazione |
 | 269 | Travel extras | Extra di viaggio |
-| 270 | TripEase on TikTok (@tripease.travel) | TripEase su TikTok (@tripease.travel) |
-| 271 | TripEase on Instagram (@tripease_travel) | TripEase su Instagram (@tripease_travel) |
-| 272 | TripEase on YouTube (@TripEase.Travel) | TripEase su YouTube (@TripEase.Travel) |
-| 273 | TripEase on X (@TripEase4travel) | TripEase su X (@TripEase4travel) |
+| 270 | TripEase on TikTok (@tripveller) | TripEase su TikTok (@tripveller) |
+| 271 | TripEase on Instagram (@tripveller) | TripEase su Instagram (@tripveller) |
+| 272 | TripEase on YouTube (@tripvellerapp) | TripEase su YouTube (@tripvellerapp) |
+| 273 | TripEase on X (@Tripveller) | TripEase su X (@Tripveller) |
 | 274 | Product | Prodotto |
 | 275 | Help and legal | Aiuto e note legali |
 | 276 | TripEase: Travel checklist & arrival guide | TripEase: checklist di viaggio e guida all’arrivo |

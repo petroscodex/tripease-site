@@ -281,10 +281,10 @@
 | 268 | Stamp map and invites | Damga haritası ve davetler |
 | 269 | Billing period | Faturalandırma dönemi |
 | 270 | Travel extras | Seyahat ekstraları |
-| 271 | TripEase on TikTok (@tripease.travel) | TikTok’ta TripEase (@tripease.travel) |
-| 272 | TripEase on Instagram (@tripease_travel) | Instagram’da TripEase (@tripease_travel) |
-| 273 | TripEase on YouTube (@TripEase.Travel) | YouTube’da TripEase (@TripEase.Travel) |
-| 274 | TripEase on X (@TripEase4travel) | X’te TripEase (@TripEase4travel) |
+| 271 | TripEase on TikTok (@tripveller) | TikTok’ta TripEase (@tripveller) |
+| 272 | TripEase on Instagram (@tripveller) | Instagram’da TripEase (@tripveller) |
+| 273 | TripEase on YouTube (@tripvellerapp) | YouTube’da TripEase (@tripvellerapp) |
+| 274 | TripEase on X (@Tripveller) | X’te TripEase (@Tripveller) |
 | 275 | Product | Ürün |
 | 276 | Help and legal | Yardım ve hukuki belgeler |
 | 277 | TripEase: Travel checklist & arrival guide | TripEase: Seyahat kontrol listesi ve varış rehberi |
@@ -953,7 +953,7 @@
 | 940 | Invites | Davetler |
 | 941 | Find your code in Profile › Tell a friend. When a friend subscribes and their first paid month starts, you get a free month of Pro. Free trials don't count. | Kodunuzu Profil › Bir arkadaşınıza anlatın bölümünde bulursunuz. Bir arkadaşınız abone olup ilk ücretli ayı başladığında bir ay ücretsiz Pro kazanırsınız. Ücretsiz denemeler sayılmaz. |
 | 942 | Follow the journey | Yolculuğu takip edin |
-| 943 | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> | <a>TikTok @tripease.travel</a> · <a>Instagram @tripease_travel</a> · <a>YouTube @TripEase.Travel</a> · <a>X @TripEase4travel</a> |
+| 943 | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> | <a>TikTok @tripveller</a> · <a>Instagram @tripveller</a> · <a>YouTube @tripvellerapp</a> · <a>X @Tripveller</a> |
 | 944 | ETIAS for Europe is not live yet | Avrupa için ETIAS henüz yürürlükte değil |
 | 945 | Version 1.0 | Sürüm 1.0 |
 | 946 | Help for TripEase: subscriptions, passport scanning, privacy, arrival forms, offline use and contact. | TripEase Yardım: abonelikler, pasaport tarama, gizlilik, varış formları, çevrimdışı kullanım ve iletişim. |
