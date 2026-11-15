@@ -1,11 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F8A80"/><stop offset="1" stop-color="#0A756C"/></linearGradient></defs>
+<defs>
+  <!-- globeFill: opaque stand-in for the original #16A094 at 55% opacity over the teal
+       field, sampled from the current app_icon_1024.png, so the globe keeps the same
+       apparent colour when the background changes. Mark size and position are unchanged. -->
+  <linearGradient id="globeFill" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#129488"/>
+    <stop offset="1" stop-color="#118E83"/>
+  </linearGradient>
+</defs>
 <rect width="1024" height="1024" fill="none"/>
-<rect x="0" y="0" width="1024" height="1024" rx="0" fill="url(#bg)"/>
+<!-- background: coral #E8604A, swoosh outlined -->
+<rect x="0" y="0" width="1024" height="1024" rx="0" fill="#E8604A"/>
 
 <g transform="translate(512 500) scale(1.0) translate(-512 -500)">
  <g transform="translate(512 500) scale(1.12) translate(-512 -500)">
- <circle cx="512" cy="500" r="300" fill="#16A094" fill-opacity="0.55" stroke="#06403B" stroke-width="17"/>
+ <circle cx="512" cy="500" r="300" fill="url(#globeFill)" stroke="#06403B" stroke-width="17"/>
  <clipPath id="g"><circle cx="512" cy="500" r="300"/></clipPath>
  <g clip-path="url(#g)" fill="none" stroke="#06403B" stroke-width="14">
   <ellipse cx="512" cy="500" rx="140" ry="300"/>
@@ -18,7 +27,9 @@
  </g>
  </g>
  <!-- swoop -->
- <path d="M150 560 C140 700 280 800 450 765 C590 735 700 590 770 355 L728 340 C690 480 590 625 440 655 C350 672 290 640 270 590 C255 548 215 530 150 560 Z" fill="#E8604A" stroke="#06403B" stroke-width="10" stroke-linejoin="round"/>
+ <!-- swoosh outlined alternative: white keyline + dark-teal outline, coral fill unchanged -->
+ <path d="M150 560 C140 700 280 800 450 765 C590 735 700 590 770 355 L728 340 C690 480 590 625 440 655 C350 672 290 640 270 590 C255 548 215 530 150 560 Z" fill="#E8604A" stroke="#FFFFFF" stroke-width="20" stroke-linejoin="round"/>
+ <path d="M150 560 C140 700 280 800 450 765 C590 735 700 590 770 355 L728 340 C690 480 590 625 440 655 C350 672 290 640 270 590 C255 548 215 530 150 560 Z" fill="#E8604A" stroke="#06403B" stroke-width="12" stroke-linejoin="round"/>
  <path d="M215 665 C300 735 410 735 490 700 C600 655 690 540 742 375" fill="none" stroke="#fff" stroke-width="9" stroke-dasharray="28 18" stroke-linecap="round"/>
  <!-- plane -->
  <g transform="translate(747 355) rotate(16) scale(1.8)" fill="#fff" stroke="#111" stroke-width="5" stroke-linejoin="round" paint-order="stroke">
