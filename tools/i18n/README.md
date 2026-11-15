@@ -1,4 +1,4 @@
-# Translations (11 languages)
+# Translations (20 languages)
 
 The English pages stay the source. Edit them as usual; the build writes the translated copies.
 
@@ -48,7 +48,7 @@ and the script strings (`js_strings.json`), and checks how many have a translati
 
 `check` is strict for the first ten languages (any missing string fails CI), as before. For an optional language that is live it only prints a
 `note:` and the first 10 missing strings, so a language at 96% does not break the build. Fill the gaps anyway. Privacy and terms stay English in every language.
-The footer FAQ and any "11 languages" wording on the site are edited by hand, not by the build.
+The footer FAQ and any "20 languages" wording on the site are edited by hand, not by the build.
 
 **Adding a language** (either one of the nine above, or a new one):
 1. New language only: add it to `LANGS` (folder, BCP-47 code, native menu label, `html lang`), to `OPTIONAL` and to `LANG_CSS`; add its short code to `SHORT` and the word "Language" to `LANG_WORD`; add it to `RTL` if it is right-to-left.

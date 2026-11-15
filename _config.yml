@@ -1,0 +1,8 @@
+# GitHub Pages (main branch, site root) runs Jekyll over this otherwise-static
+# tree. Keep internal review notes, translation sources and build tools out of
+# the live site. data/status.json stays published: help.html fetches it.
+exclude:
+  - docs
+  - tools
+  - i18n
+  - README.md
