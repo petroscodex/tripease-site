@@ -1,6 +1,10 @@
-{"_note":"Peter: update the dates here after each data refresh. [DATES TO CONFIRM]","sources":[
-{"name":"Entry rules (visa matrix)","refreshed":"Weekly","last":"[DATE]"},
-{"name":"Tripveller-checked destinations","refreshed":"Ongoing","last":"[DATE]"},
-{"name":"Travel advisories","refreshed":"Weekly","last":"[DATE]"},
-{"name":"Exchange rates","refreshed":"Weekly","last":"[DATE]"},
-{"name":"Plugs and emergency numbers","refreshed":"Weekly","last":"[DATE]"}]}
+{
+  "_note": "Record a real last-checked date as YYYY-MM-DD only after that source is actually refreshed. Do not invent dates. A weekly link check is not a legal review of a country's entry rules. The refreshed field is an intended cadence, not a completed review.",
+  "sources": [
+    {"name": "Entry rules (visa matrix)", "refreshed": "Aim: weekly link check", "last": null},
+    {"name": "Tripveller-checked destinations", "refreshed": "Aim: ongoing link check", "last": null},
+    {"name": "Travel advisories", "refreshed": "Aim: weekly link check", "last": null},
+    {"name": "Exchange rates", "refreshed": "Aim: weekly link check", "last": null},
+    {"name": "Plugs and emergency numbers", "refreshed": "Aim: weekly link check", "last": null}
+  ]
+}
