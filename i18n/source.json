@@ -306,7 +306,7 @@
   "Three ways to travel. <u>One app.</u>": [
    "index.html"
   ],
-  "Land &amp; Sea crossings are free for everyone. The same calm sequence you see when you open Tripveller: pick how you're going, and everything you need lines up.": [
+  "Land &amp; Sea crossings are free for everyone. The same sequence you see when you open Tripveller: pick how you're going, and everything you need lines up.": [
    "index.html"
   ],
   "Air": [
@@ -465,7 +465,7 @@
   "Travel often, or with family? Pro gives you more room to roam.": [
    "index.html"
   ],
-  "Yearly · save 50%": [
+  "Yearly": [
    "index.html"
   ],
   "Monthly": [
@@ -492,7 +492,7 @@
   "Travel advisories, holidays and updates": [
    "index.html"
   ],
-  "1 saved passport, 2 trips in any 12 months": [
+  "1 traveller, 1 saved passport, 2 trips in any 12 months": [
    "index.html"
   ],
   "Your stamp map": [
@@ -552,7 +552,7 @@
   "Get Pro at launch": [
    "index.html"
   ],
-  "Prices are shown in your app store for your region. The US$ figures above are indicative. Land &amp; Sea is free in the main app. Both paid plans include a 14-day free trial. Launch price: subscribe early and you keep it. Subscriptions renew automatically unless cancelled at least 24 hours before the period ends. Cancel anytime in your App Store or Google Play account.": [
+  "The US$ figures on this page are the United States Google Play list prices: US$4.99 a month and US$29.99 a year. Compared with each other, the yearly list price is about half of twelve monthly list prices. The price you pay, and whether a free trial applies, are whatever your Apple App Store or Google Play checkout shows for your account, region and currency. On Google Play, a 14-day free trial is offered only to eligible customers who have never subscribed. This page does not state an Apple price and does not promise an Apple trial. Subscriptions renew until you cancel in your Apple ID or Google Play account, in time for that store's rules to stop the next charge. There is no promise that a launch price lasts. Land &amp; Sea is free in the main app.": [
    "index.html"
   ],
   "If Pro ends, you keep the free app. Anything you made with Pro stays viewable but is locked until you resubscribe, and nothing is deleted.": [
@@ -594,7 +594,7 @@
   "Is the visa information up to date?": [
    "index.html"
   ],
-  "Updated regularly: links checked every week, and each country reviewed about once a month. Each country shows when it was last checked and links to the official site, because rules can change at short notice.": [
+  "We check official links on a regular cycle. A link check is not a legal review of a country's entry rules. A last-checked date is shown when one has been recorded. Always confirm with the official source before you travel.": [
    "index.html"
   ],
   "Does Tripveller submit forms for me?": [
@@ -612,7 +612,7 @@
   "What's free and what's in Pro?": [
    "index.html"
   ],
-  "Free gives you entry rules and official links for any passport, Land &amp; Sea (land, ferry and sea crossings), the stamp map, 1 saved passport and 2 trips in any 12 months. Pro (US$4.99 a month or US$29.99 a year, with a 14-day free trial) adds up to 10 travellers with up to 3 passports each and the best one picked per country, unlimited trips, the copy-only form helper, the offline wallet, the Home Screen widget and Lock Screen countdown, reminders for optional forms, the Schengen 90/180 counter, every local service per country, and landing weather.": [
+  "Free gives you entry rules and official links for any passport, Land &amp; Sea (land, ferry and sea crossings), the stamp map, 1 traveller with 1 saved passport and 2 trips in any 12 months. Pro (United States Google Play list price US$4.99 a month or US$29.99 a year; a 14-day Google Play trial only for an eligible customer who has never subscribed) adds up to 10 travellers with up to 3 passports each and the best one picked per country, unlimited trips, the copy-only form helper, the offline wallet, the Home Screen widget and Lock Screen countdown, reminders for optional forms, the Schengen 90/180 counter, every local service per country, and landing weather.": [
    "index.html"
   ],
   "What is Land &amp; Sea?": [
@@ -634,7 +634,7 @@
   "What else is in the app?": [
    "index.html"
   ],
-  "Details for over 1,100 airports with official terminal maps for over 180, a stamp map for each passport, a free emergency card and driver card, and ride, transit and SIM apps for over 180 countries and territories: 5 per country on Free, all of them on Pro. Pro can also import trips from your booking confirmations.": [
+  "Details for over 1,100 airports with official terminal maps for over 180, a stamp map for each passport, a free emergency card and driver card, and ride, transit and SIM apps for over 180 countries and territories: 5 per country on Free, all of them on Pro. Pro can also import trips from your booking confirmations. Settings includes Move to a new phone: export trips and stamps on the old phone and import the file on the new one. Tripveller does not upload that file. A phrase is copied before a translator opens.": [
    "index.html"
   ],
   "Which languages does it speak?": [
@@ -652,10 +652,13 @@
   "Travelling for a while?": [
    "index.html"
   ],
-  "Travel medical insurance for nomads and long trips, from our partner SafetyWing.": [
+  "Travel medical insurance for nomads and long trips, from SafetyWing.": [
    "index.html"
   ],
-  "Nomad Insurance Essential <span>↗</span><span>(Partner link, opens in a new tab)</span>": [
+  "Nomad Insurance Essential <span>↗</span><span>(Opens in a new tab)</span>": [
+   "index.html"
+  ],
+  "If you buy through this link, Tripveller may earn a commission, at no extra cost to you. SafetyWing's own terms and privacy policy apply. This is not advice that the product is suitable for you, and it does not confirm that a commission programme is currently active.": [
    "index.html"
   ],
   "Be first through the gate": [
@@ -1565,10 +1568,10 @@
   "Cruises coming later as an opt-in add-on": [
    "index.html"
   ],
-  "14-day free trial": [
+  "Trial if the store offers it": [
    "index.html"
   ],
-  "Partner": [
+  "External link": [
    "index.html"
   ],
   "Tripveller gets you ready for every arrival by air, land and sea: entry forms, visa steps and border crossings, in your language. Coming soon to Android and iOS.": [
@@ -1647,13 +1650,13 @@
    "help.html",
    "creators/index.html"
   ],
-  "A passenger jet flying over a calm sea at sunset": [
+  "A passenger jet flying over the sea at sunset": [
    "index.html"
   ],
   "A road winding through open country towards a border": [
    "index.html"
   ],
-  "A passenger ferry crossing calm open water at golden hour": [
+  "A passenger ferry crossing open water at golden hour": [
    "index.html"
   ],
   "The start screen, Where to next?, with cards for flying and for crossing by land or sea": [
@@ -1917,13 +1920,16 @@
   "Data stays on your phone": [
    "index.html"
   ],
+  "United States Google Play list price. Checkout shows the price you pay. This is not an Apple price.": [
+   "index.html"
+  ],
   "We are detail-oriented solvers of problems; we provide apps that work well and provide tangible benefits.": [
    "index.html"
   ],
   "No. Tripveller helps with flights and, through Land & Sea, land, ferry and sea crossings. Land & Sea is free in the main app: opening hours, notes and the official links for each crossing. Rules and hours can change, so always check with the officials before you travel. Cruises and trip tracking are coming as optional, opt-in extras as we build them.": [
    "index.html"
   ],
-  "Free gives you entry rules and official links for any passport, Land & Sea (land, ferry and sea crossings), the stamp map, 1 saved passport and 2 trips in any 12 months. Pro (US$4.99 a month or US$29.99 a year, with a 14-day free trial) adds up to 10 travellers with up to 3 passports each and the best one picked per country, unlimited trips, the copy-only form helper, the offline wallet, the Home Screen widget and Lock Screen countdown, reminders for optional forms, the Schengen 90/180 counter, every local service per country, and landing weather.": [
+  "Free gives you entry rules and official links for any passport, Land & Sea (land, ferry and sea crossings), the stamp map, 1 traveller with 1 saved passport and 2 trips in any 12 months. Pro (United States Google Play list price US$4.99 a month or US$29.99 a year; a 14-day Google Play trial only for an eligible customer who has never subscribed) adds up to 10 travellers with up to 3 passports each and the best one picked per country, unlimited trips, the copy-only form helper, the offline wallet, the Home Screen widget and Lock Screen countdown, reminders for optional forms, the Schengen 90/180 counter, every local service per country, and landing weather.": [
    "index.html"
   ],
   "What is Land & Sea?": [
@@ -4085,7 +4091,7 @@
   "Cross by land or sea. Know what to check at the border.": [
    "land/index.html"
   ],
-  "Every busy border has its own rules, hours and official pages. Land &amp; Sea puts them in one calm place: over 1,000 road, rail, ferry and foot crossings in over 130 countries and territories.": [
+  "Every busy border has its own rules, hours and official pages. Land &amp; Sea puts them in one place: over 1,000 road, rail, ferry and foot crossings in over 130 countries and territories.": [
    "land/index.html"
   ],
   "Illustration created with AI (Created with Grok Imagine). App screenshots on this page show AI-generated illustrations too.": [
@@ -4232,7 +4238,13 @@
   "› Land & Sea": [
    "land/index.html"
   ],
+  "Over 1,000": [
+   "land/index.html"
+  ],
   "road, rail, ferry and foot crossings": [
+   "land/index.html"
+  ],
+  "Over 130": [
    "land/index.html"
   ],
   "countries and territories": [
@@ -4307,7 +4319,7 @@
   "How can we help?": [
    "help.html"
   ],
-  "Short, calm answers you can read anywhere, even at the gate.": [
+  "Short answers you can read anywhere, even at the gate.": [
    "help.html"
   ],
   "Search help": [
@@ -4343,19 +4355,19 @@
   "How do I cancel?": [
    "help.html"
   ],
-  "Settings › Tripveller Pro › Manage subscription takes you to your store. Cancel at least 24 hours before renewal.": [
+  "Settings › Tripveller Pro › Manage subscription takes you to your store. Cancel in that Apple ID or Google Play account in time for the store's rules to stop the next charge. This help page does not set a 24-hour deadline.": [
    "help.html"
   ],
   "What stays free if I cancel?": [
    "help.html"
   ],
-  "Entry rules, official links, Land &amp; Sea, advisories and your stamp map stay free. Free keeps 1 passport and 2 trips in any 12 months.": [
+  "Entry rules, official links, Land &amp; Sea, advisories and your stamp map stay free. Free keeps 1 traveller with 1 passport, and 2 trips in any 12 months. Anything you added with Pro stays on the phone and can still be viewed, but extra travellers, passports and trips stay locked until you subscribe again. Nothing is deleted.": [
    "help.html"
   ],
   "Can I get a refund?": [
    "help.html"
   ],
-  "Refunds are handled by the App Store or Google Play.": [
+  "Apple and Google handle refunds for payments they process. Their policies do not replace any statutory withdrawal, cooling-off, or other mandatory consumer rights that apply where you live.": [
    "help.html"
   ],
   "Passport &amp; privacy": [
@@ -4442,7 +4454,7 @@
   "Will my trips move to a new phone?": [
    "help.html"
   ],
-  "Your trips and stamps move with a manual export file: export them on the old phone and import the file on the new one. A Settings “Move to a new phone” screen is coming in an app update. Your wallet is never backed up or moved, so keep your originals safe, and you’ll need to scan your passport again. Restore purchases brings Pro back.": [
+  "Settings includes Move to a new phone. Export a file of your trips and stamps on the old phone and import that file on the new one. Tripveller does not upload the file. The file never includes your wallet or passport scans, so keep the originals and scan your passport again. A passport country is included only if you turn that on for the export. Restore purchases brings Pro back.": [
    "help.html"
   ],
   "Is my wallet backed up?": [
@@ -4454,13 +4466,16 @@
   "How fresh is the data?": [
    "help.html"
   ],
+  "We check official links on a regular cycle. A link check is not a legal review of a country's entry rules. Last-checked dates are shown in the table when they have been recorded. Always confirm with the official source before you travel.": [
+   "help.html"
+  ],
   "Source": [
    "help.html"
   ],
-  "Refreshed": [
+  "Intended cadence": [
    "help.html"
   ],
-  "Last update": [
+  "Last recorded check": [
    "help.html"
   ],
   "Loading…": [
@@ -4506,6 +4521,18 @@
    "help.html"
   ],
   "20 languages": [
+   "help.html"
+  ],
+  "Pro: up to 10 travellers, up to 3 passports each. Free: 1 traveller, 1 passport and 2 trips in any 12 months": [
+   "help.html"
+  ],
+  "If Pro ends, what you added stays visible and locked. Nothing is deleted": [
+   "help.html"
+  ],
+  "Settings, Move to a new phone: export and import trips and stamps. The wallet and passport scans stay out of the file": [
+   "help.html"
+  ],
+  "Phrases: copy the phrase first. The translator opens only after that copy": [
    "help.html"
   ],
   "Talk to us": [
@@ -4787,7 +4814,9 @@
   "onPassport": "On your {p} passport",
   "priceYear": "US$29.99 <span>per year</span>",
   "priceMonth": "US$4.99 <span>per month</span>",
-  "noteYear": "That's about $2.50 a month.",
+  "noteYear": "About US$2.50 a month at the US yearly list price, not a separate charge.",
+  "statusNotRecorded": "Not recorded",
+  "statusUnavailable": "Last-checked dates are not available just now.",
   "noteMonth": "Switch to yearly any time.",
   "checkField": "Please check the highlighted field.",
   "signupSoon": "Sign-up opens soon.",
