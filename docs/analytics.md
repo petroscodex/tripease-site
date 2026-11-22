@@ -1,6 +1,6 @@
 # Website analytics (Plausible and Umami)
 
-tripveller.com currently runs **two** cookieless analytics tools side by side: [Plausible Analytics](https://plausible.io) and [Umami](https://umami.is) (Cloud). Peter is evaluating both and will drop one later. Both count visits and show which links and campaigns (UTM tags) brought them. Neither sets cookies, so no consent banner is needed. The privacy policy says so in section 5.4a, naming both tools.
+tripveller.com currently runs **two** analytics tools side by side: [Plausible Analytics](https://plausible.io) and [Umami](https://umami.is) (Cloud). Peter is evaluating both and will drop one later. Both count visits and show which links and campaigns (UTM tags) brought them. Their vendors describe them as cookieless and not used for cross-site advertising. That is not a finding that no personal data is processed: a visit can still involve technical data such as an IP address or browser type. Privacy policy section 5.4a names both tools and points to their notices.
 
 ## The tags
 
@@ -32,6 +32,10 @@ It sits at the end of `<head>` on **every** HTML page (all 616: the English page
 
 This is the Umami Cloud script from Peter's Umami account, with website id `6e3b5dc3-0353-4ecc-9f30-58a6b7cd4384`. It sits directly after the Plausible block at the end of `<head>` on every page (616). On the generated language pages `defer` is written as `defer=""`, which is the same thing. Umami records UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`) automatically from the landing URL; see the UTM insight in the Umami dashboard ([docs](https://umami.is/docs/utm)). Check a new page with `git ls-files '*.html' | xargs grep -L 6e3b5dc3-0353-4ecc-9f30-58a6b7cd4384` (it should print nothing).
 
+### Unexplained inline loader
+
+An inline script with no `src` of its own, assigning `script.src` to `https://emrldco.com/NTk4NDc0.js?t=598474`, used to sit after the Umami tag. It is not Plausible or Umami, it was not described in the privacy policy, and this repository does not identify what that URL returns. It has been removed from the HTML. Do not add it back, and do not add another inline script loader whose host is not one of the two tools above. This note does not describe that URL as malicious and it does not record a runtime trace, because the script was not executed here.
+
 ### Dropping one tool later
 
 Removing a tool = delete its one block (Plausible: the comment plus two `<script>` elements; Umami: the one `<script>` line) from the English pages, then run `python3 tools/i18n/build.py build` and commit the result. If Plausible is dropped, also update `docs/analytics.md` and privacy section 5.4a to say so. If Umami is dropped, reword 5.4a the same way.
@@ -54,8 +58,8 @@ Plausible (and Umami, see above) records `utm_source`, `utm_medium`, `utm_campai
 ## Why Plausible (and Umami as the alternative)
 
 * UTM and campaign reports are built in.
-* No cookies and no personal data, so no consent banner.
+* The vendors describe the tools as cookieless. Do not claim that these tools process no personal data.
 * Simplest setup: one script tag, no server to run.
-* Hosted in the EU.
+* Plausible’s hosted service is in the EU. That sentence is about Plausible’s hosting, not a promise about every request this site makes.
 
 [Umami](https://umami.is) is the alternative if a free option is wanted: it is open source and can be self-hosted (or used in its cloud), and it also reads UTM tags. Self-hosting means you run and update it yourself; the Cloud version used here has a free tier. Both are installed for now while Peter compares them.

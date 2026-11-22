@@ -57,7 +57,7 @@
     tg.forEach(function(x){x.setAttribute("aria-pressed","false");}); b.setAttribute("aria-pressed","true");
     var y=b.getAttribute("data-period")==="year";
     $("proPrice").innerHTML=y?L("priceYear","US$29.99 <span>per year</span>"):L("priceMonth","US$4.99 <span>per month</span>");
-    $("proNote").textContent=y?L("noteYear","That's about $2.50 a month."):L("noteMonth","Switch to yearly any time.");
+    $("proNote").textContent=y?L("noteYear","About US$2.50 a month at the US yearly list price, not a separate charge."):L("noteMonth","Switch to yearly any time.");
   });});
 
   // Forms: static UI only. Endpoints are placeholders until a backend is approved.
@@ -86,9 +86,47 @@
     var n=document.querySelectorAll(".topic details:not([hidden])").length; $("searchCount").textContent=s?(n+" matching answer"+(n===1?"":"s")):"";
   });}
 
-  // Data status dates
+  // Data status dates. A recorded check is a real calendar day. Placeholders and invalid values stay unknown.
+  function formatStatusDate(value) {
+    if (typeof value !== "string") return "";
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value.trim());
+    if (!m) return "";
+    var y = +m[1], mo = +m[2], d = +m[3];
+    var dt = new Date(Date.UTC(y, mo - 1, d));
+    if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== mo - 1 || dt.getUTCDate() !== d) return "";
+    return m[1] + "-" + m[2] + "-" + m[3];
+  }
+  /* end formatStatusDate */
+  function statusText(value) {
+    var recorded = formatStatusDate(value);
+    return recorded || L("statusNotRecorded", "Not recorded");
+  }
+  function statusUnavailable(tb) {
+    tb.textContent = "";
+    var tr = document.createElement("tr");
+    var td = document.createElement("td");
+    td.colSpan = 3;
+    td.textContent = L("statusUnavailable", "Last-checked dates are not available just now.");
+    tr.appendChild(td);
+    tb.appendChild(tr);
+  }
   var tb=$("statusBody");
-  if(tb){ fetch("/data/status.json").then(function(r){return r.json();}).then(function(d){
-    tb.innerHTML=""; d.sources.forEach(function(s){ var tr=document.createElement("tr"); [s.name,s.refreshed,s.last].forEach(function(x){var td=document.createElement("td"); td.textContent=x; tr.appendChild(td);}); tb.appendChild(tr); });
-  }).catch(function(){}); }
+  if(tb){ fetch("/data/status.json").then(function(r){
+    if(!r.ok) throw new Error("status");
+    return r.json();
+  }).then(function(d){
+    if(!d || !Array.isArray(d.sources)) throw new Error("status");
+    tb.textContent = "";
+    d.sources.forEach(function(s){
+      s = s || {};
+      var tr=document.createElement("tr");
+      [s.name, s.refreshed, statusText(s.last)].forEach(function(x){
+        var td=document.createElement("td");
+        td.textContent = (x == null || String(x).trim() === "") ? L("statusNotRecorded", "Not recorded") : String(x);
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+    if(!d.sources.length) statusUnavailable(tb);
+  }).catch(function(){ statusUnavailable(tb); }); }
 })();

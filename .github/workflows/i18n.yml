@@ -21,5 +21,7 @@ jobs:
       - run: pip install beautifulsoup4==4.15.0
       - name: Build and check every language
         run: python3 tools/i18n/build.py check
+      - name: Legal-copy regression tests
+        run: node --test tools/legal-copy.test.mjs
       - name: Generated pages are committed
         run: git diff --exit-code || { echo "::error::Run 'python3 tools/i18n/build.py build' and commit the result."; exit 1; }
