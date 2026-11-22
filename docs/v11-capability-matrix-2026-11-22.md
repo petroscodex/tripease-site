@@ -77,6 +77,7 @@ Not changed on purpose:
 - No Qibla marketing line, because the privacy policy does not describe the location prompt yet.
 - No new app screenshots. Old screenshot files were left in place.
 - Pricing footnote from 18 Nov 2026 was left in place. `tools/legal-copy.test.mjs` requires the “no launch price” and “no Apple trial” sentences.
+- Japanese home toggle said “年額・50%お得” for the English word “Yearly”. That was the old “save 50%” line. It now says “年額”. Other locales already translated “Yearly” without a 50% claim.
 
 ## Screenshots
 
